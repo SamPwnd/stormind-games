@@ -2,9 +2,14 @@
 
 //@import 'variables';
 
-@import 'tipografy';
+@import 'typography';
 
 p{
     @include poppins(H2,400, green,center);
     
+}
+
+img{
+    height: 30px;
+    color: green;
 }

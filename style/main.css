@@ -55,4 +55,9 @@ p {
     line-height: 40px;
   }
 }
+
+img {
+  height: 30px;
+  color: green;
+}
 /*# sourceMappingURL=main.css.map */
