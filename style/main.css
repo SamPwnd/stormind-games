@@ -1,3 +1,58 @@
-@import url("./_fonts.scss");
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato-Light.ttf");
+  font-weight: 300;
+}
 
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato-Bold.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato-Black.ttf");
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("../fonts/Poppins-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("../fonts/Poppins-Medium.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("../fonts/Poppins-ExtraBold.ttf");
+  font-weight: 800;
+}
+
+p {
+  font-family: 'Poppins';
+  font-size: 48px;
+  line-height: 64px;
+  font-weight: 400;
+  color: green;
+  text-align: center;
+}
+
+@media only screen and (max-width: 565px) {
+  p {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
 /*# sourceMappingURL=main.css.map */

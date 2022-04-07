@@ -1,1 +1,10 @@
-@import url('./_fonts.scss');
+@import 'fonts';
+
+//@import 'variables';
+
+@import 'tipografy';
+
+p{
+    @include poppins(H2,400, green,center);
+    
+}

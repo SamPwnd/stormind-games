@@ -1,0 +1,86 @@
+@mixin poppins($size, $weight, $color, $align) {
+    
+    font-family: 'Poppins';
+    @if $size == 'H1'{
+        font-size: 56px;
+        line-height: 64px;
+    }@else if $size == 'H2'{
+        font-size: 48px;
+        line-height: 64px;
+    }@else if $size == 'H3'{
+        font-size: 32px;
+        line-height: 32px;
+    }@else if $size == 'H4'{
+        font-size: 24px;
+        line-height: 32px;
+    }@else if $size == 'H5'{
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    font-weight:  $weight;
+
+    color: $color;
+
+    text-align: $align;
+
+    @media only screen and (max-width: 565px){
+        @if $size == 'H1'{
+            font-size: 40px;
+            line-height: 48px;
+        }@else if $size == 'H2'{
+            font-size: 32px;
+            line-height: 40px;
+        }@else if $size == 'H3'{
+            font-size: 28px;
+            line-height: 32px;
+        }
+    }
+}
+
+
+@mixin lato($size, $weight, $color, $align){
+
+    font-family: 'Lato';
+
+    @if $size == 'H1'{
+        font-size: 20px;
+        line-height: 24px;
+    }@else if $size == 'H2'{
+        font-size: 16px;
+        line-height: 20px;
+    }@else if $size == 'H3'{
+        font-size: 14px;
+        line-height: 20px;
+    }@else if $size == 'H4'{
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    font-weight: $weight;
+    color: $color;
+    text-align: $align;
+}
+
+
+@mixin lato-cta($size, $weight, $color, $align){
+    font-family: 'Lato';
+
+    @if $size == 'H1'{
+        font-size: 32px;
+        line-height: 32px;
+    }@else if $size == 'H2'{
+        font-size: 20px;
+        line-height: 32px;
+    }@else if $size == 'H3'{
+        font-size: 24px;
+        line-height: 32px;
+    }@else if $size == 'H4'{
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    font-weight: $weight;
+    color: $color;
+    text-align: $align;
+}
