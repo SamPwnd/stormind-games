@@ -1,8 +1,11 @@
 @import 'fonts';
-
-//@import 'variables';
-
+@import 'functions';
+@import 'variables';
 @import 'typography';
+
+/* .title {
+    @include poppins(H1, 800, $primary, left);
+} */
 
 p{
     @include poppins(H2,400, green,center);
