@@ -1,3 +1,31 @@
+
+<?php
+
+function get_template_part($file, $params) {
+    ob_start();
+    extract($params);
+    require $file;
+    $text = ob_get_clean();
+    echo $text;
+}
+
+
+$params = [
+   'title' => [
+    'class' => 'title',
+    'content' => 'lorem ipsum sinet dolor',
+   ],
+
+   'subtitle' =>[
+       'class' => 'subtitle',
+       'content' => 'cammelo mangia la mela',
+   ],
+];
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,5 +44,11 @@
 
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum non eius in aspernatur suscipit ducimus quae amet nam accusantium consequuntur numquam a tempora quia praesentium, laudantium sint distinctio qui quibusdam?</p>
     <img src="./Vector.svg" alt="">
+
+    <p class="title">ciao </p>
+
+    <div >
+        <?php get_template_part('components/componenta.php', $params) ?>
+    </div>
 </body>
 </html>
