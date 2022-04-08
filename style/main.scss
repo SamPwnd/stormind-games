@@ -24,3 +24,24 @@ img{
 .subtitle{
     color: aqua;
 }
+
+
+.paragraph{
+
+
+    &__title{
+        @include poppins(H1, 800, $primary, center );
+    }
+
+    &__subtitle{
+        @include lato()
+    }
+
+    &--left{
+        >*{
+            text-align: left;
+        }
+    }
+
+}
+

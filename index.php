@@ -9,18 +9,11 @@ function get_template_part($file, $params) {
     echo $text;
 }
 
-
-$params = [
-   'title' => [
-    'class' => 'title',
-    'content' => 'lorem ipsum sinet dolor',
-   ],
-
-   'subtitle' =>[
-       'class' => 'subtitle',
-       'content' => 'cammelo mangia la mela',
-   ],
+$navbar = [
+    'classes' => 'classes',
+    'logo' => 'logo'
 ];
+
 
 ?>
 
@@ -37,18 +30,16 @@ $params = [
     <title>Document</title>
 </head>
 <body>
-    <button class="btn btn-outline-primary">SUBSCRIBE</button>
-    <button class="btn btn-outline-black">SUBSCRIBE</button>
 
-    <p class="title">DEVELOPERS OF INTENSE STORIES</p>
-
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum non eius in aspernatur suscipit ducimus quae amet nam accusantium consequuntur numquam a tempora quia praesentium, laudantium sint distinctio qui quibusdam?</p>
-    <img src="./Vector.svg" alt="">
-
-    <p class="title">ciao </p>
-
-    <div >
-        <?php get_template_part('components/componenta.php', $params) ?>
-    </div>
+<?php ob_start(); ?>
+    <ul>
+        <li>home</li>
+        <li>chi siamo</li>
+        <li>cosa facciamo</li>
+        <li>contatti</li>
+    </ul>
+<?php $navbar_content = ob_get_clean(); ?>
+    
+<?php get_template_part( './components/navbar.php' ,[ 'navbar' =>$navbar ,'content' => $navbar_content]) ?>     
 </body>
 </html>

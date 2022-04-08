@@ -1,3 +1,21 @@
+<?php 
+
+
+    /*
+    'title' => [
+        'class',
+        'content'
+    ];
+
+    'sutitle' => [
+        'class',
+        'content'
+    ];
+    */
+?>
+
+
+
 <div>
     <h1 class="<?php echo $title['class']; ?>">
         <?php echo $title['content']; ?>
