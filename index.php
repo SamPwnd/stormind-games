@@ -26,12 +26,15 @@ $navbar = [
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/bootstrap.min.css">
     <link rel="stylesheet" href="./style/main.css">
+    <script src="./script/bootstrap.min.js"></script>
     <title>Document</title>
 </head>
 <body>
 
-<input class="form-control" type="text" placeholder="label1">
-<button class="btn btn-outline-black" type="button">SHOW MORE</button>
+<div class="input-group mb-3 bg-primary">
+  <input type="text" class="form-control" placeholder="label" aria-describedby="button-addon2">
+  <button class="btn btn-outline-black" type="button" id="button-addon2">SHOW MORE</button>
+</div>
 
 <?php ob_start(); ?>
     <ul>
