@@ -3,12 +3,8 @@
 @import 'variables';
 @import 'typography';
 @import 'utilities';
-
-/* .title {
-    @include poppins(H1, 800, $primary, left);
-} */
-
 @import 'navbar';
+@import 'card-profile';
 
 
 *{
