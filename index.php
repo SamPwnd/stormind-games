@@ -30,6 +30,9 @@ $navbar = [
 </head>
 <body>
 
+<input class="form-control" type="text" placeholder="label1">
+<button class="btn btn-outline-black" type="button">SHOW MORE</button>
+
 <?php ob_start(); ?>
     <ul>
         <li>home</li>

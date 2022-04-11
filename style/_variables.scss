@@ -750,7 +750,7 @@ $input-btn-focus-width:         .25rem !default;
 $input-btn-focus-color-opacity: .25 !default;
 $input-btn-focus-color:         rgba($component-active-bg, $input-btn-focus-color-opacity) !default;
 $input-btn-focus-blur:          0 !default;
-$input-btn-focus-box-shadow:    0 0 $input-btn-focus-blur $input-btn-focus-width $input-btn-focus-color !default;
+$input-btn-focus-box-shadow:    0 0 $input-btn-focus-blur $input-btn-focus-width $black !default;
 
 $input-btn-padding-y-sm:      .25rem !default;
 $input-btn-padding-x-sm:      .5rem !default;
@@ -834,8 +834,8 @@ $form-label-color:                      null !default;
 // scss-docs-end form-label-variables
 
 // scss-docs-start form-input-variables
-$input-padding-y:                       36px !default;
-$input-padding-x:                       38px !default;
+$input-padding-y:                       16px !default;
+$input-padding-x:                       18px !default;
 $input-font-family:                     $input-btn-font-family !default;
 $input-font-size:                       20px !default;
 $input-font-weight:                     700 !default;
