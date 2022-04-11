@@ -8,9 +8,21 @@
     @include poppins(H1, 800, $primary, left);
 } */
 
+@import 'navbar';
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
 p{
     @include poppins(H2,400, green,center);
-    
 }
 
 img{
@@ -35,7 +47,7 @@ img{
     }
 
     &__subtitle{
-        @include lato()
+        //@include lato()
     }
 
     &--left{
