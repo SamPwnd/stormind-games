@@ -2,3 +2,63 @@
     background: aquamarine;
     min-height: 500px;
 }
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 1px;
+    
+    
+    background:  linear-gradient(180deg, rgba(0, 0, 0, 0.5) 22.92%, rgba(0, 0, 0, 0) 100%);
+    padding: 0 10rem;
+    
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        min-height: 120px;
+
+        .navbar__logo{
+            height: 4rem ;
+        }
+
+        .navbar__links{
+            list-style: none;
+            display: flex;
+            
+            .navbar__link{
+                a{
+                    @include lato(H3, 700, $primary, start);
+                    text-transform: uppercase;
+                    margin-left: 30px;
+                    position: relative;
+                    display: inline-block;
+                    &:after{
+                        content: '';
+                        width: 0;
+                        height: 1px;
+                        position: absolute;
+                        left: 0;
+                        bottom: -6px;
+                        transition: all 0.3s;
+                        background: $primary;
+                    }
+                }
+
+                img{
+                    height: 100%;
+                }
+
+                &:first-child{
+                    a{ margin: 0;}
+                }
+
+                &:hover a::after{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

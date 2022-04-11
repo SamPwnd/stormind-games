@@ -11,6 +11,16 @@
 @import 'navbar';
 
 
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
 p{
     @include poppins(H2,400, green,center);
 }
