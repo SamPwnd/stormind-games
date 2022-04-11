@@ -17,8 +17,8 @@
 ?>
 
 <div class="<?= $navbar['classes'] ?>">
-    <div class="<?= $navbar['navwrapper'] ?>">
-        <img class="<?= $navbar['navlogo'] ?>" src="<?= $navbar['logo'] ?>" alt="<?= $navbar['logo'] ?>" >
+    <div class="<?= $navbar['navWrapper'] ?>">
+        <img class="<?= $navbar['navLogo'] ?>" src="<?= $navbar['logo'] ?>" alt="<?= $navbar['logo'] ?>" >
 
         <?= $content ?>
     </div>

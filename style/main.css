@@ -47,7 +47,8 @@
   position: fixed;
   top: 0;
   left: 0;
-  right: 1px;
+  right: 0;
+  z-index: 10;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 22.92%, rgba(0, 0, 0, 0) 100%);
   padding: 0 10rem;
 }
@@ -156,6 +157,89 @@
   white-space: pre-line;
 }
 
+/* @import 'textpanel'; */
+/* .title {
+    @include poppins(H1, 800, $primary, left);
+} */
+.mp-body {
+  background: aquamarine;
+  min-height: 500px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 22.92%, rgba(0, 0, 0, 0) 100%);
+  padding: 0 10rem;
+}
+.navbar__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-height: 120px;
+}
+.navbar__wrapper .navbar__logo {
+  height: 4rem;
+}
+.navbar__wrapper .navbar__links {
+  list-style: none;
+  display: flex;
+}
+.navbar__wrapper .navbar__links .navbar__link a {
+  font-family: "Lato";
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #F9B611;
+  text-align: start;
+  text-transform: uppercase;
+  margin-left: 30px;
+  position: relative;
+  display: inline-block;
+}
+.navbar__wrapper .navbar__links .navbar__link a:after {
+  content: "";
+  width: 0;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: all 0.3s;
+  background: #F9B611;
+}
+.navbar__wrapper .navbar__links .navbar__link img {
+  height: 100%;
+}
+.navbar__wrapper .navbar__links .navbar__link:first-child a {
+  margin: 0;
+}
+.navbar__wrapper .navbar__links .navbar__link:hover a::after {
+  width: 100%;
+}
+
+.hero {
+  object-fit: cover;
+  position: relative;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  z-index: 0;
+}
+.hero video {
+  min-height: 100vh;
+  display: block;
+  min-width: 100%;
+}
+.hero__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: red;
+  z-index: 1;
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -164,26 +248,6 @@
 
 a {
   text-decoration: none;
-}
-
-p {
-  font-family: "Poppins";
-  font-size: 48px;
-  line-height: 64px;
-  font-weight: 400;
-  color: green;
-  text-align: center;
-}
-@media only screen and (max-width: 565px) {
-  p {
-    font-size: 32px;
-    line-height: 40px;
-  }
-}
-
-img {
-  height: 30px;
-  color: green;
 }
 
 .title {

@@ -10,9 +10,15 @@
     $navbar =[
         'classes' => 'navbar',
         'logo' => './assets/logo.svg',
-        'navwrapper' => 'navbar__wrapper',
-        'navlogo' => 'navbar__logo',
+        'navWrapper' => 'navbar__wrapper',
+        'navLogo' => 'navbar__logo',
         
+    ];
+
+    $hero =[
+        'classes' => 'hero',
+        'video' => 'https://stormindgames.com/wp-content/uploads/2021/01/our-games-1.mp4',
+        'heroContent' => 'hero__content',
     ];
 
 ?>
@@ -27,10 +33,6 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="mp-body">
-        <h1>ciao</h1>
-        <img src="./assets/logo.svg" alt="">
-    </div>
 
     <?php ob_start(); ?>
         <ul class="navbar__links">
@@ -46,12 +48,24 @@
                 </a>
             </li>
         </ul>
-    <?php $navbar_content = ob_get_clean(); ?>
+    <?php $navbarContent = ob_get_clean(); ?>
 
 
-    <?php  get_template_part('./navbar.php', ['navbar' => $navbar , 'content' => $navbar_content]); ?>
+    <?php  get_template_part('./navbar.php', ['navbar' => $navbar , 'content' => $navbarContent]); ?>
+  
     
+    <?php ob_start(); ?>
+        <p class="hero__bottom">
+            <img src="./assets/icon-Down.svg" alt="down">
+            <a href="#">Scroll Down</a>
+        </p>
+    <?php $heroContent = ob_get_clean(); ?>
 
+    <?php get_template_part('./components/hero.php', ['hero' => $hero, 'content' => $heroContent]) ?>
     
+    <div>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum quos ducimus blanditiis dolores possimus, ex ipsam nostrum! Eius porro modi eaque nisi atque nemo! Mollitia rerum quis eius! Laudantium, nulla?
+    </div>
+
 </body>
 </html>

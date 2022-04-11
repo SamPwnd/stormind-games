@@ -5,6 +5,14 @@
 @import 'utilities';
 @import 'navbar';
 @import 'card-profile';
+/* @import 'textpanel'; */
+
+/* .title {
+    @include poppins(H1, 800, $primary, left);
+} */
+
+@import 'navbar';
+@import 'hero';
 
 
 *{
@@ -17,14 +25,7 @@ a{
     text-decoration: none;
 }
 
-p{
-    @include poppins(H2,400, green,center);
-}
 
-img{
-    height: 30px;
-    color: green;
-}
 
 .title{
     color: red;
@@ -42,9 +43,9 @@ img{
         @include poppins(H1, 800, $primary, center );
     }
 
-    &__subtitle{
-        //@include lato()
-    }
+    // &__subtitle{
+    //     //@include lato()
+    // }
 
     &--left{
         >*{
