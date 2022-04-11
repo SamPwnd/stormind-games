@@ -4,11 +4,16 @@
     object-fit: cover;
     position: relative;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    top: 0;
     z-index: 0;
+    overflow: hidden;
     video{
-        min-height: 100vh;
-        display: block;
+        height: 100vh;
+        position: relative;
+        //display: block;
         min-width: 100%;
+        object-fit: cover;
+        object-position: center;
     }
 
     &__content{

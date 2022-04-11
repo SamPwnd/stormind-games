@@ -2,11 +2,9 @@
 @import 'functions';
 @import 'variables';
 @import 'typography';
-@import 'textpanel';
 
-/* .title {
-    @include poppins(H1, 800, $primary, left);
-} */
+
+//@import 'textpanel';
 
 @import 'navbar';
 @import 'hero';
@@ -24,31 +22,4 @@ a{
 
 
 
-.title{
-    color: red;
-}
-
-.subtitle{
-    color: aqua;
-}
-
-
-.paragraph{
-
-
-    &__title{
-        @include poppins(H1, 800, $primary, center );
-    }
-
-    &__subtitle{
-        //@include lato()
-    }
-
-    &--left{
-        >*{
-            text-align: left;
-        }
-    }
-
-}
 

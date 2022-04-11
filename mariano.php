@@ -9,10 +9,27 @@
 
     $navbar =[
         'classes' => 'navbar',
+        'id' => 'navbar1',
         'logo' => './assets/logo.svg',
-        'navWrapper' => 'navbar__wrapper',
+        'navContainer' => 'container',
+        'navWrapper' => ' navbar__wrapper ',
         'navLogo' => 'navbar__logo',
-        
+        'button' =>[
+            'classes' => 'navbar__button ',
+            'id' => 'navbar__button-1',
+            'icon1' => './assets/icon-hamburger.svg',
+            'icon2' => './assets/icon-Close.svg'
+        ],
+        'socials'=>[
+            'classes' => 'navbar__socials',
+            'icons' =>[
+                './assets/social-linkdn.svg',
+                './assets/social-Fb.svg',
+                './assets/social-tw.svg',
+                './assets/social-Ig.svg',
+                './assets/social-yt.svg',
+            ]
+        ],
     ];
 
     $hero =[
@@ -29,13 +46,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/bootstrap.min.css">
     <link rel="stylesheet" href="style/main.css">
+    
     <title>Document</title>
 </head>
 <body>
 
     <?php ob_start(); ?>
-        <ul class="navbar__links">
+        <ul class="navbar__links " id="navbarNavDropdown">
             <li class="navbar__link"><a href="#">company</a></li>
             <li class="navbar__link"><a href="#">games</a></li>
             <li class="navbar__link"><a href="#">news</a></li>
@@ -54,6 +73,7 @@
     <?php  get_template_part('./navbar.php', ['navbar' => $navbar , 'content' => $navbarContent]); ?>
   
     
+    
     <?php ob_start(); ?>
         <p class="hero__bottom">
             <img src="./assets/icon-Down.svg" alt="down">
@@ -66,6 +86,7 @@
     <div>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum quos ducimus blanditiis dolores possimus, ex ipsam nostrum! Eius porro modi eaque nisi atque nemo! Mollitia rerum quis eius! Laudantium, nulla?
     </div>
-
+    
+    <script src="./script/navbar.js"></script>
 </body>
 </html>
