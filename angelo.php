@@ -12,8 +12,8 @@ $cardsimple = [
 [
     'classbootstrap' => 'col',
     'classes' => 'cardsimple',
-    'classtitle' => 'cardsaward__title',
-    'classsubtitle' => 'cardsaward__subtitle',
+    'classtitle' => 'cardssimple__title',
+    'classsubtitle' => 'cardssimple__subtitle',
     'image' => './img/180.png',
     'title' => 'DEVELOPMENT',
     'subtitle' => 'We can help you with developing a sequel or an expansion of your video game and  converting the player mode you’ve set to the one of your choice.'
@@ -21,8 +21,8 @@ $cardsimple = [
 [
     'classbootstrap' => 'col',
     'classes' => 'cardsimple',
-    'classtitle' => 'cardsaward__title',
-    'classsubtitle' => 'cardsaward__subtitle',
+    'classtitle' => 'cardssimple__title',
+    'classsubtitle' => 'cardssimple__subtitle',
     'image' => './img/181.png',
     'title' => 'GAME’S CINEMATICS & TRAILER',
     'subtitle' => 'Thanks to the experience gained by the professionals in our team, who have had the chance to prove their skills in the production of CGI films, we can design and create trailers and cinematics for your video game.'
@@ -30,7 +30,7 @@ $cardsimple = [
 [
     'classbootstrap' => 'col',
     'classes' => 'cardsimple',
-    'classtitle' => 'cardsaward__title',
+    'classtitle' => 'cardssimple__title',
     'classsubtitle' => 'cardssimple__subtitle',
     'image' => './img/182.png',
     'title' => 'PORTING',
@@ -85,6 +85,11 @@ $cardsaward = [
 <div class="container">
     <div class="row">
      <?php for($i=0; $i<2; $i++) get_template_part( './components/cardsaward.php', [ 'cardsaward' =>$cardsaward[$i]])?>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+     <?php get_template_part( './components/postcard.php', [ 'postcard' =>$postcard])?>
     </div>
 </div>
 </body>
