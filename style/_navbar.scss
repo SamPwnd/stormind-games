@@ -7,9 +7,8 @@
     position: fixed;
     top: 0;
     left: 0;
-    right: 1px;
-    
-    
+    right: 0;
+    z-index: 10;
     background:  linear-gradient(180deg, rgba(0, 0, 0, 0.5) 22.92%, rgba(0, 0, 0, 0) 100%);
     padding: 0 10rem;
     

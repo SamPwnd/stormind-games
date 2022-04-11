@@ -58,7 +58,8 @@
   position: fixed;
   top: 0;
   left: 0;
-  right: 1px;
+  right: 0;
+  z-index: 10;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(22.92%, rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 22.92%, rgba(0, 0, 0, 0) 100%);
   padding: 0 10rem;
@@ -126,6 +127,30 @@
   width: 100%;
 }
 
+.hero {
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4)));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  z-index: 0;
+}
+
+.hero video {
+  min-height: 100vh;
+  display: block;
+  min-width: 100%;
+}
+
+.hero__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: red;
+  z-index: 1;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -135,27 +160,6 @@
 
 a {
   text-decoration: none;
-}
-
-p {
-  font-family: 'Poppins';
-  font-size: 48px;
-  line-height: 64px;
-  font-weight: 400;
-  color: green;
-  text-align: center;
-}
-
-@media only screen and (max-width: 565px) {
-  p {
-    font-size: 32px;
-    line-height: 40px;
-  }
-}
-
-img {
-  height: 30px;
-  color: green;
 }
 
 .title {
