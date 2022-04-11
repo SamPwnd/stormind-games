@@ -57,11 +57,15 @@ body {
   background-color: black;
 }
 
-.text-panel {
-  max-width: 700px;
+h2 {
+  color: white;
 }
 
-.text-panel h1 {
+.text-panel-center {
+  max-width: 640px;
+}
+
+.text-panel-center h1 {
   color: #F9B611;
   font-family: 'Poppins';
   font-size: 56px;
@@ -73,25 +77,63 @@ body {
 }
 
 @media only screen and (max-width: 565px) {
-  .text-panel h1 {
+  .text-panel-center h1 {
     font-size: 40px;
     line-height: 48px;
   }
 }
 
-.text-panel__line {
+.text-panel-center .text-panel__line {
   width: 100px;
   border: 1px solid #F9B611;
   margin: 10px auto 24px auto;
 }
 
-.text-panel p {
+.text-panel-center p {
   font-family: 'Lato';
   font-size: 20px;
   line-height: 24px;
   font-weight: 400;
   color: white;
   text-align: center;
+}
+
+.text-panel-left {
+  max-width: 640px;
+  margin-top: 50px;
+}
+
+.text-panel-left h1 {
+  color: #F9B611;
+  font-family: 'Poppins';
+  font-size: 56px;
+  line-height: 64px;
+  font-weight: 800;
+  color: #F9B611;
+  text-align: start;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 565px) {
+  .text-panel-left h1 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+
+.text-panel-left .text-panel__line {
+  width: 100px;
+  border: 1px solid #F9B611;
+  margin: 10px 0 24px 0;
+}
+
+.text-panel-left p {
+  font-family: 'Lato';
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  color: white;
+  text-align: start;
 }
 
 .center-logo {

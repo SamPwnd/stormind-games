@@ -13,16 +13,19 @@ body{
   background-color: black;
 }
 
-.text-panel {
-  max-width: 700px;
+h2{
+  color: white;
+}
 
+.text-panel-center {
+  max-width: 640px;
   h1 {
     color: $primary;
     @include poppins(H1, 800, $primary, center);
     text-transform: uppercase;
   }
 
-  &__line {
+  .text-panel__line{
     width: 100px;
     border: 1px solid $primary;
     margin: 10px auto 24px auto;
@@ -30,6 +33,27 @@ body{
 
   p {
     @include lato(H1, 400, white, center);
+  }
+}
+
+.text-panel-left{
+  max-width: 640px;
+  margin-top: 50px;
+  
+  h1 {
+    color: $primary;
+    @include poppins(H1, 800, $primary, start);
+    text-transform: uppercase;
+  }
+  
+  .text-panel__line{
+    width: 100px;
+    border: 1px solid $primary;
+    margin: 10px 0 24px 0;
+  }
+  
+  p{
+    @include lato(H1, 400, white, start);
   }
 }
 

@@ -2,6 +2,13 @@
 @import 'functions';
 @import 'variables';
 @import 'typography';
+<<<<<<< HEAD
+=======
+@import 'utilities';
+@import 'navbar';
+@import 'card-profile';
+/* @import 'textpanel'; */
+>>>>>>> af2d130a3d99eef146634324e11bfb8871672011
 
 
 //@import 'textpanel';
@@ -22,4 +29,34 @@ a{
 
 
 
+<<<<<<< HEAD
+=======
+.title{
+    color: red;
+}
+
+.subtitle{
+    color: aqua;
+}
+
+
+.paragraph{
+
+
+    &__title{
+        @include poppins(H1, 800, $primary, center );
+    }
+
+    // &__subtitle{
+    //     //@include lato()
+    // }
+
+    &--left{
+        >*{
+            text-align: left;
+        }
+    }
+
+}
+>>>>>>> af2d130a3d99eef146634324e11bfb8871672011
 
