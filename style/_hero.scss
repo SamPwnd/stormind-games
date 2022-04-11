@@ -1,0 +1,31 @@
+
+.hero{
+    
+    object-fit: cover;
+    position: relative;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    top: 0;
+    z-index: 0;
+    overflow: hidden;
+    video{
+        height: 100vh;
+        position: relative;
+        //display: block;
+        min-width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    &__content{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background-color: red;
+        z-index: 1;
+    }
+
+    &__bottom{
+
+    }
+}

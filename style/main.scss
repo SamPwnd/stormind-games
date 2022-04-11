@@ -2,6 +2,10 @@
 @import 'functions';
 @import 'variables';
 @import 'typography';
+@import 'utilities';
+@import 'navbar';
+@import 'card-profile';
+/* @import 'textpanel'; */
 
 
 @import 'cardsimple';
@@ -10,13 +14,19 @@
 } */
 
 
-.title{
-    color: red;
+//@import 'textpanel';
+
+@import 'navbar';
+@import 'hero';
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.subtitle{
-    color: aqua;
+a{
+    text-decoration: none;
 }
-
-
 
