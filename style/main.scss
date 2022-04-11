@@ -3,19 +3,12 @@
 @import 'variables';
 @import 'typography';
 
+
+@import 'cardsimple';
 /* .title {
     @include poppins(H1, 800, $primary, left);
 } */
 
-p{
-    @include poppins(H2,400, green,center);
-    
-}
-
-img{
-    height: 30px;
-    color: green;
-}
 
 .title{
     color: red;
@@ -26,22 +19,4 @@ img{
 }
 
 
-.paragraph{
-
-
-    &__title{
-        @include poppins(H1, 800, $primary, center );
-    }
-
-    &__subtitle{
-        @include lato()
-    }
-
-    &--left{
-        >*{
-            text-align: left;
-        }
-    }
-
-}
 

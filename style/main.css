@@ -46,30 +46,21 @@
   font-weight: 800;
 }
 
+* {
+  margin: 0;
+}
+
+.cardsimple {
+  max-width: 22rem;
+}
+
+.cardsimple img {
+  width: 100%;
+}
+
 /* .title {
     @include poppins(H1, 800, $primary, left);
 } */
-p {
-  font-family: 'Poppins';
-  font-size: 48px;
-  line-height: 64px;
-  font-weight: 400;
-  color: green;
-  text-align: center;
-}
-
-@media only screen and (max-width: 565px) {
-  p {
-    font-size: 32px;
-    line-height: 40px;
-  }
-}
-
-img {
-  height: 30px;
-  color: green;
-}
-
 .title {
   color: red;
 }
