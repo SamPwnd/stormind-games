@@ -1,0 +1,111 @@
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato-Light.ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato-Bold.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato-Black.ttf");
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("../fonts/Poppins-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("../fonts/Poppins-Medium.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("../fonts/Poppins-SemiBold.ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("../fonts/Poppins-ExtraBold.ttf");
+  font-weight: 800;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+.text-panel {
+  max-width: 700px;
+}
+
+.text-panel h1 {
+  color: #F9B611;
+  font-family: 'Poppins';
+  font-size: 56px;
+  line-height: 64px;
+  font-weight: 800;
+  color: #F9B611;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 565px) {
+  .text-panel h1 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+
+.text-panel__line {
+  width: 100px;
+  border: 1px solid #F9B611;
+  margin: 10px auto 24px auto;
+}
+
+.text-panel p {
+  font-family: 'Lato';
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+}
+
+.center-logo {
+  width: 100%;
+  height: 140px;
+  background-color: #151210;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=tony.css.map */
