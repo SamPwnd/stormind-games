@@ -46,9 +46,9 @@ img{
         @include poppins(H1, 800, $primary, center );
     }
 
-    &__subtitle{
-        //@include lato()
-    }
+    // &__subtitle{
+    //     //@include lato()
+    // }
 
     &--left{
         >*{
