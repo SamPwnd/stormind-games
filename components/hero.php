@@ -13,11 +13,12 @@
 
 
 <div class="<?= $hero['classes'] ?>">
-    <video  alt="Video" height="100%"  muted autoplay loop>
+    <video  alt="Video" height="100%"  muted  loop>
         <source src="<?= $hero['video'] ?>" type="video/mp4">
     </video>
 
-    <div class="<?= $hero['heroContent'] ?>">
+    <div class="hero__content">
+        
         <?= $content ?>
         
     </div>
