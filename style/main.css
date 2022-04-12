@@ -281,16 +281,16 @@
   margin: 0;
 }
 
-.cardsimple {
+.cards-simple {
   max-width: 22rem;
   margin-top: 48px;
 }
 
-.cardsimple img {
+.cards-simple img {
   width: 100%;
 }
 
-.cardsimple__title {
+.cards-simple__title {
   font-family: 'Poppins';
   font-weight: 800;
   color: #2D2A26;
@@ -298,7 +298,7 @@
   margin-top: 16px;
 }
 
-.cardsimple__subtitle {
+.cards-simple__subtitle {
   font-family: 'Lato';
   font-weight: 400;
   color: #2D2A26;
