@@ -12,7 +12,7 @@
 ?>
 
 
-<div class="<?= $hero['classes'] ?>">
+<div class="hero">
     <video  alt="Video" height="100%"  muted  loop>
         <source src="<?= $hero['video'] ?>" type="video/mp4">
     </video>
