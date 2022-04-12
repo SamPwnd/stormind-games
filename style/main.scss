@@ -3,19 +3,15 @@
 @import 'variables';
 @import 'typography';
 @import 'utilities';
-@import 'navbar';
+
+
+
 @import 'card-profile';
-/* @import 'textpanel'; */
-
-
+@import 'navbar';
+@import 'hero';
+@import 'cardsaward';
 @import 'cardsimple';
-/* .title {
-    @include poppins(H1, 800, $primary, left);
-} */
-
-
-//@import 'textpanel';
-
+@import 'tony';
 @import 'navbar';
 @import 'hero';
 
