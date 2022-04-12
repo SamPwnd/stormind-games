@@ -16,13 +16,33 @@
             left: 0;
             top: 0;
         }
+
+        .card-profile__icon {
+
+            &--initial {
+                display: none;
+            }
+
+            &--hover {
+                display: initial;
+            }
+        }
+    }
+
+    &__icon {
+        &--initial {
+            display: initial;
+        }
+        &--hover {
+            display: none;
+        }
     }
 
     &__body {
         position: absolute;
         transition: 500ms ease;
         width: 100%;
-        top: calc(100% - 88px);
+        top: calc(100% - 100px);
         height: 100%;
     }
 
