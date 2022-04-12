@@ -46,6 +46,87 @@
   font-weight: 800;
 }
 
+.card-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #030504;
+  position: relative;
+  overflow: hidden;
+  min-height: 420px;
+}
+
+.card-profile:hover {
+  /* .card-profile__description-container {
+            margin-top: calc(-100% + 26px);
+        } */
+}
+
+.card-profile:hover .card-profile__body {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.card-profile__body {
+  position: absolute;
+  -webkit-transition: 500ms ease;
+  transition: 500ms ease;
+  width: 100%;
+  top: calc(100% - 88px);
+  height: 100%;
+}
+
+.card-profile__img {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.card-profile__title {
+  font-family: 'Poppins';
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 800;
+  color: #FFFFFF;
+  text-align: left;
+}
+
+.card-profile__title-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #151210;
+  padding: 26px 24px;
+}
+
+.card-profile__description-container {
+  background-color: #151210;
+  height: 100%;
+  padding: 0 24px 26px 24px;
+}
+
+.card-profile__description {
+  font-family: 'Lato';
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-align: left;
+  white-space: pre-line;
+}
+
 .mp-body {
   background: aquamarine;
   min-height: 500px;
@@ -195,88 +276,65 @@
   }
 }
 
-.card-profile {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-color: #030504;
+.hero {
+  -o-object-fit: cover;
+     object-fit: cover;
   position: relative;
-  overflow: hidden;
-  min-height: 420px;
-}
-
-.card-profile:hover {
-  /* .card-profile__description-container {
-            margin-top: calc(-100% + 26px);
-        } */
-}
-
-.card-profile:hover .card-profile__body {
-  position: absolute;
-  left: 0;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4)));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
   top: 0;
+  z-index: 0;
+  overflow: hidden;
 }
 
-.card-profile__body {
+.hero video {
+  height: 100vh;
+  position: relative;
+  min-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.hero__content {
   position: absolute;
-  -webkit-transition: 500ms ease;
-  transition: 500ms ease;
-  width: 100%;
-  top: calc(100% - 88px);
+  top: 0;
+  left: 0;
   height: 100%;
+  background-color: red;
+  z-index: 1;
 }
 
-.card-profile__img {
+* {
+  margin: 0;
+}
+
+.cardsaward {
+  max-width: 22rem;
+  margin-top: 48px;
+  background-color: #2D2A26;
+}
+
+.cardsaward img {
   width: 100%;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
 }
 
-.card-profile__title {
+.cardsaward__title {
   font-family: 'Poppins';
-  font-size: 24px;
-  line-height: 32px;
   font-weight: 800;
-  color: #FFFFFF;
-  text-align: left;
+  color: #FFFF;
+  text-align: center;
+  margin-top: 16px;
 }
 
-.card-profile__title-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #151210;
-  padding: 26px 24px;
-}
-
-.card-profile__description-container {
-  background-color: #151210;
-  height: 100%;
-  padding: 0 24px 26px 24px;
-}
-
-.card-profile__description {
+.cardsaward__subtitle {
   font-family: 'Lato';
-  font-size: 20px;
-  line-height: 24px;
   font-weight: 400;
-  color: #FFFFFF;
-  text-align: left;
-  white-space: pre-line;
+  color: #FFFF;
+  text-align: center;
 }
 
-/* @import 'textpanel'; */
 * {
   margin: 0;
 }
@@ -305,9 +363,178 @@
   text-align: left;
 }
 
-/* .title {
-    @include poppins(H1, 800, $primary, left);
-} */
+body {
+  background-color: gray;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.text-panel {
+  max-width: 640px;
+  margin-top: 50px;
+}
+
+.text-panel h1 {
+  color: #F9B611;
+  font-family: 'Poppins';
+  font-size: 56px;
+  line-height: 64px;
+  font-weight: 800;
+  color: #F9B611;
+  text-align: start;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 565px) {
+  .text-panel h1 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+
+.text-panel .text-panel__line {
+  width: 100px;
+  border: 1px solid #F9B611;
+  margin: 10px 0 24px 0;
+}
+
+.text-panel p {
+  font-family: 'Lato';
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  color: white;
+  text-align: start;
+}
+
+.text-panel--center {
+  max-width: 640px;
+}
+
+.text-panel--center h1 {
+  font-family: 'Poppins';
+  font-size: 56px;
+  line-height: 64px;
+  font-weight: 800;
+  color: #F9B611;
+  text-align: center;
+}
+
+@media only screen and (max-width: 565px) {
+  .text-panel--center h1 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+
+.text-panel--center .text-panel__line {
+  width: 100px;
+  border: 1px solid #F9B611;
+  margin: 10px auto 24px auto;
+}
+
+.text-panel--center p {
+  font-family: 'Lato';
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+}
+
+.text-panel--center--dark {
+  max-width: 640px;
+}
+
+.text-panel--center--dark h1 {
+  font-family: 'Poppins';
+  font-size: 56px;
+  line-height: 64px;
+  font-weight: 800;
+  color: #F9B611;
+  text-align: center;
+}
+
+@media only screen and (max-width: 565px) {
+  .text-panel--center--dark h1 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+
+.text-panel--center--dark .text-panel__line {
+  width: 100px;
+  border: 1px solid #F9B611;
+  margin: 10px auto 24px auto;
+}
+
+.text-panel--center--dark p {
+  font-family: 'Lato';
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  color: black;
+  text-align: center;
+}
+
+.text-panel--dark {
+  max-width: 640px;
+  margin-top: 50px;
+}
+
+.text-panel--dark h1 {
+  color: #F9B611;
+  font-family: 'Poppins';
+  font-size: 56px;
+  line-height: 64px;
+  font-weight: 800;
+  color: #F9B611;
+  text-align: start;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 565px) {
+  .text-panel--dark h1 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+
+.text-panel--dark .text-panel__line {
+  width: 100px;
+  border: 1px solid #F9B611;
+  margin: 10px 0 24px 0;
+}
+
+.text-panel--dark p {
+  font-family: 'Lato';
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  color: black;
+  text-align: start;
+}
+
+.center-logo {
+  width: 100%;
+  height: 140px;
+  background-color: #151210;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .mp-body {
   background: aquamarine;
   min-height: 500px;
