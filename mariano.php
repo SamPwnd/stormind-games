@@ -1,11 +1,5 @@
 <?php
-    function get_template_part($file, $params) {
-        ob_start();
-        extract($params);
-        require $file;
-        $text = ob_get_clean();
-        echo $text;
-    }
+    require_once('./functions.php');
 
     $navbar =[
         'classes' => 'navbar',
@@ -73,9 +67,7 @@
     
     <?php ob_start(); ?>
         <div class="container">
-            <-- qui si chiama il componente textpanel -->
-
-
+            <!-- qui si chiama il componente textpanel -->
             <p class="hero__bottom">
                 <img src="./assets/scroll-down-arrow.svg" alt="down">
                 <a href="#">Scroll Down</a>
