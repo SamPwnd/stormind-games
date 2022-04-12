@@ -29,15 +29,10 @@ require_once('./functions.php');
  */
 
 $navbar =[
-    'classes' => 'navbar navbar--open',
+    'classes' => 'navbar navbar--opened',
     'id' => 'navbar1',
     'logo' => './assets/logo.svg',
     'navContainer' => 'container',
-    'button' =>[
-        'id' => 'navbar__button-1',
-        'icon1' => './assets/icon-hamburger.svg',
-        'icon2' => './assets/icon-Close.svg'
-    ],
     'socials'=>[
         'classes' => 'navbar__socials',
         'icons' =>[

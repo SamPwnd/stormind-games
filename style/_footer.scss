@@ -4,6 +4,17 @@
 
     .navbar {
         position: static;
+
+        .navbar__wrapper {
+            .navbar__links {
+                padding: 0;
+                padding-top: 42px;
+            }
+
+            .navbar__socials {
+                display: none;
+            }
+        }
     }
 
     .footer-bottom {
@@ -44,14 +55,21 @@
 }
 
 @media only screen and (max-width: map-get($grid-breakpoints, lg)){
+    
+    .footer-bottom > div {
+        flex-direction: column;
+
+        .footer__credits {
+            margin-left: 0;
+            margin-bottom: 24px;
+        }
+    }
 
     .navbar {
-        position: relative;
-
-        .navbar__wrapper{
+        .navbar__wrapper {
             flex-wrap: wrap;
-
-            .navbar__links{
+            .navbar__links {
+                padding: 0;
                 width: 100%;
                 display: block;
                 padding: 100px 1.5rem;
@@ -61,31 +79,7 @@
                         a{margin: 0;}
                     }
                 }
-                
             }
-
-            .navbar__socials{
-                display: block;
-            }
-        }
-    }
-
-    .navbar__wrapper {
-        .navbar__links {
-            padding: 0;
-            padding-top: 42px;
-        }
-
-        .navbar__socials {
-            display: none;
-        }
-    }
-    .footer-bottom > div {
-        flex-direction: column;
-
-        .footer__credits {
-            margin-left: 0;
-            margin-bottom: 24px;
         }
     }
 }
