@@ -1,7 +1,4 @@
-@import 'fonts';
-@import 'functions';
-@import 'variables';
-@import 'typography';
+
 
 *{
   margin: 0;
@@ -9,13 +6,6 @@
   box-sizing: border-box;
 }
 
-body{
-  background-color: black;
-}
-
-h2{
-  color: white;
-}
 
 .text-panel-center {
   max-width: 640px;
