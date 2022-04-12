@@ -21,11 +21,17 @@
         top: 0;
         left: 0;
         height: 100%;
-        background-color: red;
+        //background-color: red;
         z-index: 1;
+        width: 100%;
+        padding-bottom: 52px;
     }
 
     &__bottom{
-
+        display: flex;
+        align-items: center;
+        img{margin-right: 0.5rem;}
+        position: absolute;
+        bottom: 52px;
     }
 }

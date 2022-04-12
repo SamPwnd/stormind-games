@@ -12,10 +12,7 @@
         'id' => 'navbar1',
         'logo' => './assets/logo.svg',
         'navContainer' => 'container',
-        'navWrapper' => ' navbar__wrapper ',
-        'navLogo' => 'navbar__logo',
         'button' =>[
-            'classes' => 'navbar__button ',
             'id' => 'navbar__button-1',
             'icon1' => './assets/icon-hamburger.svg',
             'icon2' => './assets/icon-Close.svg'
@@ -35,7 +32,7 @@
     $hero =[
         'classes' => 'hero',
         'video' => 'https://stormindgames.com/wp-content/uploads/2021/01/our-games-1.mp4',
-        'heroContent' => 'hero__content',
+        
     ];
 
 ?>
@@ -70,15 +67,20 @@
     <?php $navbarContent = ob_get_clean(); ?>
 
 
-    <?php  get_template_part('./navbar.php', ['navbar' => $navbar , 'content' => $navbarContent]); ?>
+    <?php  get_template_part('./components/navbar.php', ['navbar' => $navbar , 'content' => $navbarContent]); ?>
   
     
     
     <?php ob_start(); ?>
-        <p class="hero__bottom">
-            <img src="./assets/icon-Down.svg" alt="down">
-            <a href="#">Scroll Down</a>
-        </p>
+        <div class="container">
+            <-- qui si chiama il componente textpanel -->
+
+
+            <p class="hero__bottom">
+                <img src="./assets/scroll-down-arrow.svg" alt="down">
+                <a href="#">Scroll Down</a>
+            </p>
+        </div>
     <?php $heroContent = ob_get_clean(); ?>
 
     <?php get_template_part('./components/hero.php', ['hero' => $hero, 'content' => $heroContent]) ?>
