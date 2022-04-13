@@ -156,6 +156,27 @@ $center_logo = [
   ],
 ];
 
+$article = [
+  [
+    'classes' => 'article',
+    'image' => 'assets/antonio-cannata.jpg',
+    'title' => 'ANTONIO CANNATA',
+    'subtitle' => 'Co-Founder & CEO',
+    'content-up' => 'CEO and Co-Founder of the company, is in charge of the company marketing strategies and business development, with a focus on brand building and deal-making with publishers and investors.
+    <br><br> After graduating in Computer Engineering, he devoted his full time work to combine business',
+    'content-down' => 'and video games, his two passions. Following a professional training abroad, that paved the way for bringing his own company to life with the right conditions, he started operating in the entertainment industry, and after two years, together with Federico Laudani, he founded Stormind Games.<br><br>In the last 8 years, Antonio has specialized in the videogame industry for PC and Consoles. His enthusiastic leadership and his contribution in managing the company with the aim to always raise the bar have been awarded with the “Management Star” Award from DStars in 2020, the award dedicated to Italian excellences in the game development industry, for his outstanding contribution in managing a game studio.'
+  ],
+  [
+    'classes' => 'article',
+    'image' => 'assets/federico-laudani.jpg',
+    'title' => 'FEDERICO LAUDANI',
+    'subtitle' => 'Co-Founder & Art Director',
+    'content-up' => 'Co-Founder and Art Director of Stormind Games, is in charge of art direction, lighting, look development and post-production.
+    <br><br>After earning a master’s degree in 3D and Graphic Design, he kick-started his career as Art Director,  specializing in CGI.',
+    'content-down' => 'In 2010, he opened a small CGI studio, working mainly on commercials, short films, and 4D movies for the entertainment industry. This experience got him ready for focusing his effort on creating his own company together with Antonio Cannata, in the entertainment industry first, and then in the video game industry, giving birth to Stormind Games.<br><br> In the last 11 years, Federico has worked on 30+ productions and now supervises the production department of the company to ensure everything goes off without a hitch.'
+
+  ]
+];
 ?>
 
 <!DOCTYPE html>
@@ -171,8 +192,15 @@ $center_logo = [
 </head>
 
 <body>
-    <?php for ($i = 0; $i < count($text_panel); $i++) get_template_part('./components/text-panel.php', ['text_panel' => $text_panel[$i]]) ?>
-    <?php for ($i = 0; $i < count($center_logo); $i++) get_template_part('./components/center-logo.php', ['center_logo' => $center_logo[$i]]) ?>
+  <?php for ($i = 0; $i < count($text_panel); $i++) get_template_part('./components/text-panel.php', ['text_panel' => $text_panel[$i]]) ?>
+
+
+  <?php for ($i = 0; $i < count($center_logo); $i++) get_template_part('./components/center-logo.php', ['center_logo' => $center_logo[$i]]) ?>
+
+  <div class="container">
+    <?php for ($i = 0; $i < count($article); $i++) get_template_part('./components/article.php', ['article' => $article[$i]]) ?>
+  </div> 
+
 </body>
 
 </html>

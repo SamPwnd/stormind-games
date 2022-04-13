@@ -1,0 +1,41 @@
+
+.article{
+  width: 544px;
+  .title-box{
+    width: 493px;
+    display: inline-block;
+  }
+  .line{
+    display: inline-block;
+    width: 24px;
+    border: 3.43px solid $primary;
+    background-color: $primary;
+    margin-bottom: 24px;
+  }
+  h3{
+    @include poppins(H3, 800, #2D2A26, start);
+  }
+  p{
+    @include lato(H4, 400, #2D2A26, start);
+    margin-bottom: 24px;
+  }
+  .col-7,.col-5{
+    margin-bottom: 24px;
+    padding: 0;
+    @include lato(H1, 400, #2D2A26, start);
+  }
+  .col-12{
+    padding: 0;
+    @include lato(H1, 400, #2D2A26, start);
+  }
+  .col-7{
+    padding-left: 32px;
+  }
+  img{
+    width: 100%;
+  }
+  .linkedin{
+    width: 24px;
+    margin-top: 24px;
+  }
+}
