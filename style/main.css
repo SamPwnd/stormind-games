@@ -46,6 +46,12 @@
   font-weight: 800;
 }
 
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url("../fonts/Helvetica.ttf");
+  font-weight: 400;
+}
+
 .card-profile {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -57,7 +63,6 @@
   background-color: #030504;
   position: relative;
   overflow: hidden;
-  min-height: 420px;
 }
 
 .card-profile:hover {
@@ -306,6 +311,7 @@
 .hero video {
   height: 100vh;
   position: relative;
+  display: block;
   min-width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -320,13 +326,9 @@
   height: 100%;
   z-index: 1;
   width: 100%;
-  padding-bottom: 52px;
 }
 
 .hero__bottom {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -633,6 +635,7 @@ body {
 .hero video {
   height: 100vh;
   position: relative;
+  display: block;
   min-width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -647,13 +650,9 @@ body {
   height: 100%;
   z-index: 1;
   width: 100%;
-  padding-bottom: 52px;
 }
 
 .hero__bottom {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

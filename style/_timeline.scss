@@ -1,0 +1,31 @@
+
+
+.timeline{
+    background: $primary;
+    
+    &__background{
+        height: 100vh;
+        background-position: center bottom;
+        background-size: cover;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        border-right: 4px solid white;
+    }
+
+    &__content{
+        min-height: 1500px;
+        padding: 120px 116px;
+
+        .timeline__title{
+            @include poppins(H1, 800, $black, start);
+            text-transform: uppercase;
+            &:after{
+                content: '';
+                height: 2px;
+                width: 100px;
+                background: $black;
+            }
+        }
+    }
+}

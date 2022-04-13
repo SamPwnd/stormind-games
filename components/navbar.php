@@ -27,10 +27,14 @@
     <div class="<?= $navbar['navContainer'] ?>">
         <div class="navbar__wrapper">
             <a href="#"><img class="navbar__logo" src="<?= $navbar['logo'] ?>" alt="<?= $navbar['logo'] ?>" ></a>
-            <button class="navbar__button" id="<?= $navbar['button']['id'] ?>">
-                <img src="<?= $navbar['button']['icon1'] ?>" alt="<?= $navbar['button']['icon1'] ?>">
-                <img src="<?= $navbar['button']['icon2'] ?>" alt="<?= $navbar['button']['icon2'] ?>">
-            </button>
+            
+            <?php if(isset($navbar['button']['id'])): ?>
+                <button class="navbar__button" id="<?= $navbar['button']['id'] ?>">
+                    <img src="<?= $navbar['button']['icon1'] ?>" alt="<?= $navbar['button']['icon1'] ?>">
+                    <img src="<?= $navbar['button']['icon2'] ?>" alt="<?= $navbar['button']['icon2'] ?>">
+                </button>
+            <?php endif; ?>
+
             <?= $content ?>
 
             <div class="navbar__socials">

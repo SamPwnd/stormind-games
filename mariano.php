@@ -29,6 +29,10 @@
         
     ];
 
+    $timeline=[
+        'background' => 'http://stormindgames.com/wp-content/uploads/2021/01/Timeline-scaled.jpg',
+    ];
+
 ?>
 
 <!DOCTYPE html>
@@ -75,12 +79,19 @@
         </div>
     <?php $heroContent = ob_get_clean(); ?>
 
-    <?php get_template_part('./components/hero.php', ['hero' => $hero, 'content' => $heroContent]) ?>
+    <?php get_template_part('./components/hero.php', ['hero' => $hero, 'content' => $heroContent]); ?>
     
     <div>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum quos ducimus blanditiis dolores possimus, ex ipsam nostrum! Eius porro modi eaque nisi atque nemo! Mollitia rerum quis eius! Laudantium, nulla?
     </div>
+
+    <?php get_template_part('./components/timeline.php',['timeline' => $timeline]) ;?>
     
+    <div>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum quos ducimus blanditiis dolores possimus, ex ipsam nostrum! Eius porro modi eaque nisi atque nemo! Mollitia rerum quis eius! Laudantium, nulla?
+    </div>
+
+
     <script src="./script/navbar.js"></script>
 </body>
 </html>
