@@ -435,23 +435,7 @@ body {
 }
 
 .text-panel--center h1 {
-<<<<<<< HEAD
-  font-family: 'Poppins';
-  font-size: 56px;
-  line-height: 64px;
-  font-weight: 800;
-  color: #F9B611;
   text-align: center;
-}
-
-@media only screen and (max-width: 565px) {
-  .text-panel--center h1 {
-    font-size: 40px;
-    line-height: 48px;
-  }
-=======
-  text-align: center;
->>>>>>> c9dc8b39ce0377ea310a819fd8d14b4d3e8186db
 }
 
 .text-panel--center .text-panel__line {
@@ -464,44 +448,8 @@ body {
   text-align: center;
 }
 
-<<<<<<< HEAD
-.text-panel--dark {
-  max-width: 640px;
-  margin-top: 50px;
-}
-
-.text-panel--dark h1 {
-  color: #F9B611;
-  font-family: 'Poppins';
-  font-size: 56px;
-  line-height: 64px;
-  font-weight: 800;
-  color: #F9B611;
-  text-align: start;
-  text-transform: uppercase;
-}
-
-@media only screen and (max-width: 565px) {
-  .text-panel--dark h1 {
-    font-size: 40px;
-    line-height: 48px;
-  }
-}
-
-.text-panel--dark .text-panel__line {
-  width: 100px;
-  border: 1px solid #F9B611;
-  margin: 10px 0 24px 0;
-}
-
-=======
->>>>>>> c9dc8b39ce0377ea310a819fd8d14b4d3e8186db
 .text-panel--dark p {
   color: black;
-<<<<<<< HEAD
-  text-align: start;
-=======
->>>>>>> c9dc8b39ce0377ea310a819fd8d14b4d3e8186db
 }
 
 .center-logo {
@@ -517,212 +465,52 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-<<<<<<< HEAD
 }
 
 .timeline {
   background: #F9B611;
 }
 
-=======
-}
-
-.mp-body {
-  background: aquamarine;
-  min-height: 500px;
-}
-
-.navbar {
-  position: absolute;
+.timeline__background {
+  height: 100vh;
+  background-position: center bottom;
+  background-size: cover;
+  position: -webkit-sticky;
+  position: sticky;
   top: 0;
-  left: 0;
-  right: 0;
-  z-index: 10;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(22.92%, rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 22.92%, rgba(0, 0, 0, 0) 100%);
-  padding: 0;
-}
-
-.navbar__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 100%;
-  padding: 1.5rem 0;
+  border-right: 4px solid white;
 }
 
-.navbar__wrapper .navbar__logo {
-  height: 4rem;
+.timeline__content {
+  min-height: 1500px;
+  padding: 120px 116px;
 }
 
-.navbar__wrapper .navbar__links {
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.navbar__wrapper .navbar__links .navbar__link a {
-  font-family: 'Lato';
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 700;
-  color: #F9B611;
+.timeline__content .timeline__title {
+  font-family: 'Poppins';
+  font-size: 56px;
+  line-height: 64px;
+  font-weight: 800;
+  color: #151210;
   text-align: start;
   text-transform: uppercase;
-  margin-left: 30px;
-  position: relative;
-  display: inline-block;
 }
 
-.navbar__wrapper .navbar__links .navbar__link a:after {
+@media only screen and (max-width: 565px) {
+  .timeline__content .timeline__title {
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+
+.timeline__content .timeline__title:after {
   content: '';
-  width: 0;
-  height: 1px;
-  position: absolute;
-  left: 0;
-  bottom: -6px;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  background: #F9B611;
+  height: 2px;
+  width: 100px;
+  background: #151210;
 }
 
-.navbar__wrapper .navbar__links .navbar__link img {
-  height: 100%;
-}
-
-.navbar__wrapper .navbar__links .navbar__link:first-child a {
-  margin: 0;
-}
-
-.navbar__wrapper .navbar__links .navbar__link:hover a::after {
-  width: 100%;
-}
-
-.navbar__wrapper .navbar__button {
-  background: none;
-  border: none;
-  display: none;
-}
-
-.navbar__wrapper .navbar__button img:last-child {
-  display: none;
-}
-
-.navbar__wrapper .navbar__button--pressed img:first-child {
-  display: none;
-}
-
-.navbar__wrapper .navbar__button--pressed img:last-child {
-  display: inline;
-}
-
-.navbar__wrapper .navbar__socials {
-  padding: 1rem 1.5rem 0 1.5rem;
-  -webkit-box-shadow: 0px -1px 0px rgba(255, 255, 255, 0.05);
-          box-shadow: 0px -1px 0px rgba(255, 255, 255, 0.05);
-  width: 100%;
-  display: none;
-}
-
-.navbar__wrapper .navbar__socials img {
-  margin-right: 1.5rem;
-}
-
-.navbar--open {
-  background-color: #151210;
-  background-image: url("../assets/backgrounds/noise.png");
-  position: relative;
-}
-
-.navbar--open .navbar__wrapper {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.navbar--open .navbar__wrapper .navbar__links {
-  width: 100%;
-  display: block;
-  padding: 100px 1.5rem;
-}
-
-.navbar--open .navbar__wrapper .navbar__links .navbar__link a {
-  margin: 0 0 36px 0;
-}
-
-.navbar--open .navbar__wrapper .navbar__links .navbar__link a:last-child a {
-  margin: 0;
-}
-
-.navbar--open .navbar__wrapper .navbar__socials {
-  display: block;
-}
-
-@media only screen and (max-width: 992px) {
-  .navbar .navbar__button {
-    display: inline-block;
-  }
-  .navbar .navbar__links {
-    display: none;
-  }
-  .navbar .navbar__logo {
-    max-height: 24px;
-  }
-}
-
-.hero {
-  -o-object-fit: cover;
-     object-fit: cover;
-  position: relative;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4)));
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
-  top: 0;
-  z-index: 0;
-  overflow: hidden;
-}
-
-.hero video {
-  height: 100vh;
-  position: relative;
-  min-width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
-}
-
-.hero__content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  z-index: 1;
-  width: 100%;
-  padding-bottom: 52px;
-}
-
-.hero__bottom {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: absolute;
-  bottom: 52px;
-}
-
-.hero__bottom img {
-  margin-right: 0.5rem;
-}
-
->>>>>>> c9dc8b39ce0377ea310a819fd8d14b4d3e8186db
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
