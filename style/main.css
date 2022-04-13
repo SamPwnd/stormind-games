@@ -810,8 +810,6 @@ body {
 .timeline__element .timeline__dot {
   position: absolute;
   left: -142px;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
   top: 5px;
   background: #151210;
   border: 4px solid white;
