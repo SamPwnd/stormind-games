@@ -2,30 +2,127 @@
 
 .timeline{
     background: $primary;
-    
+    position: relative;
     &__background{
-        height: 100vh;
+        height: 110vh;
         background-position: center bottom;
         background-size: cover;
         position: sticky;
         top: 0;
         width: 100%;
         border-right: 4px solid white;
+        box-shadow: inset 0 0 0 110vh rgba(0,0,0,.5)
     }
 
     &__content{
-        min-height: 1500px;
+        //position: relative;
         padding: 120px 116px;
 
         .timeline__title{
             @include poppins(H1, 800, $black, start);
             text-transform: uppercase;
+            position: relative;
+            margin-bottom: 82px;
             &:after{
                 content: '';
-                height: 2px;
                 width: 100px;
-                background: $black;
+                border: 1px solid black;
+                position: absolute;
+                bottom: -10px;
+                left: 0;
             }
+        }
+    }
+
+    &__element{
+        width: 100%;
+        position: relative;
+        margin-bottom: 2rem;
+        .timeline__dot{
+            position: absolute;
+            left: -142px;
+            transform: translate(-50%);
+            top: 5px;
+            background: $black;
+            border: 4px solid white;
+            border-radius: 2rem;
+            height: 1.5rem;
+            width: 1.5rem;
+        }
+
+        .timeline__date{
+            @include poppins(H5, 800, white, end);
+            position: absolute;
+            top: 5px;
+            left: -284px;
+            transform: translate(-100%);
+        }
+
+        .timeline__subtitle{
+            @include poppins(H4, 800, $black, start);
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            
+        }
+
+        .timeline__description{
+            @include lato(H1, 400, $black, start);
+            padding-bottom: 2rem;
+            border-bottom: 1px solid rgba(0,0,0,.2);
+        }
+    }
+
+    @media only screen and (max-width: 767px){
+        
+        .timeline__background{
+            max-height: 216px;
+            border-right: 0;
+            border-bottom: 4px solid white;
+        }
+        .timeline__content{
+            padding: 3rem 0 3rem 1rem;
+            margin-bottom: 3rem;           
+            overflow-y: visible;            
+            overflow-x: scroll;
+            display: flex;
+            margin-top: -216px;
+            padding-top: 264px;
+            >*{
+                display: inline-block;
+            }
+        }
+        .timeline__title{
+            position: absolute;
+            top: 48px;
+            left: 1rem;
+            transform: translate( 0, -50%);
+            width: calc(100% - 2rem);
+            text-align: center;
+            color: $primary;
+            &::after{
+                border-color: $primary;
+                left: 50%;
+                transform: translate(-50%);
+            }
+        }
+        .timeline__element{
+            flex-shrink: 0;
+            width: 100%;
+            margin-right: 2rem;
+            margin-bottom: 0;
+        }
+        .timeline__dot{
+            left: 50%;
+            transform: translate(-50% , -50% );
+            top: -3rem;
+        }
+        .timeline__date{
+            left: 50%;
+            transform: translate(-50%, -100%);
+            top: -88px;
+        }
+        .timeline__description{
+            border: 0;
         }
     }
 }
