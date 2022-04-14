@@ -1,7 +1,7 @@
 let navButton1 = document.getElementById("navbar__button-1");
 //console.log(navButton1);
 let navbar1 = document.getElementById("navbar1");
-console.log(navbar1);
+//console.log(navbar1);
 
 navButton1.addEventListener("click", function(){
     if(navButton1.classList.contains('navbar__button--pressed')){

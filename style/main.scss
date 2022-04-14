@@ -4,6 +4,13 @@
 @import 'typography';
 @import 'utilities';
 
+$side-content-min-height-3: 42rem;
+$side-content-min-height-2: 24rem;
+$side-content-min-height-1: 350px;
+
+
+
+
 
 
 @import 'card-profile';
@@ -12,8 +19,13 @@
 @import 'cardsaward';
 @import 'cardsimple';
 @import 'textpanel';
+@import 'navbar';
+@import 'hero';
+@import 'article';
 @import 'timeline';
+@import 'side-content';
 @import 'footer';
+@import 'card-link';
 
 
 *{
