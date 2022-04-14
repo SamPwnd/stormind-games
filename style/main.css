@@ -914,6 +914,32 @@ body {
   }
 }
 
+.side-content {
+  min-height: 42rem;
+  background: white;
+}
+
+.side-content .row {
+  min-height: inherit;
+}
+
+.side-content .row > * {
+  min-height: inherit;
+  background-position: center;
+}
+
+@media only screen and (max-width: 992px) {
+  .side-content {
+    min-height: 24rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .side-content {
+    min-height: 350px;
+  }
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;

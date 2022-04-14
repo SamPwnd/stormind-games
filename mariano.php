@@ -92,6 +92,23 @@
 
     ];
 
+    $sideContent1 =[
+        'background' => './img/side-content-image-1.png',
+        'left-classes' => 'col-10 offset-1 col-md-5 d-flex align-items-center ',
+        'right-classes' => 'col-12 col-md-5 offset-md-1',
+    ];
+    $sideContent2 =[
+        'background' => './img/side-content-image-1.png',
+        'left-classes' => 'col-10 offset-1 col-md-5 d-flex align-items-center order-0 order-md-2',
+        'right-classes' => 'col-12 col-md-5  oreder-1 ',
+    ];
+
+    $textPanel1 = [
+        'classes' => 'text-panel text-panel--dark',
+        'title' => 'INTENSE STORIES',
+        'subtitle' => 'All of our games are based on intense stories to open the doors to franchises and sequels.'
+    ];
+
 ?>
 
 <!DOCTYPE html>
@@ -150,6 +167,19 @@
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum quos ducimus blanditiis dolores possimus, ex ipsam nostrum! Eius porro modi eaque nisi atque nemo! Mollitia rerum quis eius! Laudantium, nulla?
     </div>
 
+    <?php ob_start(); ?>
+
+        <?php get_template_part('./components/text-panel.php',['text_panel' => $textPanel1]) ;?>
+
+    <?php $sideContentElement = ob_get_clean(); ?>
+
+    <?php get_template_part(('./components/side-content.php'), ['side_content' => $sideContent1, 'content' => $sideContentElement]) ?>
+
+    <?php get_template_part(('./components/side-content.php'), ['side_content' => $sideContent2, 'content' => $sideContentElement]) ?>
+
+    <div>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum quos ducimus blanditiis dolores possimus, ex ipsam nostrum! Eius porro modi eaque nisi atque nemo! Mollitia rerum quis eius! Laudantium, nulla?
+    </div>
 
     <script src="./script/navbar.js"></script>
 </body>

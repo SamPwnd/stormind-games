@@ -4,6 +4,13 @@
 @import 'typography';
 @import 'utilities';
 
+$side-content-min-height-3: 42rem;
+$side-content-min-height-2: 24rem;
+$side-content-min-height-1: 350px;
+
+
+
+
 
 
 @import 'card-profile';
@@ -16,6 +23,7 @@
 @import 'hero';
 @import 'article';
 @import 'timeline';
+@import 'side-content';
 
 
 *{
