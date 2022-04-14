@@ -73,3 +73,15 @@
         white-space: pre-line;
     }
 }
+
+@media only screen and (max-width: map-get($grid-breakpoints, lg)){
+    .card-profile {
+        &__title-container {
+            padding: 2px 16px;
+        }
+
+        &__body {
+            top: calc(100% - 54px);
+        }
+    }
+}
