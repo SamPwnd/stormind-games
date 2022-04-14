@@ -829,6 +829,39 @@ body {
         flex-basis: 100%;
     }
 } */
+.card-link {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.card-link__img-wrapper {
+  position: relative;
+}
+.card-link__img-wrapper .card-link__icon {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+}
+.card-link__title {
+  font-family: "Poppins";
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 800;
+  color: #151210;
+  text-align: left;
+}
+.card-link__title:hover {
+  color: #F9B611;
+}
+.card-link__subtitle {
+  font-family: "Lato";
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 700;
+  color: #151210;
+  text-align: left;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;

@@ -33,6 +33,14 @@
         ],
     ];
 
+    $cardLink = [
+        'classes' => 'card-link',
+        'image' => './assets/card-link-img.png',
+        'link' => '#',
+        'title' => 'REMOTHERED: Broken Porcelain',
+        'subtitle' => 'UPDATED: Aug 19, 2019',
+        'icon' => './assets/icon-download.svg',
+    ];
     
 
 ?>
@@ -52,6 +60,8 @@
     <?php get_template_part('./components/card-profile.php', $cardProfile); ?>
 
     <?php get_template_part('./components/footer.php', $footer); ?>
+
+    <?php get_template_part('./components/card-link.php', $cardLink); ?>
     
     <script src="./script/navbar.js"></script>
 </body>

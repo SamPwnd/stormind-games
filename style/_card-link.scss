@@ -1,0 +1,27 @@
+.card-link {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    &__img-wrapper {
+        position: relative;
+
+        .card-link__icon {
+            position: absolute;
+            right: 12px;
+            bottom: 12px;
+        }
+    }
+
+    &__title {
+        @include poppins(H5, 800, $black, left);
+
+        &:hover {
+            color: $primary;
+        }
+    }
+
+    &__subtitle {
+        @include lato(H4, 700, $black, left);
+    }
+}
