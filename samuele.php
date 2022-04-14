@@ -41,6 +41,20 @@
         'subtitle' => 'UPDATED: Aug 19, 2019',
         'icon' => './assets/icon-download.svg',
     ];
+
+    $news = [
+        'classes' => 'news',
+        'image' => './assets/news.png',
+        'link' => '#',
+        'date' => 'AUG 19, 2019',
+        'category' => 'NEWS',
+        'tag' => 'Remothered | Broken Porcelain',
+        'text_panel' => [
+            'classes' => 'text-panel text-panel--small-title text-panel--dark',
+            'title' => 'DEVELOPERS OF INTENSE STORIES',
+            'subtitle' => 'We developed and promoted Remothered: Tormented Fathers. We are currently working on the second title, Remothered: Broken Porcelain, and on a new unannounced project.'
+        ],
+    ];
     
 
 ?>
@@ -63,6 +77,8 @@
 
     <?php get_template_part('./components/card-link.php', $cardLink); ?>
     
+    <?php get_template_part('./components/news.php', $news); ?>
+
     <script src="./script/navbar.js"></script>
 </body>
 </html>

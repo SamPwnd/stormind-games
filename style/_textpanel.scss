@@ -1,29 +1,34 @@
-body{
-  background-color: gray;
-}
-
 
 .text-panel{
   max-width: 640px;
   margin-top: 50px;
+
+  &--small-title {
+    max-width: 100%;
+    margin-top: 0;
+
+    .text-panel__title {
+      @include poppins(H3, 800, $primary, start);
+    }
+  }
   
-  h1 {
+  &__title {
     color: $primary;
     @include poppins(H1, 800, $primary, start);
     text-transform: uppercase;
   }
   
-  .text-panel__line{
+  &__line{
     width: 100px;
-    border: 1px solid $primary;
+    border-top: 2px solid $primary;
     margin: 10px 0 24px 0;
   }
   
-  p{
+  &__subtitle{
     @include lato(H1, 400, white, start);
   }
   &--center {
-    h1 {
+    .text-panel__title {
       text-align: center;
     }
   
@@ -33,13 +38,13 @@ body{
       margin: 10px auto 24px auto;
     }
   
-    p {
+    .text-panel__subtitle {
       text-align: center;
     }
   }
 
   &--dark{
-    p {
+    .text-panel__subtitle {
       color: black;
     }
   }
