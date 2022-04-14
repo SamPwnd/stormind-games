@@ -21,15 +21,15 @@
 ?>
 
 <div class="<?=$classes['card-profile'] ?>">
-    <img class="<?=$classes['image'] ?>" src="<?=$image ?>" alt="">
-    <div class="<?=$classes['body'] ?>">
-        <div class="<?=$classes['title-div'] ?>">
-            <p class="<?=$classes['title'] ?>"><?=$title ?></p>
-            <img src="<?=$icon ?>" alt="">
+    <img class="card-profile__img" src="<?=$image ?>" alt="">
+    <div class="card-profile__body">
+        <div class="card-profile__title-container">
+            <p class="card-profile__title"><?=$title ?></p>
+            <img src="<?=$icon ?>" class="card-profile__icon card-profile__icon--initial" alt="">
+            <img src="<?=$icon_hover ?>" class="card-profile__icon card-profile__icon--hover" alt="">
         </div>
-        <div class="<?=$classes['description-div'] ?>">
-            <p class="<?=$classes['description']?>"><?=$description ?></p>
-            
+        <div class="card-profile__description-container">
+            <p class="card-profile__description"><?=$description ?></p>
         </div>
     </div>
     
