@@ -274,22 +274,22 @@
   margin: 0;
 }
 
-.cardsaward {
+.cards-award {
   max-width: 22rem;
   margin-top: 48px;
   background-color: #2D2A26;
 }
-.cardsaward img {
+.cards-award img {
   width: 100%;
 }
-.cardsaward__title {
+.cards-award__title {
   font-family: "Poppins";
   font-weight: 800;
   color: white;
   text-align: center;
   margin-top: 16px;
 }
-.cardsaward__subtitle {
+.cards-award__subtitle {
   font-family: "Lato";
   font-weight: 400;
   color: white;
@@ -300,21 +300,21 @@
   margin: 0;
 }
 
-.cardsimple {
+.card-simple {
   max-width: 22rem;
   margin-top: 48px;
 }
-.cardsimple img {
+.card-simple img {
   width: 100%;
 }
-.cardsimple__title {
+.card-simple__title {
   font-family: "Poppins";
   font-weight: 800;
   color: #2D2A26;
   text-align: left;
   margin-top: 16px;
 }
-.cardsimple__subtitle {
+.card-simple__subtitle {
   font-family: "Lato";
   font-weight: 400;
   color: #2D2A26;
@@ -762,6 +762,28 @@
   }
 }
 
+.side-content {
+  min-height: 42rem;
+  background: white;
+}
+.side-content .row {
+  min-height: inherit;
+}
+.side-content .row > * {
+  min-height: inherit;
+  background-position: center;
+}
+@media only screen and (max-width: 992px) {
+  .side-content {
+    min-height: 24rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .side-content {
+    min-height: 350px;
+  }
+}
+
 .footer {
   position: relative;
   background-color: #151210;
@@ -894,6 +916,46 @@
   font-size: 12px;
   line-height: 120%;
   margin-left: 5px;
+}
+
+.wrapper {
+  background-color: white;
+  padding: 120px 160px;
+}
+.wrapper__title {
+  font-family: "Poppins";
+  font-size: 56px;
+  line-height: 64px;
+  font-weight: 800;
+  color: #F9B611;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  margin-bottom: 72px;
+  position: relative;
+}
+@media only screen and (max-width: 565px) {
+  .wrapper__title {
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+.wrapper__title:after {
+  content: "";
+  width: 100px;
+  outline: 1px solid #F9B611;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+.wrapper--black {
+  background-color: #151210;
+}
+@media only screen and (max-width: 767px) {
+  .wrapper {
+    padding: 48px 16px;
+  }
 }
 
 * {

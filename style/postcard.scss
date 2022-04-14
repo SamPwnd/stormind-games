@@ -1,0 +1,29 @@
+@import 'typography';
+*{
+    margin: 0;
+}
+
+.post-card
+{
+    background-image: url(../img/postcard.jpg);
+    height: 30rem;
+    &__title
+    {
+        @include poppins(h3,800,#F9B611,left);
+    }
+
+    &__description
+    {
+        @include lato(h1,400,#FFFF,left);
+    }
+    &__caption
+    {
+        @include lato(h4,400,#FFFF,left);
+    }
+}
+
+
+
+
+
+

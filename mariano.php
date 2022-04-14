@@ -92,6 +92,75 @@
 
     ];
 
+    $sideContent1 =[
+        'background' => './img/side-content-image-1.png',
+        'left-classes' => 'col-10 offset-1 col-md-5 d-flex align-items-center ',
+        'right-classes' => 'col-12 col-md-5 offset-md-1',
+    ];
+    $sideContent2 =[
+        'background' => './img/side-content-image-1.png',
+        'left-classes' => 'col-10 offset-1 col-md-5 d-flex align-items-center order-0 order-md-2',
+        'right-classes' => 'col-12 col-md-5  oreder-1 ',
+    ];
+
+    $textPanel1 = [
+        'classes' => 'text-panel text-panel--dark',
+        'title' => 'INTENSE STORIES',
+        'subtitle' => 'All of our games are based on intense stories to open the doors to franchises and sequels.'
+    ];
+
+    $cardsimple = [
+        [
+            'classbootstrap' => 'col',
+            'classes' => 'cardsimple',
+            'classtitle' => 'cardsaward__title',
+            'classsubtitle' => 'cardsaward__subtitle',
+            'image' => './img/180.png',
+            'title' => 'DEVELOPMENT',
+            'subtitle' => 'We can help you with developing a sequel or an expansion of your video game and  converting the player mode you’ve set to the one of your choice.'
+        ],
+        [
+            'classbootstrap' => 'col',
+            'classes' => 'cardsimple',
+            'classtitle' => 'cardsaward__title',
+            'classsubtitle' => 'cardsaward__subtitle',
+            'image' => './img/181.png',
+            'title' => 'GAME’S CINEMATICS & TRAILER',
+            'subtitle' => 'Thanks to the experience gained by the professionals in our team, who have had the chance to prove their skills in the production of CGI films, we can design and create trailers and cinematics for your video game.'
+        ],
+        [
+            'classbootstrap' => 'col',
+            'classes' => 'cardsimple',
+            'classtitle' => 'cardsaward__title',
+            'classsubtitle' => 'cardssimple__subtitle',
+            'image' => './img/182.png',
+            'title' => 'PORTING',
+            'subtitle' => 'If you have a finished game for PC, we can port it from PC to PlayStation, Xbox, and Switch, thus making it compatible for consoles.'
+        ]];
+
+
+    $wrapper =[
+        'classes' => 'wrapper ',
+        'row_classes' => 'row-cols-1 row-cols-md-3',
+        'title' => 'games',
+        'elements' => [
+            [
+                'classes' => '',
+                'content' => get_template_part('./components/cardsimple.php', ['cardsimple' => $cardsimple[0]]),
+            ],
+            [
+                'classes' => '',
+                'content' => get_template_part('./components/cardsimple.php', ['cardsimple' => $cardsimple[1]]),
+            ],
+            [
+                'classes' => '',
+                'content' => get_template_part('./components/cardsimple.php', ['cardsimple' => $cardsimple[2]]),
+            ],
+        ],
+    ];
+
+    
+
 ?>
 
 <!DOCTYPE html>
@@ -150,7 +219,24 @@
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum quos ducimus blanditiis dolores possimus, ex ipsam nostrum! Eius porro modi eaque nisi atque nemo! Mollitia rerum quis eius! Laudantium, nulla?
     </div>
 
+    <?php ob_start(); ?>
 
+        <?php get_template_part('./components/text-panel.php',['text_panel' => $textPanel1]) ;?>
+
+    <?php $sideContentElement = ob_get_clean(); ?>
+
+    <?php get_template_part(('./components/side-content.php'), ['side_content' => $sideContent1, 'content' => $sideContentElement]) ?>
+
+    <?php get_template_part(('./components/side-content.php'), ['side_content' => $sideContent2, 'content' => $sideContentElement]) ?>
+
+    <div>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum quos ducimus blanditiis dolores possimus, ex ipsam nostrum! Eius porro modi eaque nisi atque nemo! Mollitia rerum quis eius! Laudantium, nulla?
+    </div>
+    <?php get_template_part(('./components/wrapper.php'), ['wrapper' => $wrapper]) ?>
+    <div>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum quos ducimus blanditiis dolores possimus, ex ipsam nostrum! Eius porro modi eaque nisi atque nemo! Mollitia rerum quis eius! Laudantium, nulla?
+    </div>
+    
     <script src="./script/navbar.js"></script>
 </body>
 </html>
