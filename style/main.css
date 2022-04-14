@@ -1097,6 +1097,52 @@ body {
   text-align: left;
 }
 
+.wrapper {
+  background-color: white;
+  padding: 120px 160px;
+}
+
+.wrapper__title {
+  font-family: 'Poppins';
+  font-size: 56px;
+  line-height: 64px;
+  font-weight: 800;
+  color: #F9B611;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  margin-bottom: 72px;
+  position: relative;
+}
+
+@media only screen and (max-width: 565px) {
+  .wrapper__title {
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+
+.wrapper__title:after {
+  content: '';
+  width: 100px;
+  outline: 1px solid #F9B611;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+.wrapper--black {
+  background-color: #151210;
+}
+
+@media only screen and (max-width: 767px) {
+  .wrapper {
+    padding: 48px 16px;
+  }
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
