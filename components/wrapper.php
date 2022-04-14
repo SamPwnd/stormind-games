@@ -8,8 +8,11 @@
     </p>
     <div class="row <?= $wrapper['row_classes'] ?>">
         <?php foreach($wrapper['elements'] as $element): ?>
-            <div class="col <?= $element['classes'] ?>">
-            <?= $element['content'] ?>
+            <div class="col">
+                <?php 
+                    $component = $element['component'];
+                    get_template_part("./components/$component", ['content' => $element['content']]);
+                ?>
             </div>
 
         <?php endforeach; ?>

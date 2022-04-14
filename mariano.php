@@ -145,16 +145,28 @@
         'title' => 'games',
         'elements' => [
             [
-                'classes' => '',
-                'content' => get_template_part('./components/cardsimple.php', ['cardsimple' => $cardsimple[0]]),
+                'component' => 'cardsimple.php',
+                'content' => [
+                    'image' => './img/180.png',
+                    'title' => 'DEVELOPMENT',
+                    'subtitle' => 'We can help you with developing a sequel or an expansion of your video game and  converting the player mode you’ve set to the one of your choice.'
+                ],
             ],
             [
-                'classes' => '',
-                'content' => get_template_part('./components/cardsimple.php', ['cardsimple' => $cardsimple[1]]),
+                'component' => 'cardsimple.php',
+                'content' => [
+                    'image' => './img/180.png',
+                    'title' => 'DEVELOPMENT',
+                    'subtitle' => 'We can help you with developing a sequel or an expansion of your video game and  converting the player mode you’ve set to the one of your choice.'
+                ],
             ],
             [
-                'classes' => '',
-                'content' => get_template_part('./components/cardsimple.php', ['cardsimple' => $cardsimple[2]]),
+                'component' => 'cardsimple.php',
+                'content' => [
+                    'image' => './img/180.png',
+                    'title' => 'DEVELOPMENT',
+                    'subtitle' => 'We can help you with developing a sequel or an expansion of your video game and  converting the player mode you’ve set to the one of your choice.'
+                ],
             ],
         ],
     ];
