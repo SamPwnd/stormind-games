@@ -382,25 +382,53 @@
   margin: 0;
 }
 
-.cardsimple {
+.cards-simple {
   max-width: 22rem;
   margin-top: 48px;
 }
+<<<<<<< HEAD
+<<<<<<< HEAD
 
+.cards-simple img {
+  width: 100%;
+}
+
+.cards-simple__title {
+  font-family: 'Poppins';
+=======
+=======
+
+>>>>>>> 7562989210f0c5b0f69e0ae23dad62ca0a942046
 .cardsimple img {
   width: 100%;
 }
 
 .cardsimple__title {
+<<<<<<< HEAD
+  font-family: "Poppins";
+>>>>>>> 4e90a3bc7d0167dcc12658f89f2fc6b5e161f91c
+=======
   font-family: 'Poppins';
+>>>>>>> 7562989210f0c5b0f69e0ae23dad62ca0a942046
   font-weight: 800;
   color: #2D2A26;
   text-align: left;
   margin-top: 16px;
 }
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+.cards-simple__subtitle {
+  font-family: 'Lato';
+=======
+.cardsimple__subtitle {
+  font-family: "Lato";
+>>>>>>> 4e90a3bc7d0167dcc12658f89f2fc6b5e161f91c
+=======
 
 .cardsimple__subtitle {
   font-family: 'Lato';
+>>>>>>> 7562989210f0c5b0f69e0ae23dad62ca0a942046
   font-weight: 400;
   color: #2D2A26;
   text-align: left;

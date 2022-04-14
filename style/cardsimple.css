@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+}
+
+.card-simple {
+  max-width: 22rem;
+  margin-top: 48px;
+}
+
+.card-simple img {
+  width: 100%;
+}
+
+.card-simple__title {
+  font-family: 'Poppins';
+  font-weight: 800;
+  color: #2D2A26;
+  text-align: left;
+  margin-top: 16px;
+}
+
+.card-simple__subtitle {
+  font-family: 'Lato';
+  font-weight: 400;
+  color: #2D2A26;
+  text-align: left;
+}
+/*# sourceMappingURL=cardsimple.css.map */

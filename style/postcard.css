@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+}
+
+.post-card {
+  background-image: url(../img/postcard.jpg);
+  height: 30rem;
+}
+
+.post-card__title {
+  font-family: 'Poppins';
+  font-weight: 800;
+  color: #F9B611;
+  text-align: left;
+}
+
+.post-card__description {
+  font-family: 'Lato';
+  font-weight: 400;
+  color: #FFFF;
+  text-align: left;
+}
+
+.post-card__caption {
+  font-family: 'Lato';
+  font-weight: 400;
+  color: #FFFF;
+  text-align: left;
+}
+/*# sourceMappingURL=postcard.css.map */
