@@ -25,6 +25,10 @@
         background-color: $black;
     }
 
+    &--primary{
+        background-color: $primary;
+    }
+
     @media only screen and (max-width: 767px){
         padding: 48px 16px;
     }

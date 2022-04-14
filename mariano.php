@@ -145,6 +145,7 @@
         'title' => 'games',
         'elements' => [
             [
+                'classes' => 'col',
                 'component' => 'cardsimple.php',
                 'content' => [
                     'image' => './img/180.png',
@@ -153,6 +154,7 @@
                 ],
             ],
             [
+                'classes' => 'col',
                 'component' => 'cardsimple.php',
                 'content' => [
                     'image' => './img/180.png',
@@ -161,6 +163,7 @@
                 ],
             ],
             [
+                'classes' => 'col',
                 'component' => 'cardsimple.php',
                 'content' => [
                     'image' => './img/180.png',
@@ -171,7 +174,9 @@
         ],
     ];
 
-    
+    $side_panel =[
+        'background' => 'https://stormindgames.com/wp-content/uploads/2020/11/Batora-Lost-Haven-Cover-Central.jpg',
+    ];
 
 ?>
 
@@ -225,7 +230,7 @@
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum quos ducimus blanditiis dolores possimus, ex ipsam nostrum! Eius porro modi eaque nisi atque nemo! Mollitia rerum quis eius! Laudantium, nulla?
     </div>
 
-    <?php get_template_part('./components/timeline.php',['timeline' => $timeline]) ;?>
+    <?php get_template_part('./components/timeline.php',['content' => $timeline]) ;?>
     
     <div>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum quos ducimus blanditiis dolores possimus, ex ipsam nostrum! Eius porro modi eaque nisi atque nemo! Mollitia rerum quis eius! Laudantium, nulla?
@@ -244,11 +249,16 @@
     <div>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum quos ducimus blanditiis dolores possimus, ex ipsam nostrum! Eius porro modi eaque nisi atque nemo! Mollitia rerum quis eius! Laudantium, nulla?
     </div>
-    <?php get_template_part(('./components/wrapper.php'), ['wrapper' => $wrapper]) ?>
+    <?php get_template_part(('./components/wrapper.php'), ['content' => $wrapper]) ?>
     <div>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum quos ducimus blanditiis dolores possimus, ex ipsam nostrum! Eius porro modi eaque nisi atque nemo! Mollitia rerum quis eius! Laudantium, nulla?
     </div>
-    
+    <?php get_template_part(('./components/side-panel.php'), ['content' => $side_panel, 'text' => $navbarContent]) ?>
+    <div>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum quos ducimus blanditiis dolores possimus, ex ipsam nostrum! Eius porro modi eaque nisi atque nemo! Mollitia rerum quis eius! Laudantium, nulla?
+    </div>
+
+
     <script src="./script/navbar.js"></script>
 </body>
 </html>
