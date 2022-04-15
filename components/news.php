@@ -15,8 +15,8 @@
 
 ?>
 
-<div class="<?=$classes ?> col-8">
-    <img src="<?=$image ?>" alt="">
+<div class="<?=$content['classes'] ?> col-8">
+    <img src="<?=$content['image'] ?>" alt="">
     <div class="news__icons-wrapper">
         <div class="news__icon-block">
             <img src="./assets/icon-calendar.svg" alt="">
@@ -25,15 +25,15 @@
 
         <div class="news__icon-block">
             <img src="./assets/icon-folder.svg" alt="">
-            <p class="news__icon-block__text"><?=$category ?></p>
+            <p class="news__icon-block__text"><?=$content['category'] ?></p>
         </div>
 
         <div class="news__icon-block">
             <img src="./assets/icon-tag.svg" alt="">
-            <p class="news__icon-block__text"><?=$tag ?></p>
+            <p class="news__icon-block__text"><?=$content['tag'] ?></p>
         </div>
     </div>
 
-    <?php get_template_part('./components/text-panel.php',['text_panel' => $text_panel]); ?>
+    <?php get_template_part('./components/text-panel.php',['content' => $content['text_panel']]); ?>
 </div>
 

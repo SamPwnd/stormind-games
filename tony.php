@@ -192,7 +192,7 @@ $article = [
 </head>
 
 <body>
-  <?php for ($i = 0; $i < count($text_panel); $i++) get_template_part('./components/text-panel.php', ['text_panel' => $text_panel[$i]]) ?>
+  <?php for ($i = 0; $i < count($text_panel); $i++) get_template_part('./components/text-panel.php', ['content' => $text_panel[$i]]) ?>
 
 
   <?php for ($i = 0; $i < count($center_logo); $i++) get_template_part('./components/center-logo.php', ['center_logo' => $center_logo[$i]]) ?>
