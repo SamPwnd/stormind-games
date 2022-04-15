@@ -20,16 +20,16 @@
     ]; */
 ?>
 
-<div class="<?=$classes['card-profile'] ?>">
-    <img class="card-profile__img" src="<?=$image ?>" alt="">
+<div class="<?=$content['classes']?>">
+    <img class="card-profile__img" src="<?=$content['image'] ?>" alt="">
     <div class="card-profile__body">
         <div class="card-profile__title-container">
             <p class="card-profile__title"><?=$title ?></p>
-            <img src="<?=$icon ?>" class="card-profile__icon card-profile__icon--initial" alt="">
-            <img src="<?=$icon_hover ?>" class="card-profile__icon card-profile__icon--hover" alt="">
+            <img src="<?=$content['icon'] ?>" class="card-profile__icon card-profile__icon--initial" alt="">
+            <img src="<?=$content['icon_hover'] ?>" class="card-profile__icon card-profile__icon--hover" alt="">
         </div>
         <div class="card-profile__description-container">
-            <p class="card-profile__description"><?=$description ?></p>
+            <p class="card-profile__description"><?=$content['description'] ?></p>
         </div>
     </div>
     

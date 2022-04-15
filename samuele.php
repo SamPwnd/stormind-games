@@ -2,9 +2,7 @@
     require_once('./functions.php');
 
     $cardProfile = [
-        'classes' => [
-            'card-profile' => 'card-profile col-4'
-        ],
+        'classes' => 'card-profile col-4',
         'image' => './assets/card-profile1.png',
         'title' => 'JENNIFER',
         'icon' => './assets/icon-more.svg',
@@ -71,13 +69,13 @@
 </head>
 <body>
 
-    <?php get_template_part('./components/card-profile.php',  $cardProfile); ?>
+    <?php get_template_part('./components/card-profile.php', ['content' => $cardProfile]); ?>
 
     <?php get_template_part('./components/footer.php', $footer); ?>
 
-    <?php get_template_part('./components/card-link.php', $cardLink); ?>
+    <?php get_template_part('./components/card-link.php', ['content' => $cardLink]); ?>
     
-    <?php get_template_part('./components/news.php', $news); ?>
+    <?php get_template_part('./components/news.php', ['content' => $news]); ?>
 
     <script src="./script/navbar.js"></script>
 </body>
