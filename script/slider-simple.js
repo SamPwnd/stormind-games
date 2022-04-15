@@ -8,7 +8,9 @@ console.log(slider);
 for(let i = 0; i< dots.length; i++){
     dots[i].addEventListener("click", ()=>{
         selectDot(i);
-        slider.style.left = `calc(-100% * ${i})`;
+        let vw = slider.clientWidth / 100;
+            slider.style.setProperty('--vw', `${vw}px`);
+        slider.style.left = `-${100 *i}%`;
     });
     
 }
