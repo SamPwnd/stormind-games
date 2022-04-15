@@ -53,6 +53,15 @@
             'subtitle' => 'We developed and promoted Remothered: Tormented Fathers. We are currently working on the second title, Remothered: Broken Porcelain, and on a new unannounced project.'
         ],
     ];
+
+    $application = [
+        'classes' => 'application',
+        'text_panel' => [
+            'classes' => 'text-panel text-panel--small-title text-panel--black',
+            'title' => 'FUNCTIONAL TESTER',
+        ],
+
+    ]
     
 
 ?>
@@ -77,6 +86,9 @@
     
     <?php get_template_part('./components/news.php', ['content' => $news]); ?>
 
+    <?php get_template_part('./components/application.php', ['content' => $application]); ?>
+
     <script src="./script/navbar.js"></script>
+    <script src="./script/bootstrap.min.js"></script>
 </body>
 </html>
