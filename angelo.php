@@ -43,15 +43,27 @@ $cardsaward = [
     ];
 
 $postcard = [
-    'title' => 'BATORA: Lost Haven',
+    'title' => 'BATORA: LOST HAVEN',
     'description' => 'After her expulsion from an all-girls boarding school, the rebellious Jen begins to observe strange occurrences happening at the Ashmann Inn, the hotel where she was sent to serve as one of its maids. As the past comes back to haunt her, will she be able to escape?',
     'caption' => 'COOMING SOON',
     'icons' => [
-            './assets/platform-pc.svg',
-            './assets/platform-ps-yellow.svg',
-            './assets/platform-xbox-yellow.svg',
-            './assets/platform-Nintendo.svg',
+            '../stormind-games/img/pc.svg',
+            '../stormind-games/img/ps.svg',
+            '../stormind-games/img/xbox.svg',
+            '../stormind-games/img/nintendo.svg',
         ],
+    'contentbutton' => '+ SHOW MORE',
+];
+
+$postcard2 = [
+    'title' => 'BATORA: LOST HAVEN',
+    'icons' => [
+            '../stormind-games/img/pc.svg',
+            '../stormind-games/img/ps.svg',
+            '../stormind-games/img/xbox.svg',
+            '../stormind-games/img/nintendo.svg',
+        ],
+        'contentbutton' => '+',
 ];
 
 
@@ -99,6 +111,13 @@ $postcard = [
  <div class="row">
      <div class="col">
         <?php get_template_part( './components/postcard.php', [ 'postcard' =>$postcard])?>
+     </div>
+ </div>
+</div>
+<div class="container">
+ <div class="row">
+     <div class="col">
+        <?php get_template_part( './components/postcard.php', [ 'postcard2' =>$postcard2])?>
      </div>
  </div>
 </div>

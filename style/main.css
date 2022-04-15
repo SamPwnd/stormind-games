@@ -353,17 +353,17 @@
   margin: 0;
 }
 
-.cardsaward {
+.cards-award {
   max-width: 22rem;
   margin-top: 48px;
   background-color: #2D2A26;
 }
 
-.cardsaward img {
+.cards-award img {
   width: 100%;
 }
 
-.cardsaward__title {
+.cards-award__title {
   font-family: 'Poppins';
   font-weight: 800;
   color: #FFFF;
@@ -371,7 +371,7 @@
   margin-top: 16px;
 }
 
-.cardsaward__subtitle {
+.cards-award__subtitle {
   font-family: 'Lato';
   font-weight: 400;
   color: #FFFF;
@@ -382,53 +382,25 @@
   margin: 0;
 }
 
-.cards-simple {
+.card-simple {
   max-width: 22rem;
   margin-top: 48px;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-.cards-simple img {
+.card-simple img {
   width: 100%;
 }
 
-.cards-simple__title {
+.card-simple__title {
   font-family: 'Poppins';
-=======
-=======
-
->>>>>>> 7562989210f0c5b0f69e0ae23dad62ca0a942046
-.cardsimple img {
-  width: 100%;
-}
-
-.cardsimple__title {
-<<<<<<< HEAD
-  font-family: "Poppins";
->>>>>>> 4e90a3bc7d0167dcc12658f89f2fc6b5e161f91c
-=======
-  font-family: 'Poppins';
->>>>>>> 7562989210f0c5b0f69e0ae23dad62ca0a942046
   font-weight: 800;
   color: #2D2A26;
   text-align: left;
   margin-top: 16px;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-.cards-simple__subtitle {
+.card-simple__subtitle {
   font-family: 'Lato';
-=======
-.cardsimple__subtitle {
-  font-family: "Lato";
->>>>>>> 4e90a3bc7d0167dcc12658f89f2fc6b5e161f91c
-=======
-
-.cardsimple__subtitle {
-  font-family: 'Lato';
->>>>>>> 7562989210f0c5b0f69e0ae23dad62ca0a942046
   font-weight: 400;
   color: #2D2A26;
   text-align: left;

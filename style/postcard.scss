@@ -6,19 +6,43 @@
 .post-card
 {
     background-image: url(../img/postcard.jpg);
-    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     &__title
     {
         @include poppins(h3,800,#F9B611,left);
+        padding: 48px 0 0 48px;
+        max-width: 250px;
     }
 
     &__description
     {
         @include lato(h1,400,#FFFF,left);
+        margin: 48px 0 0 48px;
+        width: 502px;
     }
     &__caption
     {
         @include lato(h4,400,#FFFF,left);
+        margin: 24px 0 0 48px;
+    }
+    &__bottom
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 63px 48px 58px 52px;
+        .post-card__box
+        {
+            img
+            {
+                margin-right: 30px;
+            }
+        }
+        .post-card__button
+        {
+        }
     }
 }
 
