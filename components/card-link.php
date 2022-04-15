@@ -10,7 +10,7 @@
  */
 ?>
 
-<div class="<?= $classes?> col-4">
+<div class="<?= $classes?> col-4">  
     <a href="<?= $link?>">
         <div class="card-link__img-wrapper">
             <img class="w-100" src="<?=$image?>" alt="">

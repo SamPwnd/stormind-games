@@ -140,9 +140,10 @@
 
 
     $wrapper =[
-        'classes' => 'wrapper ',
+        'classes' => ' ',
         'row_classes' => 'row-cols-1 row-cols-md-3',
         'title' => 'games',
+        'background' => 'https://stormindgames.com/wp-content/themes/storemind/storemind/assets/images/placeholder.jpg',
         'elements' => [
             [
                 'classes' => 'col',
@@ -176,6 +177,97 @@
 
     $side_panel =[
         'background' => 'https://stormindgames.com/wp-content/uploads/2020/11/Batora-Lost-Haven-Cover-Central.jpg',
+    ];
+
+
+    $slider_simple=[
+        'elements' =>[
+            [
+                'vote' => '8.5',
+                'title' => 'MULTIPLAYER.it',
+                'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+            ],
+            [
+                'vote' => '8.5',
+                'title' => 'MULTIPLAYER.it',
+                'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+            ],
+            [
+                'vote' => '8.5',
+                'title' => 'MULTIPLAYER.it',
+                'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+            ],
+            [
+                'vote' => '8.5',
+                'title' => 'MULTIPLAYER.it',
+                'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+            ],
+            [
+                'vote' => '8.5',
+                'title' => 'MULTIPLAYER.it',
+                'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+            ],
+            [
+                'vote' => '8.5',
+                'title' => 'MULTIPLAYER.it',
+                'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+            ],
+            [
+                'vote' => '8.5',
+                'title' => 'MULTIPLAYER.it',
+                'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+            ],
+            [
+                'vote' => '8.5',
+                'title' => 'MULTIPLAYER.it',
+                'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+            ],
+            [
+                'vote' => '8.5',
+                'title' => 'MULTIPLAYER.it',
+                'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+            ],
+            [
+                'vote' => '8.5',
+                'title' => 'MULTIPLAYER.it',
+                'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+            ],
+            [
+                'vote' => '8.5',
+                'title' => 'MULTIPLAYER.it',
+                'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+            ],
+            [
+                'vote' => '8.5',
+                'title' => 'MULTIPLAYER.it',
+                'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+            ],
+            [
+                'vote' => '8.5',
+                'title' => 'MULTIPLAYER.it',
+                'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+            ],
+            [
+                'vote' => '8.5',
+                'title' => 'MULTIPLAYER.it',
+                'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+            ],
+            
+        ],
     ];
 
 ?>
@@ -258,7 +350,10 @@
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum quos ducimus blanditiis dolores possimus, ex ipsam nostrum! Eius porro modi eaque nisi atque nemo! Mollitia rerum quis eius! Laudantium, nulla?
     </div>
 
+    <?php get_template_part(('./components/slider-simple.php'), ['content' => $slider_simple]); ?>
+
 
     <script src="./script/navbar.js"></script>
+    <script src="./script/slider-simple.js"></script>
 </body>
 </html>

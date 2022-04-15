@@ -71,7 +71,7 @@
 </head>
 <body>
 
-    <?php get_template_part('./components/card-profile.php', $cardProfile); ?>
+    <?php get_template_part('./components/card-profile.php',  $cardProfile); ?>
 
     <?php get_template_part('./components/footer.php', $footer); ?>
 

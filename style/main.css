@@ -902,13 +902,14 @@
   }
   .timeline .timeline__title {
     position: absolute;
-    top: 48px;
+    top: 60px;
     left: 1rem;
     -webkit-transform: translate(0, -50%);
             transform: translate(0, -50%);
     width: calc(100% - 2rem);
     text-align: center;
     color: #F9B611;
+    font-size: 32px;
   }
   .timeline .timeline__title::after {
     border-color: #F9B611;
@@ -1149,6 +1150,10 @@
 .wrapper {
   background-color: white;
   padding: 120px 160px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .wrapper__title {
@@ -1221,6 +1226,80 @@
   .side-panel .side-panel__content {
     padding: 48px 0;
   }
+}
+
+.slider-simple {
+  width: 100%;
+  min-height: 280px;
+}
+
+.slider-simple__wrapper {
+  width: 100%;
+  min-height: inherit;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.slider-simple__slider {
+  width: calc(500%);
+  min-height: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: left 0.3s;
+  transition: left 0.3s;
+}
+
+.slider-simple__slider .slider-simple__element {
+  display: inline-block;
+  width: calc((100% / 5) / 3);
+  padding-right: 2rem;
+}
+
+.slider-simple__slider .slider-simple__element:last-of-type {
+  padding: 0;
+}
+
+.slider-simple__slider .slider-simple__element .slider-simple__title {
+  font-family: 'Poppins';
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 800;
+  color: #151210;
+  text-align: start;
+}
+
+.slider-simple__slider .slider-simple__element .slider-simple__title span {
+  color: #F9B611;
+}
+
+.slider-simple__selectors {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.slider-simple__selectors .slider-simple__dot {
+  height: 12px;
+  width: 12px;
+  cursor: pointer;
+  border-radius: 20px;
+  background-color: #151210;
+  opacity: 0.4;
+  margin-right: 14px;
+}
+
+.slider-simple__selectors .slider-simple__dot:last-of-type {
+  margin: 0;
+}
+
+.slider-simple__selectors .slider-simple__dot--pressed {
+  background-color: #F9B611;
+  opacity: 1;
 }
 
 * {
