@@ -20,7 +20,7 @@
     <div class="news__icons-wrapper">
         <div class="news__icon-block">
             <img src="./assets/icon-calendar.svg" alt="">
-            <p class="news__icon-block__text"><?=$date ?></p>
+            <p class="news__icon-block__text"><?=$content['date'] ?></p>
         </div>
 
         <div class="news__icon-block">
