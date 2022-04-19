@@ -1,0 +1,51 @@
+.accordion{
+  width: 544px;
+  min-height: 96px;
+  border-top: 0.5px solid #2D2A26; 
+  border-bottom: 0.5px solid #2D2A26;
+  margin-bottom: 600px;
+}
+
+.accordion__simple{
+  width: 100%;
+  height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 12px;
+}
+
+.accordion__title{
+  @include poppins(H3, 800,#2D2A26,start);
+}
+
+#crosse,#less{
+  width: 24px;
+  img{
+    width: 100%;
+  }
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+#accordion__submenu{
+  p{
+    @include lato(H1, 400, #2D2A26,start);margin-bottom: 24px;
+    span{
+      font-weight: 800;
+    }
+  }
+}
+
+.alt-0{
+  height: 0;
+}
+
+.alt-100{
+  height: 596px;
+}
+
+.btn{
+  margin-bottom: 24px;
+}
