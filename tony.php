@@ -177,6 +177,13 @@ $article = [
 
   ]
 ];
+
+$accordion = [
+  [
+    'classes' => 'accordion',
+    'title' => 'FUNCTIONAL TESTER'
+  ]
+];
 ?>
 
 <!DOCTYPE html>
@@ -199,8 +206,14 @@ $article = [
 
   <div class="container">
     <?php for ($i = 0; $i < count($article); $i++) get_template_part('./components/article.php', ['article' => $article[$i]]) ?>
-  </div> 
-
+  </div>
+  <div class="container">
+    <?php for ($i = 0; $i < count($accordion); $i++) get_template_part('./components/accordion.php', ['accordion' => $accordion[$i]]) ?>
+  </div>
+  <script src="./script/accordion.js"></script>
 </body>
+
+
+
 
 </html>
