@@ -24,7 +24,7 @@
     <img class="card-profile__img" src="<?=$content['image'] ?>" alt="">
     <div class="card-profile__body">
         <div class="card-profile__title-container">
-            <p class="card-profile__title"><?=$title ?></p>
+            <p class="card-profile__title"><?=$content['title'] ?></p>
             <img src="<?=$content['icon'] ?>" class="card-profile__icon card-profile__icon--initial" alt="">
             <img src="<?=$content['icon_hover'] ?>" class="card-profile__icon card-profile__icon--hover" alt="">
         </div>

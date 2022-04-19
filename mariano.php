@@ -270,6 +270,25 @@
         ],
     ];
 
+
+    $gallery =[
+
+        'elements' =>[
+            './img/03-Remothered-BP.png',
+            './img/03-Remothered-BP.png',
+            './img/03-Remothered-BP.png',
+            './img/03-Remothered-BP.png',
+            './img/03-Remothered-BP.png',
+            './img/03-Remothered-BP.png',
+            './img/03-Remothered-BP.png',
+            './img/03-Remothered-BP.png',
+            './img/03-Remothered-BP.png',
+            './img/03-Remothered-BP.png',
+            './img/03-Remothered-BP.png',
+            './img/03-Remothered-BP.png',
+        ]
+    ];
+
 ?>
 
 <!DOCTYPE html>
@@ -352,8 +371,12 @@
 
     <?php get_template_part(('./components/slider-simple.php'), ['content' => $slider_simple]); ?>
 
+    <div class="container-fluid">
+        <?php get_template_part(('./components/gallery.php'), ['content' => $gallery]); ?>
 
+    </div>
     <script src="./script/navbar.js"></script>
     <script src="./script/slider-simple.js"></script>
+    <script src="./script/galery.js"></script>
 </body>
 </html>

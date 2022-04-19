@@ -18,15 +18,17 @@ $slider-num-of-slides: '5';
         position: absolute;
         top: 0;
         left: 0;
-        transition: left 0.3s;
+        transition: left 0.5s;
+        display: flex;
+        flex-wrap: nowrap;
         
         .slider-simple__element{
             display: inline-block;
-            width: calc((100% / 5) / 3);
+            max-width: calc((100% / 5) / 3);
             padding-right: 2rem;
 
-            &:last-of-type{padding: 0;}
-            
+            //&:last-of-type{padding: 0;}
+
             .slider-simple__title{
                 @include poppins(H4, 800, $black, start);
                 span{

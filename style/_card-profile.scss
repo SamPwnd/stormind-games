@@ -83,5 +83,9 @@
         &__body {
             top: calc(100% - 54px);
         }
+
+        &__description {
+            @include lato(H2, 400, #FFFFFF, left);
+        }
     }
 }
