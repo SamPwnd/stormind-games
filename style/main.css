@@ -1346,6 +1346,7 @@
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: end;
+    background-size: cover;
   }
 }
 
