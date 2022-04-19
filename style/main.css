@@ -155,6 +155,14 @@
   .card-profile__body {
     top: calc(100% - 54px);
   }
+  .card-profile__description {
+    font-family: 'Lato';
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #FFFFFF;
+    text-align: left;
+  }
 }
 
 .mp-body {
@@ -480,7 +488,15 @@
 }
 
 .text-panel--dark .text-panel__subtitle {
-  color: black;
+  color: #151210;
+}
+
+.text-panel--black .text-panel__title, .text-panel--black .text-panel__subtitle {
+  color: #151210;
+}
+
+.text-panel--black .text-panel__line {
+  border-top: 2px solid #151210;
 }
 
 .center-logo {
@@ -902,13 +918,14 @@
   }
   .timeline .timeline__title {
     position: absolute;
-    top: 48px;
+    top: 60px;
     left: 1rem;
     -webkit-transform: translate(0, -50%);
             transform: translate(0, -50%);
     width: calc(100% - 2rem);
     text-align: center;
     color: #F9B611;
+    font-size: 32px;
   }
   .timeline .timeline__title::after {
     border-color: #F9B611;
@@ -1149,6 +1166,10 @@
 .wrapper {
   background-color: white;
   padding: 120px 160px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .wrapper__title {

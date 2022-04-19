@@ -266,6 +266,12 @@
                 'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
 
             ],
+            [
+                'vote' => '8.5',
+                'title' => 'MULTIPLAYER.it',
+                'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+            ],
             
         ],
     ];
@@ -302,53 +308,6 @@
     <?php $navbarContent = ob_get_clean(); ?>
 
 
-    <?php  get_template_part('./components/navbar.php', ['navbar' => $navbar , 'content' => $navbarContent]); ?>
-  
-    
-    
-    <?php ob_start(); ?>
-        <div class="container">
-            <!-- qui si chiama il componente textpanel -->
-            <p class="hero__bottom">
-                <img src="./assets/scroll-down-arrow.svg" alt="down">
-                <a href="#">Scroll Down</a>
-            </p>
-        </div>
-    <?php $heroContent = ob_get_clean(); ?>
-
-    <?php get_template_part('./components/hero.php', ['hero' => $hero, 'content' => $heroContent]); ?>
-    
-    <div>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum quos ducimus blanditiis dolores possimus, ex ipsam nostrum! Eius porro modi eaque nisi atque nemo! Mollitia rerum quis eius! Laudantium, nulla?
-    </div>
-
-    <?php get_template_part('./components/timeline.php',['content' => $timeline]) ;?>
-    
-    <div>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum quos ducimus blanditiis dolores possimus, ex ipsam nostrum! Eius porro modi eaque nisi atque nemo! Mollitia rerum quis eius! Laudantium, nulla?
-    </div>
-
-    <?php ob_start(); ?>
-
-        <?php get_template_part('./components/text-panel.php',['text_panel' => $textPanel1]) ;?>
-
-    <?php $sideContentElement = ob_get_clean(); ?>
-
-    <?php get_template_part(('./components/side-content.php'), ['side_content' => $sideContent1, 'content' => $sideContentElement]) ?>
-
-    <?php get_template_part(('./components/side-content.php'), ['side_content' => $sideContent2, 'content' => $sideContentElement]) ?>
-
-    <div>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum quos ducimus blanditiis dolores possimus, ex ipsam nostrum! Eius porro modi eaque nisi atque nemo! Mollitia rerum quis eius! Laudantium, nulla?
-    </div>
-    <?php get_template_part(('./components/wrapper.php'), ['content' => $wrapper]) ?>
-    <div>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum quos ducimus blanditiis dolores possimus, ex ipsam nostrum! Eius porro modi eaque nisi atque nemo! Mollitia rerum quis eius! Laudantium, nulla?
-    </div>
-    <?php get_template_part(('./components/side-panel.php'), ['content' => $side_panel, 'text' => $navbarContent]) ?>
-    <div>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum quos ducimus blanditiis dolores possimus, ex ipsam nostrum! Eius porro modi eaque nisi atque nemo! Mollitia rerum quis eius! Laudantium, nulla?
-    </div>
 
     <?php get_template_part(('./components/slider-simple.php'), ['content' => $slider_simple]); ?>
 

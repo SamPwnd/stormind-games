@@ -2,6 +2,10 @@
 .wrapper{
     background-color: white;
     padding: 120px 160px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 
     &__title{
         @include poppins(H1, 800, $primary, center);

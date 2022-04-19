@@ -45,7 +45,17 @@
 
   &--dark{
     .text-panel__subtitle {
-      color: black;
+      color: $black;
+    }
+  }
+
+  &--black {
+    .text-panel__title, .text-panel__subtitle {
+      color: $black;
+    }
+
+    .text-panel__line {
+      border-top: 2px solid $black;
     }
   }
 
