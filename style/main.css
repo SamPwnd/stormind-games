@@ -1003,10 +1003,6 @@
   }
 }
 
-.btn-close {
-  opacity: 1;
-}
-
 textarea {
   background-image: url("../assets/icon-message.svg");
   background-repeat: no-repeat;
@@ -1024,6 +1020,10 @@ textarea::-webkit-resizer {
   margin-top: 16px;
   padding-bottom: 0rem;
 }
+.modal__submit-div {
+  width: max-content;
+  margin-left: auto;
+}
 
 .application__subtitle {
   font-family: "Poppins";
@@ -1037,6 +1037,9 @@ textarea::-webkit-resizer {
 .application__form-group {
   margin-bottom: 1.6rem;
 }
+.application__form-group--footer {
+  margin-bottom: 0.5rem;
+}
 
 .input-file-label {
   font-family: "Lato";
@@ -1045,9 +1048,11 @@ textarea::-webkit-resizer {
   font-weight: 700;
   color: #151210;
   text-align: left;
-  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23333' stroke-width='2' stroke-dasharray='6%2c 14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='black' stroke-width='4' stroke-dasharray='0%2c10' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
   display: inline-block;
-  padding: 6px 12px;
+  padding: 16px 24px;
+  display: flex;
+  gap: 12px;
   cursor: pointer;
 }
 
@@ -1055,6 +1060,19 @@ textarea::-webkit-resizer {
   display: none;
 }
 
+@media only screen and (max-width: 992px) {
+  .modal__submit-div {
+    margin-top: 52px;
+    margin-right: auto;
+  }
+  .modal .modal-header {
+    margin-top: 26px;
+  }
+
+  .application__form-group--footer {
+    margin-bottom: 1.7rem;
+  }
+}
 .slider-simple {
   width: 100%;
   min-height: 280px;
