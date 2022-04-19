@@ -5,20 +5,96 @@
 
 .post-card
 {
-    background-image: url(../img/postcard.jpg);
-    height: 30rem;
+    &--little
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .post-card__title
+        {
+            @include poppins(H3,800,#F9B611,left);
+            padding: 16px 0 0 16px;
+            max-width: 512px;
+        }
+        .post-card__bottom
+        {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 63px 16px 16px 20px;
+            .post-card__box
+            {
+                img
+                {
+                    margin-right: 30px;
+                }
+            }
+        }
+    }
+    &--medium
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        @include media-breakpoint-down(lg){
+            display: none;
+        }    
+    }
+    &--biggest
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .post-card__title
+        {
+            @include poppins(H3,800,#F9B611,left);
+            padding: 48px 0 0 48px;
+        }
+        .post-card__bottom
+        {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 63px 52px 48px 48px;
+            .post-card__box
+            {
+                img
+                {
+                    margin-right: 30px;
+                }
+            }
+        }
+    }
     &__title
     {
         @include poppins(h3,800,#F9B611,left);
+        padding: 48px 0 0 48px;
+        max-width: 250px;
     }
-
     &__description
     {
-        @include lato(h1,400,#FFFF,left);
+        @include lato(H1,400,#FFFF,left);
+        margin: 48px 0 0 48px;
+        width: 502px;
     }
     &__caption
     {
-        @include lato(h4,400,#FFFF,left);
+        @include lato(H4,400,#FFFF,left);
+        margin: 24px 0 0 48px;
+    }
+    &__bottom
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 38px 48px 58px 52px;
+        .post-card__box
+        {
+            img
+            {
+                margin-right: 30px;
+            }
+        }
     }
 }
 

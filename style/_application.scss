@@ -1,6 +1,3 @@
-.btn-close {
-    opacity: 1;
-}
 
 textarea {
     &::-webkit-resizer {
@@ -14,10 +11,16 @@ textarea {
 
 .modal {
     background-color: rgba(0, 0, 0, 0.8);
+
     .modal-header {
         align-items: baseline;
         margin-top: 16px;
         padding-bottom: 0rem;
+    }
+
+    &__submit-div {
+        width: max-content;
+        margin-left: auto;
     }
 }
 
@@ -29,17 +32,43 @@ textarea {
 
     &__form-group {
         margin-bottom: 1.6rem;
+
+        &--footer {
+            margin-bottom: .5rem;
+        }
     }
 }
 
 .input-file-label {
     @include lato-cta(H3, 700, $black, left);
-    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23333' stroke-width='2' stroke-dasharray='6%2c 14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
-    display: inline-block;
-    padding: 6px 12px;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='black' stroke-width='4' stroke-dasharray='0%2c10' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");    display: inline-block;
+    padding: 16px 24px;
+    display: flex;
+    gap: 12px;
     cursor: pointer;
 }
 
 .input-file {
     display: none;
+}
+
+@media only screen and (max-width: map-get($grid-breakpoints, lg)){
+    .modal {
+        &__submit-div {
+            margin-top: 52px;
+            margin-right: auto;
+        }
+
+        .modal-header {
+            margin-top: 26px;
+        }
+    }
+
+    .application {
+        &__form-group {
+            &--footer {
+                margin-bottom: 1.7rem;
+            }
+        }
+    }
 }

@@ -1,5 +1,12 @@
 <?php 
 
+/* $application = [
+    'classes' => 'application',
+    'text_panel' => [
+        'classes' => 'text-panel text-panel--small-title text-panel--black',
+        'title' => 'FUNCTIONAL TESTER',
+    ],
+]; */
 ?>
 
 <button class="btn btn-outline-primary" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">SEND APPLICATION</button>
@@ -17,12 +24,12 @@
             <div class="application__form-group">
                 <p class="application__subtitle">PERSONAL INFORMATION</p>
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-12 col-lg-6">
                         <div class="input-group mb-3 bg-primary">
                             <input type="text" class="form-control" placeholder="First name*">
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-12 col-lg-6">
                         <div class="input-group mb-3 bg-primary">
                             <input type="text" class="form-control" placeholder="Last name*">
                         </div>
@@ -30,12 +37,12 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-12 col-lg-6">
                         <div class="input-group mb-3 bg-primary">
                             <input type="text" class="form-control" placeholder="City*">
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-12 col-lg-6">
                         <div class="input-group mb-3 bg-primary">
                             <input type="text" class="form-control" placeholder="Phone*">
                         </div>
@@ -43,7 +50,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-12 col-lg-6">
                         <div class="input-group mb-3 bg-primary">
                             <input type="text" class="form-control" placeholder="E-mail address*">
                         </div>
@@ -54,12 +61,12 @@
             <div class="application__form-group">
                 <p class="application__subtitle">NETWORK</p>
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-12 col-lg-6">
                         <div class="input-group mb-3 bg-primary">
                             <input type="text" class="form-control" placeholder="Linkedin Profile">
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-12 col-lg-6">
                         <div class="input-group mb-3 bg-primary">
                             <input type="text" class="form-control" placeholder="Website">
                         </div>
@@ -76,21 +83,19 @@
                 </div>
             </div>
             
-            <div class="application__form-group">
+            <div class="application__form-group application__form-group--footer">
                 <p class="application__subtitle">ATTACH CV / RESUME</p>
                 <div class="row">
-                    <div class="col-6">
-                    <label for="file-upload" class="input-file-label">BROWSE ATTACHED</label>
+                    <div class="col-12 col-lg-6">
+                    <label for="file-upload" class="input-file-label"><img src="./assets/icon-add.svg" alt=""> BROWSE ATTACHED</label>
                     <input id="file-upload" class="input-file" type="file"/>
+                    </div>
+                    <div class="modal__submit-div">
+                        <button type="submit" class="btn btn-outline-black" data-bs-dismiss="modal">SEND APPLICATION</button>
                     </div>
                 </div>
             </div>
-      
           </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Understood</button>
       </div>
     </div>
   </div>
