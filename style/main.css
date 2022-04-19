@@ -1244,10 +1244,6 @@
   }
 }
 
-.btn-close {
-  opacity: 1;
-}
-
 textarea {
   background-image: url("../assets/icon-message.svg");
   background-repeat: no-repeat;
@@ -1270,6 +1266,13 @@ textarea::-webkit-resizer {
   padding-bottom: 0rem;
 }
 
+.modal__submit-div {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-left: auto;
+}
+
 .application__subtitle {
   font-family: 'Poppins';
   font-size: 20px;
@@ -1284,6 +1287,10 @@ textarea::-webkit-resizer {
   margin-bottom: 1.6rem;
 }
 
+.application__form-group--footer {
+  margin-bottom: .5rem;
+}
+
 .input-file-label {
   font-family: 'Lato';
   font-size: 24px;
@@ -1291,14 +1298,31 @@ textarea::-webkit-resizer {
   font-weight: 700;
   color: #151210;
   text-align: left;
-  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23333' stroke-width='2' stroke-dasharray='6%2c 14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='black' stroke-width='4' stroke-dasharray='0%2c10' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
   display: inline-block;
-  padding: 6px 12px;
+  padding: 16px 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 12px;
   cursor: pointer;
 }
 
 .input-file {
   display: none;
+}
+
+@media only screen and (max-width: 992px) {
+  .modal__submit-div {
+    margin-top: 52px;
+    margin-right: auto;
+  }
+  .modal .modal-header {
+    margin-top: 26px;
+  }
+  .application__form-group--footer {
+    margin-bottom: 1.7rem;
+  }
 }
 
 .slider-simple {
@@ -1472,6 +1496,148 @@ textarea::-webkit-resizer {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
+}
+
+.contact__btn {
+  margin-left: auto;
+}
+
+@media only screen and (max-width: 992px) {
+  .contact__btn {
+    margin-right: auto;
+  }
+}
+
+.accordion {
+  width: 544px;
+  min-height: 96px;
+  border-top: 0.5px solid #2D2A26;
+  border-bottom: 0.5px solid #2D2A26;
+  margin-bottom: 600px;
+}
+
+.accordion__simple {
+  width: 100%;
+  height: 96px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 12px;
+}
+
+.accordion__title {
+  font-family: 'Poppins';
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 800;
+  color: #2D2A26;
+  text-align: start;
+}
+
+@media only screen and (max-width: 565px) {
+  .accordion__title {
+    font-size: 28px;
+    line-height: 32px;
+  }
+}
+
+#crosse, #less {
+  width: 24px;
+}
+
+#crosse img, #less img {
+  width: 100%;
+}
+
+#crosse:hover, #less:hover {
+  cursor: pointer;
+}
+
+#accordion__submenu p {
+  font-family: 'Lato';
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #2D2A26;
+  text-align: start;
+  margin-bottom: 24px;
+}
+
+#accordion__submenu p span {
+  font-weight: 800;
+}
+
+.alt-0 {
+  height: 0;
+}
+
+.alt-100 {
+  height: 596px;
+}
+
+.btn {
+  margin-bottom: 24px;
+}
+
+.side_panel_2 {
+  width: 100%;
+  height: 400px;
+  background-image: url("../assets/Dev-Company.jpg");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .side_panel_2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 16px;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+    background-size: cover;
+  }
+}
+
+.side_panel_2 .text-panel {
+  margin-right: 0;
+  display: inline-block;
+}
+
+.side_panel_2 .text-panel .text-panel__title {
+  font-family: 'Poppins';
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 800;
+  color: #F9B611;
+  text-align: start;
+}
+
+@media only screen and (max-width: 565px) {
+  .side_panel_2 .text-panel .text-panel__title {
+    font-size: 28px;
+    line-height: 32px;
+  }
+}
+
+.side_panel_2 .btn {
+  margin-bottom: 0;
+  margin-top: 40px;
 }
 
 * {

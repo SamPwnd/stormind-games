@@ -1,0 +1,16 @@
+.contact {
+
+    &__btn {
+        margin-left: auto;
+    }
+}
+
+@media only screen and (max-width: map-get($grid-breakpoints, lg)){
+    .contact {
+
+        &__btn {
+            margin-right: auto;
+        }
+    }
+
+}
