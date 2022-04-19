@@ -289,6 +289,39 @@
         ]
     ];
 
+
+    $bullettin = [
+        'categories' =>[
+            'news',
+            'video',
+        ],
+        'tags' =>[
+            '#REMOTHERED #BROKEN PORCELAIN #BROKEN PORCELAIN #REMOTHERED ',
+        ],
+        'latest' =>[
+            [
+                'image' => './img/bullettin_1.png',
+                'text' => 'Developers of Intense Stories.',
+                'date' => 'Aug 19, 2019',
+            ],
+            [
+                'image' => './img/bullettin_1.png',
+                'text' => 'Developers of Intense Stories.',
+                'date' => 'Aug 19, 2019',
+            ],
+            [
+                'image' => './img/bullettin_1.png',
+                'text' => 'Developers of Intense Stories.',
+                'date' => 'Aug 19, 2019',
+            ],
+            
+        ]
+    ];
+
+
+    $slider_panel =[
+
+    ];
 ?>
 
 <!DOCTYPE html>
@@ -375,6 +408,16 @@
         <?php get_template_part(('./components/gallery.php'), ['content' => $gallery]); ?>
 
     </div>
+
+
+    <?php ob_start() ?>
+
+    <?php $bullettin_elements = ob_get_clean() ?>
+
+
+    <?php get_template_part(('./components/bullettin.php'), ['content' => $bullettin,  'elements' => $bullettin_elements]) ?>
+
+    <?php get_template_part(('./components/slider-panel.php'), ['content' => $slider_panel]) ?>
     <script src="./script/navbar.js"></script>
     <script src="./script/slider-simple.js"></script>
     <script src="./script/galery.js"></script>
