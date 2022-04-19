@@ -158,7 +158,7 @@ $center_logo = [
 
 $article = [
   [
-    'classes' => 'article',
+    'classes' => 'article article-accordion',
     'image' => 'assets/antonio-cannata.jpg',
     'title' => 'ANTONIO CANNATA',
     'subtitle' => 'Co-Founder & CEO',
@@ -167,7 +167,7 @@ $article = [
     'content-down' => 'and video games, his two passions. Following a professional training abroad, that paved the way for bringing his own company to life with the right conditions, he started operating in the entertainment industry, and after two years, together with Federico Laudani, he founded Stormind Games.<br><br>In the last 8 years, Antonio has specialized in the videogame industry for PC and Consoles. His enthusiastic leadership and his contribution in managing the company with the aim to always raise the bar have been awarded with the “Management Star” Award from DStars in 2020, the award dedicated to Italian excellences in the game development industry, for his outstanding contribution in managing a game studio.'
   ],
   [
-    'classes' => 'article',
+    'classes' => 'article article-accordion',
     'image' => 'assets/federico-laudani.jpg',
     'title' => 'FEDERICO LAUDANI',
     'subtitle' => 'Co-Founder & Art Director',
@@ -186,8 +186,8 @@ $accordion = [
 ];
 
 $side_panel_2 = [
-    'classes' => 'side_panel_2',
-    'image' => 'assets/Dev-Company.jpg'
+  'classes' => 'side_panel_2',
+  'image' => 'assets/Dev-Company.jpg'
 ];
 
 ?>
@@ -218,8 +218,9 @@ $side_panel_2 = [
   </div>
 
   <?php get_template_part('./components/side-panel-2.php', ['side_panel_2' => $side_panel_2]) ?>
-
   <script src="./script/accordion.js"></script>
+  <!-- <script src="./script/article.js"></script> -->
+
 </body>
 
 </html>

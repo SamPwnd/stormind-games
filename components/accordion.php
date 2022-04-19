@@ -8,12 +8,12 @@
     <div class="cross" id="crosse">
       <img src="assets/cross.svg" alt="">
     </div>
-    <div id="less" class="d-none">
+    <div id="less" class="less_acc d-none">
       <img src="assets/meno.svg" alt="">
     </div>
   </div>
 
-  <div id="accordion__submenu" class="alt-0 d-none">
+  <div id="accordion__submenu" class="alt-0 d-none accordion_submenu">
     <p><span>Job Description:</span><br>
       The functional tester is a very important member of the production team. He executes tests to ensure the user of the application will have an optimal experience. The tester helps the development team to find bugs, refine the user experience and support the development process.<br><br>
 
