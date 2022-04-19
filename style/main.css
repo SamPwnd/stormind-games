@@ -1321,6 +1321,60 @@
   margin-bottom: 24px;
 }
 
+.side_panel_2 {
+  width: 100%;
+  height: 400px;
+  background-image: url("../assets/Dev-Company.jpg");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .side_panel_2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 16px;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+  }
+}
+
+.side_panel_2 .text-panel {
+  margin-right: 0;
+  display: inline-block;
+}
+
+.side_panel_2 .text-panel .text-panel__title {
+  font-family: 'Poppins';
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 800;
+  color: #F9B611;
+  text-align: start;
+}
+
+@media only screen and (max-width: 565px) {
+  .side_panel_2 .text-panel .text-panel__title {
+    font-size: 28px;
+    line-height: 32px;
+  }
+}
+
+.side_panel_2 .btn {
+  margin-bottom: 0;
+  margin-top: 40px;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;

@@ -184,6 +184,12 @@ $accordion = [
     'title' => 'FUNCTIONAL TESTER'
   ]
 ];
+
+$side_panel_2 = [
+    'classes' => 'side_panel_2',
+    'image' => 'assets/Dev-Company.jpg'
+];
+
 ?>
 
 <!DOCTYPE html>
@@ -210,10 +216,10 @@ $accordion = [
   <div class="container">
     <?php for ($i = 0; $i < count($accordion); $i++) get_template_part('./components/accordion.php', ['accordion' => $accordion[$i]]) ?>
   </div>
+
+  <?php get_template_part('./components/side-panel-2.php', ['side_panel_2' => $side_panel_2]) ?>
+
   <script src="./script/accordion.js"></script>
 </body>
-
-
-
 
 </html>
