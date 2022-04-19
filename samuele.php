@@ -60,8 +60,12 @@
             'classes' => 'text-panel text-panel--small-title text-panel--black',
             'title' => 'FUNCTIONAL TESTER',
         ],
+    ];
 
-    ]
+    $contact = [
+        'classes' => 'contact',
+
+    ];
     
 
 ?>
@@ -87,6 +91,9 @@
     <?php get_template_part('./components/news.php', ['content' => $news]); ?>
 
     <?php get_template_part('./components/application.php', ['content' => $application]); ?>
+
+    <?php get_template_part('./components/contact.php', ['content' => $contact]); ?>
+
 
     <script src="./script/navbar.js"></script>
     <script src="./script/bootstrap.min.js"></script>
