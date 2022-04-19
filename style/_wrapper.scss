@@ -1,0 +1,39 @@
+
+.wrapper{
+    background-color: white;
+    padding: 120px 160px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    &__title{
+        @include poppins(H1, 800, $primary, center);
+        text-transform: uppercase;
+        padding-bottom: 10px;
+        margin-bottom: 72px;
+        position: relative;
+
+        &:after{
+            content: '';
+            width: 100px;
+            outline: 1px solid $primary;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%);
+        }
+    }
+
+    &--black{
+        background-color: $black;
+    }
+
+    &--primary{
+        background-color: $primary;
+    }
+
+    @media only screen and (max-width: 767px){
+        padding: 48px 16px;
+    }
+}

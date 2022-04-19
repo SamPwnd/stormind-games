@@ -1,0 +1,25 @@
+.side-panel{
+    background: white;
+    &__background{
+        height: 110vh;
+        background-position: center bottom;
+        background-size: cover;
+        position: sticky;
+        top: 0;
+        width: 100%;      
+    }
+
+    &__content{
+        padding: 72px 0;
+    }
+
+    @media only screen and (max-width: 767px){       
+        .side-panel__background{
+            max-height: 216px;            
+        }
+        .side-panel__content{
+            padding: 48px 0;
+        }
+
+    }
+}

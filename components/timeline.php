@@ -71,16 +71,15 @@
    
     <div class="row m-0">
         <div class="col-12 col-md-5 p-0" >
-            <div class="timeline__background" style="background-image: url('<?= $timeline['background'] ?>');">
+            <div class="timeline__background" style="background-image: url('<?= $content['background'] ?>');"></div>
 
-            </div>
         </div>
         <div class="col-10 offset-1 col-md-7 offset-md-0 ">
             <div class="timeline__content">
                 <div class="timeline__title">
-                    <?= $timeline['title'] ?>
+                    <?= $content['title'] ?>
                 </div>
-                <?php foreach($timeline['elements'] as $element):  ?>
+                <?php foreach($content['elements'] as $element):  ?>
                     <div class="timeline__element">                    
                         <div class="timeline__dot"></div>
                         <div class="timeline__date"><?= $element['date']?></div>

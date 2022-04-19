@@ -42,7 +42,10 @@ $cardsaward = [
 
     ];
 
-$postcard = [
+
+/**/$postcard = [
+    'background-img' => 'height: 480px; background-image: url(../stormind-games/img/postcard.jpg)',
+    'class'  => 'post-card--medium',
     'title' => 'BATORA: LOST HAVEN',
     'description' => 'After her expulsion from an all-girls boarding school, the rebellious Jen begins to observe strange occurrences happening at the Ashmann Inn, the hotel where she was sent to serve as one of its maids. As the past comes back to haunt her, will she be able to escape?',
     'caption' => 'COOMING SOON',
@@ -55,8 +58,10 @@ $postcard = [
     'contentbutton' => '+ SHOW MORE',
 ];
 
-$postcard2 = [
-    'title' => 'BATORA: LOST HAVEN',
+/*$postcard = [
+    'background-img' => 'height: 742px; background-image: url(../stormind-games/img/sfondo2.jpg)',
+    'class'  => 'post-card--biggest',
+    'title' => 'BATORA:<br> LOST HAVEN',
     'icons' => [
             '../stormind-games/img/pc.svg',
             '../stormind-games/img/ps.svg',
@@ -66,6 +71,18 @@ $postcard2 = [
         'contentbutton' => '+',
 ];
 
+$postcard = [
+    'background-img' => 'height: 360px; background-image: url(../stormind-games/img/littlepostcard.jpg)',
+    'class'  => 'post-card--little',
+    'title' => 'REMOTHERED:<br> BROKEN PORCELAIN',
+    'icons' => [
+            '../stormind-games/img/pc.svg',
+            '../stormind-games/img/ps.svg',
+            '../stormind-games/img/xbox.svg',
+            '../stormind-games/img/nintendo.svg',
+        ],
+        'contentbutton' => '+',
+];*/
 
 ?>
 
@@ -84,10 +101,10 @@ $postcard2 = [
 </head>
 <body>
 
-<div class="container">
+<!--<div class="container">
     <div class="row">
      <div class="col">
-        <?php get_template_part( './components/cardsimple.php', [ 'cardsimple' =>$cardsimple[0]])?>
+     <?php get_template_part( './components/cardsimple.php', [ 'cardsimple' =>$cardsimple[0]])?>
      </div>
      <div class="col">
         <?php get_template_part( './components/cardsimple.php', [ 'cardsimple' =>$cardsimple[1]])?>
@@ -107,19 +124,36 @@ $postcard2 = [
      </div>
     </div>
 </div>
+-->
+<!-- Little
 <div class="container">
- <div class="row">
-     <div class="col">
+    <div class="row">
+      <div class="col-6">
         <?php get_template_part( './components/postcard.php', [ 'postcard' =>$postcard])?>
-     </div>
- </div>
-</div>
+      </div>
+      <div class="col-6">
+        <?php get_template_part( './components/postcard.php', [ 'postcard' =>$postcard])?>
+      </div>
+    </div>
+</div>-->
+
+<!-- Medium
+-->
 <div class="container">
- <div class="row">
-     <div class="col">
-        <?php get_template_part( './components/postcard.php', [ 'postcard2' =>$postcard2])?>
-     </div>
- </div>
+    <div class="row">
+      <div class="col">
+        <?php get_template_part( './components/postcard.php', [ 'postcard' =>$postcard])?>
+      </div>
+    </div>
 </div>
+<!-- BIGGEST
+<div class="container">
+    <div class="row">
+      <div class="col">
+      <?php get_template_part( './components/postcard.php', [ 'postcard' =>$postcard])?>
+      </div>
+    </div>
+</div>
+-->
 </body>
 </html>

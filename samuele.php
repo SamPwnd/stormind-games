@@ -2,9 +2,7 @@
     require_once('./functions.php');
 
     $cardProfile = [
-        'classes' => [
-            'card-profile' => 'card-profile col-4'
-        ],
+        'classes' => 'card-profile col-4',
         'image' => './assets/card-profile1.png',
         'title' => 'JENNIFER',
         'icon' => './assets/icon-more.svg',
@@ -41,6 +39,20 @@
         'subtitle' => 'UPDATED: Aug 19, 2019',
         'icon' => './assets/icon-download.svg',
     ];
+
+    $news = [
+        'classes' => 'news',
+        'image' => './assets/news.png',
+        'link' => '#',
+        'date' => 'AUG 19, 2019',
+        'category' => 'NEWS',
+        'tag' => 'Remothered | Broken Porcelain',
+        'text_panel' => [
+            'classes' => 'text-panel text-panel--small-title text-panel--dark',
+            'title' => 'DEVELOPERS OF INTENSE STORIES',
+            'subtitle' => 'We developed and promoted Remothered: Tormented Fathers. We are currently working on the second title, Remothered: Broken Porcelain, and on a new unannounced project.'
+        ],
+    ];
     
 
 ?>
@@ -57,12 +69,14 @@
 </head>
 <body>
 
-    <?php get_template_part('./components/card-profile.php', $cardProfile); ?>
+    <?php get_template_part('./components/card-profile.php', ['content' => $cardProfile]); ?>
 
     <?php get_template_part('./components/footer.php', $footer); ?>
 
-    <?php get_template_part('./components/card-link.php', $cardLink); ?>
+    <?php get_template_part('./components/card-link.php', ['content' => $cardLink]); ?>
     
+    <?php get_template_part('./components/news.php', ['content' => $news]); ?>
+
     <script src="./script/navbar.js"></script>
 </body>
 </html>

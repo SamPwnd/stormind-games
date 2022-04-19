@@ -109,6 +109,167 @@
         'subtitle' => 'All of our games are based on intense stories to open the doors to franchises and sequels.'
     ];
 
+    $cardsimple = [
+        [
+            'classbootstrap' => 'col',
+            'classes' => 'cardsimple',
+            'classtitle' => 'cardsaward__title',
+            'classsubtitle' => 'cardsaward__subtitle',
+            'image' => './img/180.png',
+            'title' => 'DEVELOPMENT',
+            'subtitle' => 'We can help you with developing a sequel or an expansion of your video game and  converting the player mode you’ve set to the one of your choice.'
+        ],
+        [
+            'classbootstrap' => 'col',
+            'classes' => 'cardsimple',
+            'classtitle' => 'cardsaward__title',
+            'classsubtitle' => 'cardsaward__subtitle',
+            'image' => './img/181.png',
+            'title' => 'GAME’S CINEMATICS & TRAILER',
+            'subtitle' => 'Thanks to the experience gained by the professionals in our team, who have had the chance to prove their skills in the production of CGI films, we can design and create trailers and cinematics for your video game.'
+        ],
+        [
+            'classbootstrap' => 'col',
+            'classes' => 'cardsimple',
+            'classtitle' => 'cardsaward__title',
+            'classsubtitle' => 'cardssimple__subtitle',
+            'image' => './img/182.png',
+            'title' => 'PORTING',
+            'subtitle' => 'If you have a finished game for PC, we can port it from PC to PlayStation, Xbox, and Switch, thus making it compatible for consoles.'
+        ]];
+
+
+    $wrapper =[
+        'classes' => ' ',
+        'row_classes' => 'row-cols-1 row-cols-md-3',
+        'title' => 'games',
+        'background' => 'https://stormindgames.com/wp-content/themes/storemind/storemind/assets/images/placeholder.jpg',
+        'elements' => [
+            [
+                'classes' => 'col',
+                'component' => 'cardsimple.php',
+                'content' => [
+                    'image' => './img/180.png',
+                    'title' => 'DEVELOPMENT',
+                    'subtitle' => 'We can help you with developing a sequel or an expansion of your video game and  converting the player mode you’ve set to the one of your choice.'
+                ],
+            ],
+            [
+                'classes' => 'col',
+                'component' => 'cardsimple.php',
+                'content' => [
+                    'image' => './img/180.png',
+                    'title' => 'DEVELOPMENT',
+                    'subtitle' => 'We can help you with developing a sequel or an expansion of your video game and  converting the player mode you’ve set to the one of your choice.'
+                ],
+            ],
+            [
+                'classes' => 'col',
+                'component' => 'cardsimple.php',
+                'content' => [
+                    'image' => './img/180.png',
+                    'title' => 'DEVELOPMENT',
+                    'subtitle' => 'We can help you with developing a sequel or an expansion of your video game and  converting the player mode you’ve set to the one of your choice.'
+                ],
+            ],
+        ],
+    ];
+
+    $side_panel =[
+        'background' => 'https://stormindgames.com/wp-content/uploads/2020/11/Batora-Lost-Haven-Cover-Central.jpg',
+    ];
+
+
+    $slider_simple=[
+        'elements' =>[
+            [
+                'vote' => '8.5',
+                'title' => 'MULTIPLAYER.it',
+                'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+            ],
+            [
+                'vote' => '8.5',
+                'title' => 'MULTIPLAYER.it',
+                'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+            ],
+            [
+                'vote' => '8.5',
+                'title' => 'MULTIPLAYER.it',
+                'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+            ],
+            [
+                'vote' => '8.5',
+                'title' => 'MULTIPLAYER.it',
+                'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+            ],
+            [
+                'vote' => '8.5',
+                'title' => 'MULTIPLAYER.it',
+                'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+            ],
+            [
+                'vote' => '8.5',
+                'title' => 'MULTIPLAYER.it',
+                'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+            ],
+            [
+                'vote' => '8.5',
+                'title' => 'MULTIPLAYER.it',
+                'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+            ],
+            [
+                'vote' => '8.5',
+                'title' => 'MULTIPLAYER.it',
+                'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+            ],
+            [
+                'vote' => '8.5',
+                'title' => 'MULTIPLAYER.it',
+                'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+            ],
+            [
+                'vote' => '8.5',
+                'title' => 'MULTIPLAYER.it',
+                'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+            ],
+            [
+                'vote' => '8.5',
+                'title' => 'MULTIPLAYER.it',
+                'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+            ],
+            [
+                'vote' => '8.5',
+                'title' => 'MULTIPLAYER.it',
+                'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+            ],
+            [
+                'vote' => '8.5',
+                'title' => 'MULTIPLAYER.it',
+                'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+            ],
+            [
+                'vote' => '8.5',
+                'title' => 'MULTIPLAYER.it',
+                'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+            ],
+            
+        ],
+    ];
+
 ?>
 
 <!DOCTYPE html>
@@ -161,7 +322,7 @@
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum quos ducimus blanditiis dolores possimus, ex ipsam nostrum! Eius porro modi eaque nisi atque nemo! Mollitia rerum quis eius! Laudantium, nulla?
     </div>
 
-    <?php get_template_part('./components/timeline.php',['timeline' => $timeline]) ;?>
+    <?php get_template_part('./components/timeline.php',['content' => $timeline]) ;?>
     
     <div>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum quos ducimus blanditiis dolores possimus, ex ipsam nostrum! Eius porro modi eaque nisi atque nemo! Mollitia rerum quis eius! Laudantium, nulla?
@@ -180,7 +341,19 @@
     <div>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum quos ducimus blanditiis dolores possimus, ex ipsam nostrum! Eius porro modi eaque nisi atque nemo! Mollitia rerum quis eius! Laudantium, nulla?
     </div>
+    <?php get_template_part(('./components/wrapper.php'), ['content' => $wrapper]) ?>
+    <div>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum quos ducimus blanditiis dolores possimus, ex ipsam nostrum! Eius porro modi eaque nisi atque nemo! Mollitia rerum quis eius! Laudantium, nulla?
+    </div>
+    <?php get_template_part(('./components/side-panel.php'), ['content' => $side_panel, 'text' => $navbarContent]) ?>
+    <div>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum quos ducimus blanditiis dolores possimus, ex ipsam nostrum! Eius porro modi eaque nisi atque nemo! Mollitia rerum quis eius! Laudantium, nulla?
+    </div>
+
+    <?php get_template_part(('./components/slider-simple.php'), ['content' => $slider_simple]); ?>
+
 
     <script src="./script/navbar.js"></script>
+    <script src="./script/slider-simple.js"></script>
 </body>
 </html>

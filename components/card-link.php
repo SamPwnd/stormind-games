@@ -10,15 +10,15 @@
  */
 ?>
 
-<div class="<?= $classes?> col-4">
-    <a href="<?= $link?>">
+<div class="<?= $content['classes']?> col-4">
+    <a href="<?= $content['link']?>">
         <div class="card-link__img-wrapper">
-            <img class="w-100" src="<?=$image?>" alt="">
-            <img class="card-link__icon" src="<?=$icon?>" alt="">
+            <img class="w-100" src="<?=$content['image']?>" alt="">
+            <img class="card-link__icon" src="<?=$content['icon']?>" alt="">
         </div>
     </a>
 
-    <a href="<?= $link?>"><p class="card-link__title"><?= $title?></p></a>
-    <p class="card-link__subtitle"><?= $subtitle?></p>
+    <a href="<?= $content['link']?>"><p class="card-link__title"><?= $content['title']?></p></a>
+    <p class="card-link__subtitle"><?= $content['subtitle']?></p>
 
 </div>

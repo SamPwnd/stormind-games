@@ -1,0 +1,22 @@
+.news {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    &__icons-wrapper {
+        display: flex;
+        gap: 18px;
+    }
+
+    &__icon-block {
+        display: flex;
+
+        &__text {
+            font-family: 'Poppins';
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 120%;
+            margin-left: 5px;
+        }
+    }
+}

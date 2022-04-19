@@ -15,7 +15,7 @@
     }
 
     &__content{
-        //position: relative;
+       
         padding: 120px 116px;
 
         .timeline__title{
@@ -102,12 +102,13 @@
         }
         .timeline__title{
             position: absolute;
-            top: 48px;
+            top: 60px;
             left: 1rem;
             transform: translate( 0, -50%);
             width: calc(100% - 2rem);
             text-align: center;
             color: $primary;
+            font-size: 32px ;
             &::after{
                 border-color: $primary;
                 left: 50%;
