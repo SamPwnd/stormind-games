@@ -1,6 +1,6 @@
 
 
-<div class="">
+<div class="<?=$content['classes']?>">
     <form action="#">
         <div class="container-md bg-primary">
             <div class="row pt-5 pt-lg-4">

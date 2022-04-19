@@ -64,9 +64,7 @@
 
     $contact = [
         'classes' => 'contact',
-
     ];
-    
 
 ?>
 

@@ -1,5 +1,12 @@
 <?php 
 
+/* $application = [
+    'classes' => 'application',
+    'text_panel' => [
+        'classes' => 'text-panel text-panel--small-title text-panel--black',
+        'title' => 'FUNCTIONAL TESTER',
+    ],
+]; */
 ?>
 
 <button class="btn btn-outline-primary" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">SEND APPLICATION</button>
