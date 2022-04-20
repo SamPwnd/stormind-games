@@ -13,7 +13,7 @@
 
 
 <div class="hero">
-    <video  alt="Video" height="100%"  muted  loop>
+    <video  alt="Video" height="100%"  muted autoplay loop>
         <source src="<?= $hero['video'] ?>" type="video/mp4">
     </video>
 
