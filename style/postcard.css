@@ -61,6 +61,9 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  /* @include media-breakpoint-down(lg){
+            display: none;
+        }    */
 }
 
 .post-card--biggest {
