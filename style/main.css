@@ -333,7 +333,6 @@
 
 .text-panel {
   max-width: 640px;
-  margin-top: 50px;
 }
 .text-panel--small-title {
   max-width: 100%;
@@ -1256,7 +1255,6 @@ textarea::-webkit-resizer {
   border-bottom: 0.5px solid #2D2A26;
   margin-bottom: 20px;
 }
-
 @media screen and (max-width: 768px) {
   .accordion {
     padding-bottom: 10px;
