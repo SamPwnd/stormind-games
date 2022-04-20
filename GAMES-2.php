@@ -205,7 +205,7 @@ $gallery =[
 ];
 
 $timeline=[
-    'background' => 'http://stormindgames.com/wp-content/uploads/2021/01/Timeline-scaled.jpg',
+    'background' => 'https://stormindgames.com/wp-content/uploads/2021/01/remote-tf-timeline.png',
     'title' => 'timeline',
     'elements'=>[
         [
@@ -266,6 +266,107 @@ $timeline=[
     ],
 
 ];
+
+$wrapper_reviews=[
+    'classes' => '',
+    'row_classes' => '',
+    'title' => 'rewiews',
+    'background' => '',
+];
+
+$reviews=[
+    'elements' =>[
+        [
+            'vote' => '8.5',
+            'title' => 'MULTIPLAYER.it',
+            'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+        ],
+        [
+            'vote' => '8.5',
+            'title' => 'MULTIPLAYER.it',
+            'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+        ],
+        [
+            'vote' => '8.5',
+            'title' => 'MULTIPLAYER.it',
+            'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+        ],
+        [
+            'vote' => '8.5',
+            'title' => 'MULTIPLAYER.it',
+            'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+        ],
+        [
+            'vote' => '8.5',
+            'title' => 'MULTIPLAYER.it',
+            'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+        ],
+        [
+            'vote' => '8.5',
+            'title' => 'MULTIPLAYER.it',
+            'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+        ],
+        [
+            'vote' => '8.5',
+            'title' => 'MULTIPLAYER.it',
+            'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+        ],
+        [
+            'vote' => '8.5',
+            'title' => 'MULTIPLAYER.it',
+            'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+        ],
+        [
+            'vote' => '8.5',
+            'title' => 'MULTIPLAYER.it',
+            'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+        ],
+        [
+            'vote' => '8.5',
+            'title' => 'MULTIPLAYER.it',
+            'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+        ],
+        [
+            'vote' => '8.5',
+            'title' => 'MULTIPLAYER.it',
+            'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+        ],
+        [
+            'vote' => '8.5',
+            'title' => 'MULTIPLAYER.it',
+            'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+        ],
+        [
+            'vote' => '8.5',
+            'title' => 'MULTIPLAYER.it',
+            'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+        ],
+        [
+            'vote' => '8.5',
+            'title' => 'MULTIPLAYER.it',
+            'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+        ],
+        
+    ],
+];
+
+
+
+
 ?>
 
 <!DOCTYPE html>
@@ -388,19 +489,41 @@ $timeline=[
 
             <?php get_template_part(('./components/wrapper.php'), ['content' => $wrapper_other_trailers, 'elements' => $wrapper_content]) ?>
         </section>
-        <section class="mb-1">
-            <?php ob_start() ?>              
-                <?php get_template_part(('./components/gallery.php'), ['content' => $gallery]); ?>  
-            <?php $wrapper_content = ob_get_clean() ?>    
+        <section class="mb-1">                            
+            <?php   $wrapper_content = get_template_text(('./components/gallery.php'), ['content' => $gallery]); ?> 
             <?php get_template_part(('./components/wrapper.php'), ['content' => $wrapper_gallery, 'elements' => $wrapper_content]) ?>
         </section>
         <section class="mb-1">
             <?php get_template_part('./components/timeline.php',['content' => $timeline]) ;?>
         </section>
+        <section class="mb-1">
+            <?php $wrapper_content = get_template_text(('./components/slider-simple.php'), ['content' => $reviews]); ?> 
+               
+            <?php get_template_part(('./components/wrapper.php'), ['content' => $wrapper_gallery, 'elements' => $wrapper_content]) ?>
+        </section>
+
     </body>
 
     <footer>
-
+        <?php 
+            $footer = [
+                'classes' => 'footer',
+                'credits' => '© 2020  STORMIND S.R.L - P.IVA 05415340875     |     Via Sclafani 40/B - traversa, 95024 Acireale (CT) - ITALY     |     All Rights Reserved.',
+                'img_bw' => './assets/byBiscuitWay.svg',
+        
+                'socials' => [
+                    'classes' => 'navbar__socials',
+                    'icons' =>[
+                        './assets/social-linkdn.svg',
+                        './assets/social-Fb.svg',
+                        './assets/social-tw.svg',
+                        './assets/social-Ig.svg',
+                        './assets/social-yt.svg',
+                    ]
+                ],
+            ];
+        ?>
+        <?php get_template_part('./components/footer.php', $footer);  ?>
     </footer>
     <script src="./script/navbar.js"></script>
     <script src="./script/slider-simple.js"></script>
