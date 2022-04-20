@@ -88,7 +88,7 @@
   }
 
   &__selectors{
-    
+    margin-bottom: 70px;
     a{
       text-transform: uppercase;
       @include lato(H3, 700, $black, start);
@@ -99,14 +99,26 @@
       &:after{
         content:'';
         position: absolute;
-        bottom: 0;
+        bottom: -5px;
         left: 0;
+        width: 0%;
         border-top: 1px solid $primary;
+        transition: all .2s;
       }
       &:hover{
-
-
+        &:after{ width: 100%;}
       }
+    }
+  }
+
+  &__btn{
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    margin-top: 72px;
+    img{
+      max-height: 35px;
+      margin-right: 7px;
     }
   }
 }

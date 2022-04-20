@@ -179,6 +179,31 @@ $trailer_elements =[
     ],
 ];
 
+$wrapper_gallery=[
+    'classes' => '',
+    'row_classes' => '',
+    'title' => 'gallery',
+    'background' => '',
+];
+
+$gallery =[
+    'elements' =>[
+        'https://stormindgames.com/wp-content/uploads/2020/12/01-Remothered-TF.png',
+        'https://stormindgames.com/wp-content/uploads/2020/12/02-Remothered-TF.png',
+        'https://stormindgames.com/wp-content/uploads/2020/12/03-Remothered-TF.png',
+        'https://stormindgames.com/wp-content/uploads/2020/12/04-Remothered-TF.png',
+        'https://stormindgames.com/wp-content/uploads/2020/12/05-Remothered-TF.png',
+        'https://stormindgames.com/wp-content/uploads/2020/12/06-Remothered-TF.png',
+        'https://stormindgames.com/wp-content/uploads/2020/12/07-Remothered-TF.png',
+        'https://stormindgames.com/wp-content/uploads/2020/12/08-Remothered-TF.png',
+        'https://stormindgames.com/wp-content/uploads/2020/12/09-Remothered-TF.png',
+        'https://stormindgames.com/wp-content/uploads/2020/12/10-Remothered-TF.png',
+        'https://stormindgames.com/wp-content/uploads/2020/12/11-Remothered-TF.png',
+        'https://stormindgames.com/wp-content/uploads/2020/12/12-Remothered-TF.png',
+        
+    ]
+];
+
 ?>
 
 <!DOCTYPE html>
@@ -300,6 +325,12 @@ $trailer_elements =[
             ?>
 
             <?php get_template_part(('./components/wrapper.php'), ['content' => $wrapper_other_trailers, 'elements' => $wrapper_content]) ?>
+        </section>
+        <section class="mb-1">
+            <?php ob_start() ?>              
+                <?php get_template_part(('./components/gallery.php'), ['content' => $gallery]); ?>  
+            <?php $wrapper_content = ob_get_clean() ?>    
+            <?php get_template_part(('./components/wrapper.php'), ['content' => $wrapper_gallery, 'elements' => $wrapper_content]) ?>
         </section>
     </body>
 
