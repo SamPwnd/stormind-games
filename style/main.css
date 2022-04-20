@@ -1545,6 +1545,10 @@ textarea::-webkit-resizer {
      object-fit: cover;
 }
 
+.gallery__selectors {
+  margin-bottom: 70px;
+}
+
 .gallery__selectors a {
   text-transform: uppercase;
   font-family: 'Lato';
@@ -1564,9 +1568,32 @@ textarea::-webkit-resizer {
 .gallery__selectors a:after {
   content: '';
   position: absolute;
-  bottom: 0;
+  bottom: -5px;
   left: 0;
+  width: 0%;
   border-top: 1px solid #F9B611;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.gallery__selectors a:hover:after {
+  width: 100%;
+}
+
+.gallery__btn {
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 72px;
+}
+
+.gallery__btn img {
+  max-height: 35px;
+  margin-right: 7px;
 }
 
 .contact__btn {
