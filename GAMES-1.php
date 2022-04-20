@@ -37,7 +37,7 @@ $text_panel_hero=[
 ];
 
 $postcard = [[
-    'background-img' => 'height: 480px; background-image: url(../stormind-games/img/postcard.jpg)',
+    'background-img' => 'height: 480px; background-image: url(../stormind-games/assets/img/postcard.jpg)',
     'class'  => '--medium',
     'title' => 'BATORA: LOST HAVEN',
     'description' => 'After her expulsion from an all-girls boarding school, the rebellious Jen begins to observe strange occurrences happening at the Ashmann Inn, the hotel where she was sent to serve as one of its maids. As the past comes back to haunt her, will she be able to escape?',
@@ -51,7 +51,7 @@ $postcard = [[
     'contentbutton' => '+ SHOW MORE',
     ],
     [
-    'background-img' => 'height: 480px; background-image: url(../stormind-games/img/postcard.jpg)',
+    'background-img' => 'height: 480px; background-image: url(../stormind-games/assets/img/postcard.jpg)',
     'class'  => '--medium',
     'title' => 'REMOTHERED:Broken Porcelain',
     'description' => 'After her expulsion from an all-girls boarding school, the rebellious Jen begins to observe strange occurrences happening at the Ashmann Inn, the hotel where she was sent to serve as one of its maids. As the past comes back to haunt her, will she be able to escape?',
@@ -65,7 +65,7 @@ $postcard = [[
     'contentbutton' => '+ SHOW MORE',
     ],
     [
-        'background-img' => 'height: 480px; background-image: url(../stormind-games/img/postcard.jpg)',
+        'background-img' => 'height: 480px; background-image: url(../stormind-games/assets/img/postcard.jpg)',
         'class'  => '--medium',
         'title' => 'REMOTHERED:Tormented Fathers',
         'description' => 'A beautiful and mysterious lady is smoking while seated in a white van, contemplating the entrance of a big dismal mansion. She is looking for Celeste Felton, a girl gone missing years before and to find her, she gets caught into a web of lies where murders and obsessions come to life.',
