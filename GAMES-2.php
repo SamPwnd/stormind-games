@@ -394,6 +394,9 @@ $timeline=[
             <?php $wrapper_content = ob_get_clean() ?>    
             <?php get_template_part(('./components/wrapper.php'), ['content' => $wrapper_gallery, 'elements' => $wrapper_content]) ?>
         </section>
+        <section class="mb-1">
+            <?php get_template_part('./components/timeline.php',['content' => $timeline]) ;?>
+        </section>
     </body>
 
     <footer>

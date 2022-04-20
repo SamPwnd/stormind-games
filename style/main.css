@@ -2225,8 +2225,6 @@ textarea::-webkit-resizer {
   text-transform: uppercase;
 }
 
-<<<<<<< HEAD
-=======
 .developers {
   width: 100%;
 }
@@ -2235,7 +2233,6 @@ textarea::-webkit-resizer {
   width: 100%;
 }
 
->>>>>>> baf9b9ba201493ccbe7c14238f3e10033278d573
 .home__wrapper {
   background-color: #151210;
   padding-top: 120px;
@@ -2257,7 +2254,6 @@ textarea::-webkit-resizer {
   }
 }
 
-<<<<<<< HEAD
 .mt {
   margin-top: 120px;
 }
@@ -2266,8 +2262,6 @@ textarea::-webkit-resizer {
   margin-top: 72px;
 }
 
-=======
->>>>>>> baf9b9ba201493ccbe7c14238f3e10033278d573
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
