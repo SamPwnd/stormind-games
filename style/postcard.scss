@@ -36,9 +36,9 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        @include media-breakpoint-down(lg){
+       /* @include media-breakpoint-down(lg){
             display: none;
-        }    
+        }    */
     }
     &--biggest
     {
