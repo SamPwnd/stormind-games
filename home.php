@@ -29,10 +29,42 @@
         
     ];
 
-    $text_panel = [
+    $text_panel_hero = [
         'classes' => 'text-panel',
         'title' => 'DEVELOPERS OF INTENSE STORIES',
         'subtitle' => 'We developed and promoted Remothered: Tormented Fathers. We are currently working on the second title, Remothered: Broken Porcelain, and on a new unannounced project.'
+    ];
+
+    $text_panel_wrapper = [
+        'classes' => 'text-panel text-panel--center',
+        'title' => 'What we do',
+        'subtitle' => 'We develop premium video games with intense stories and distinctive visual style for PC and consoles. 
+
+        Our team consists of experienced professionals specialized in the production of video games and marketing experts.
+         We publish our games in full autonomy or by collaborating with top publishers.'
+    ];
+
+    $sideContentLeft =[
+        'background' => './img/side-content-image-1.png',
+        'left-classes' => 'col-10 offset-1 col-md-5 d-flex align-items-center ',
+        'right-classes' => 'col-12 col-md-5 offset-md-1',
+    ];
+    $sideContentRight =[
+        'background' => './img/side-content-image-2.png',
+        'left-classes' => 'col-10 offset-1 col-md-5 d-flex align-items-center order-0 order-md-2',
+        'right-classes' => 'col-12 col-md-5  oreder-1 ',
+    ];
+
+    $textPanelSideL = [
+        'classes' => 'text-panel text-panel--dark',
+        'title' => 'INTENSE STORIES',
+        'subtitle' => 'All of our games are based on intense stories to open the doors to franchises and sequels.'
+    ];
+
+    $textPanelSideR = [
+        'classes' => 'text-panel text-panel--dark',
+        'title' => 'DISTINCTIVE VISUAL STYLE',
+        'subtitle' => 'The visual style of the video games we develop must be distinctive and make them immediately recognizable.'
     ];
 ?>
 
@@ -70,7 +102,7 @@
     
     <?php ob_start(); ?>
         <div class="container">
-        <?php get_template_part('./components/text-panel.php',['content' => $text_panel]); ?>
+        <?php get_template_part('./components/text-panel.php',['content' => $text_panel_hero]); ?>
             <p class="hero__bottom">
                 <img src="./assets/scroll-down-arrow.svg" alt="down">
                 <a href="#">Scroll Down</a>
@@ -80,6 +112,25 @@
 
     <?php get_template_part('./components/hero.php', ['hero' => $hero, 'content' => $heroContent]); ?>
 
+    <div class="home__wrapper">
+        <?php get_template_part('./components/text-panel.php',['content' => $text_panel_wrapper]); ?>
+    </div>
+
+    <?php ob_start(); ?>
+
+        <?php get_template_part('./components/text-panel.php',['content' => $textPanelSideL]) ;?>
+
+    <?php $sideContentElement = ob_get_clean(); ?>
+
+    <?php get_template_part(('./components/side-content.php'), ['side_content' => $sideContentLeft, 'content' => $sideContentElement]) ?>
+
+    <?php ob_start(); ?>
+
+        <?php get_template_part('./components/text-panel.php',['content' => $textPanelSideR]) ;?>
+
+    <?php $sideContentElement = ob_get_clean(); ?>
+
+    <?php get_template_part(('./components/side-content.php'), ['side_content' => $sideContentRight, 'content' => $sideContentElement]) ?>
 
     <script src="./script/navbar.js"></script>
 

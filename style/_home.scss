@@ -1,0 +1,19 @@
+.home__wrapper {
+    background-color: $black;
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+    .text-panel {
+        margin: 0 auto;
+        &__subtitle {
+            white-space: pre-line;
+        }
+    }
+}
+
+@media only screen and (max-width: map-get($grid-breakpoints, lg)){
+    .home__wrapper {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+}

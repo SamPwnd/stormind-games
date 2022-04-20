@@ -27,14 +27,12 @@
         width: 100%;
         display: flex;
         align-items: center;
-        
     }
 
     &__bottom{
-        //display: flex;
-        align-items: center;
         img{margin-right: 0.5rem;}
         position: absolute;
         bottom: 52px;
+        z-index: 2;
     }
 }
