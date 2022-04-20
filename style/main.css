@@ -707,7 +707,7 @@
 }
 
 .article {
-  width: 544px;
+  max-width: 544px;
   position: relative;
 }
 
@@ -1537,11 +1537,16 @@ textarea::-webkit-resizer {
 }
 
 .accordion {
-  width: 544px;
+  max-width: 544px;
   min-height: 96px;
-  border-top: 0.5px solid #2D2A26;
   border-bottom: 0.5px solid #2D2A26;
-  margin-bottom: 600px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .accordion {
+    padding-bottom: 10px;
+  }
 }
 
 .accordion__simple {
