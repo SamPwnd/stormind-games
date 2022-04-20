@@ -93,12 +93,12 @@
     ];
 
     $sideContent1 =[
-        'background' => './img/side-content-image-1.png',
+        'background' => './assets/img/side-content-image-1.png',
         'left-classes' => 'col-10 offset-1 col-md-5 d-flex align-items-center ',
         'right-classes' => 'col-12 col-md-5 offset-md-1',
     ];
     $sideContent2 =[
-        'background' => './img/side-content-image-1.png',
+        'background' => './assets/img/side-content-image-1.png',
         'left-classes' => 'col-10 offset-1 col-md-5 d-flex align-items-center order-0 order-md-2',
         'right-classes' => 'col-12 col-md-5  oreder-1 ',
     ];
