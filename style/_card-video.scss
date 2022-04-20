@@ -1,0 +1,16 @@
+.card-video
+{
+    
+    margin-top: 48px;
+    iframe
+    {
+        width: 100%;
+    }
+    &__title
+    {
+       @include poppins(h4,800,#2D2A26,left); 
+       margin-top: 16px;
+       text-transform: uppercase;
+    }
+
+}

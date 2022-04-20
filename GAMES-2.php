@@ -55,105 +55,129 @@ $wrapper_characters =[
 
 $character_elements =[
     [
-        'classes' => 'col mb-4',
-        'component' => 'card-profile.php',
-        'content' => [
-            'classes' => 'card-profile ',
-            'image' => './assets/card-profile1.png',
-            'title' => 'JENNIFER',
-            'icon' => './assets/icon-more.svg',
-            'icon_hover' => './assets/icon-less.svg',
-            'description' => 'Linn is a timid and insecure sixteen-year-old girl with a stutter who works at the Ashmann Inn as a maid. 
-                She is definitely not happy with it but she feels somehow attached to the people who live in there.
-    
-                Upon Jennifer’s arrival, they became friends right away. 
-                However, their budding friendship will be put to test as they navigate the dangers within their new home.'
-        ],
+        'classes' => 'card-profile ',
+        'image' => './assets/card-profile1.png',
+        'title' => 'JENNIFER',
+        'icon' => './assets/icon-more.svg',
+        'icon_hover' => './assets/icon-less.svg',
+        'description' => 'Linn is a timid and insecure sixteen-year-old girl with a stutter who works at the Ashmann Inn as a maid. 
+            She is definitely not happy with it but she feels somehow attached to the people who live in there.
+
+            Upon Jennifer’s arrival, they became friends right away. 
+            However, their budding friendship will be put to test as they navigate the dangers within their new home.'
     ],
     [
-        'classes' => 'col mb-4',
-        'component' => 'card-profile.php',
-        'content' => [
-            'classes' => 'card-profile ',
-            'image' => './assets/card-profile1.png',
-            'title' => 'JENNIFER',
-            'icon' => './assets/icon-more.svg',
-            'icon_hover' => './assets/icon-less.svg',
-            'description' => 'Linn is a timid and insecure sixteen-year-old girl with a stutter who works at the Ashmann Inn as a maid. 
-                She is definitely not happy with it but she feels somehow attached to the people who live in there.
-    
-                Upon Jennifer’s arrival, they became friends right away. 
-                However, their budding friendship will be put to test as they navigate the dangers within their new home.'
-        ],
+        'classes' => 'card-profile ',
+        'image' => './assets/card-profile1.png',
+        'title' => 'JENNIFER',
+        'icon' => './assets/icon-more.svg',
+        'icon_hover' => './assets/icon-less.svg',
+        'description' => 'Linn is a timid and insecure sixteen-year-old girl with a stutter who works at the Ashmann Inn as a maid. 
+            She is definitely not happy with it but she feels somehow attached to the people who live in there.
+
+            Upon Jennifer’s arrival, they became friends right away. 
+            However, their budding friendship will be put to test as they navigate the dangers within their new home.'
     ],
     [
-        'classes' => 'col mb-4',
-        'component' => 'card-profile.php',
-        'content' => [
-            'classes' => 'card-profile ',
-            'image' => './assets/card-profile1.png',
-            'title' => 'JENNIFER',
-            'icon' => './assets/icon-more.svg',
-            'icon_hover' => './assets/icon-less.svg',
-            'description' => 'Linn is a timid and insecure sixteen-year-old girl with a stutter who works at the Ashmann Inn as a maid. 
-                She is definitely not happy with it but she feels somehow attached to the people who live in there.
-    
-                Upon Jennifer’s arrival, they became friends right away. 
-                However, their budding friendship will be put to test as they navigate the dangers within their new home.'
-        ],
+        'classes' => 'card-profile ',
+        'image' => './assets/card-profile1.png',
+        'title' => 'JENNIFER',
+        'icon' => './assets/icon-more.svg',
+        'icon_hover' => './assets/icon-less.svg',
+        'description' => 'Linn is a timid and insecure sixteen-year-old girl with a stutter who works at the Ashmann Inn as a maid. 
+            She is definitely not happy with it but she feels somehow attached to the people who live in there.
+
+            Upon Jennifer’s arrival, they became friends right away. 
+            However, their budding friendship will be put to test as they navigate the dangers within their new home.'
     ],
     [
-        'classes' => 'col mb-4',
-        'component' => 'card-profile.php',
-        'content' => [
-            'classes' => 'card-profile ',
-            'image' => './assets/card-profile1.png',
-            'title' => 'JENNIFER',
-            'icon' => './assets/icon-more.svg',
-            'icon_hover' => './assets/icon-less.svg',
-            'description' => 'Linn is a timid and insecure sixteen-year-old girl with a stutter who works at the Ashmann Inn as a maid. 
-                She is definitely not happy with it but she feels somehow attached to the people who live in there.
-    
-                Upon Jennifer’s arrival, they became friends right away. 
-                However, their budding friendship will be put to test as they navigate the dangers within their new home.'
-        ],
+        'classes' => 'card-profile ',
+        'image' => './assets/card-profile1.png',
+        'title' => 'JENNIFER',
+        'icon' => './assets/icon-more.svg',
+        'icon_hover' => './assets/icon-less.svg',
+        'description' => 'Linn is a timid and insecure sixteen-year-old girl with a stutter who works at the Ashmann Inn as a maid. 
+            She is definitely not happy with it but she feels somehow attached to the people who live in there.
+
+            Upon Jennifer’s arrival, they became friends right away. 
+            However, their budding friendship will be put to test as they navigate the dangers within their new home.'
     ],
     [
-        'classes' => 'col mb-4',
-        'component' => 'card-profile.php',
-        'content' => [
-            'classes' => 'card-profile ',
-            'image' => './assets/card-profile1.png',
-            'title' => 'JENNIFER',
-            'icon' => './assets/icon-more.svg',
-            'icon_hover' => './assets/icon-less.svg',
-            'description' => 'Linn is a timid and insecure sixteen-year-old girl with a stutter who works at the Ashmann Inn as a maid. 
-                She is definitely not happy with it but she feels somehow attached to the people who live in there.
-    
-                Upon Jennifer’s arrival, they became friends right away. 
-                However, their budding friendship will be put to test as they navigate the dangers within their new home.'
-        ],
+        'classes' => 'card-profile ',
+        'image' => './assets/card-profile1.png',
+        'title' => 'JENNIFER',
+        'icon' => './assets/icon-more.svg',
+        'icon_hover' => './assets/icon-less.svg',
+        'description' => 'Linn is a timid and insecure sixteen-year-old girl with a stutter who works at the Ashmann Inn as a maid. 
+            She is definitely not happy with it but she feels somehow attached to the people who live in there.
+
+            Upon Jennifer’s arrival, they became friends right away. 
+            However, their budding friendship will be put to test as they navigate the dangers within their new home.'
     ],
     [
-        'classes' => 'col mb-4',
-        'component' => 'card-profile.php',
-        'content' => [
-            'classes' => 'card-profile ',
-            'image' => './assets/card-profile1.png',
-            'title' => 'JENNIFER',
-            'icon' => './assets/icon-more.svg',
-            'icon_hover' => './assets/icon-less.svg',
-            'description' => 'Linn is a timid and insecure sixteen-year-old girl with a stutter who works at the Ashmann Inn as a maid. 
-                She is definitely not happy with it but she feels somehow attached to the people who live in there.
-    
-                Upon Jennifer’s arrival, they became friends right away. 
-                However, their budding friendship will be put to test as they navigate the dangers within their new home.'
-        ],
+        'classes' => 'card-profile ',
+        'image' => './assets/card-profile1.png',
+        'title' => 'JENNIFER',
+        'icon' => './assets/icon-more.svg',
+        'icon_hover' => './assets/icon-less.svg',
+        'description' => 'Linn is a timid and insecure sixteen-year-old girl with a stutter who works at the Ashmann Inn as a maid. 
+            She is definitely not happy with it but she feels somehow attached to the people who live in there.
+
+            Upon Jennifer’s arrival, they became friends right away. 
+            However, their budding friendship will be put to test as they navigate the dangers within their new home.'
     ],
+
+    
     
     
 ];
 
+$wrapper_trailer =[
+    'classes' => '',
+    'row_classes' => 'row-cols-1 ',
+    'title' => 'trailer',
+    'background' => '',
+];
+
+$wrapper_other_trailers =[
+    'classes' => '',
+    'row_classes' => 'row-cols-1  row-cols-md-2 row-cols-lg-3',
+    'title' => 'other trailers',
+    'background' => '',
+];
+
+$trailer_elements =[
+    [
+        'classes' => 'cards-video',
+        'video' => '<iframe width="560" height="315" src="https://www.youtube.com/embed/jdj3YPilUP0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+        'title' => 'physical edition trailer',
+    ],
+    [
+        'classes' => 'cards-video',
+        'video' => '<iframe width="560" height="315" src="https://www.youtube.com/embed/jdj3YPilUP0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+        'title' => 'switch trailer',
+    ],
+    [
+        'classes' => 'cards-video',
+        'video' => '<iframe width="560" height="315" src="https://www.youtube.com/embed/jdj3YPilUP0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+        'title' => 'official trailer',
+    ],
+    [
+        'classes' => 'cards-video',
+        'video' => '<iframe width="560" height="315" src="https://www.youtube.com/embed/jdj3YPilUP0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+        'title' => 'steam early acces trailer',
+    ],
+    [
+        'classes' => 'cards-video',
+        'video' => '<iframe width="560" height="315" src="https://www.youtube.com/embed/jdj3YPilUP0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+        'title' => 'greenlight trailer',
+    ],
+    [
+        'classes' => 'cards-video',
+        'video' => '<iframe width="560" height="315" src="https://www.youtube.com/embed/jdj3YPilUP0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+        'title' => 'announcement trailer',
+    ],
+];
 
 ?>
 
@@ -244,16 +268,38 @@ $character_elements =[
                 ob_start(); 
                 foreach($character_elements as $element): 
             ?>        
-                <div class="<?= $element['classes'] ?>">
-                    <?php
-                        $component = $element['component'];
-                        get_template_part("./components/$component", ['content' => $element['content']]); ?>
+                <div class="col">
+                    <?php get_template_part("./components/card-profile.php", ['content' => $element]); ?>
                 </div>
             <?php
                 endforeach;
                 $wrapper_content = ob_get_clean(); 
             ?>
             <?php get_template_part(('./components/wrapper.php'), ['content' => $wrapper_characters, 'elements' => $wrapper_content]) ?>
+        </section>
+        <section class="mb-1">
+            <?php ob_start(); ?>        
+                <div class="col ratio ratio-16x9">
+                <iframe  width="" height="" src="https://www.youtube.com/embed/jdj3YPilUP0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            <?php $wrapper_content = ob_get_clean(); ?>
+
+            <?php get_template_part(('./components/wrapper.php'), ['content' => $wrapper_trailer, 'elements' => $wrapper_content]) ?>
+        </section>
+        <section class="mb-1">
+            <?php 
+                ob_start(); 
+                foreach($trailer_elements as $element): 
+            ?>        
+                <div class="col">
+                    <?php  get_template_part("./components/card-video.php", ['content' => $element]);  ?>
+                </div>
+            <?php
+                endforeach;
+                $wrapper_content = ob_get_clean(); 
+            ?>
+
+            <?php get_template_part(('./components/wrapper.php'), ['content' => $wrapper_other_trailers, 'elements' => $wrapper_content]) ?>
         </section>
     </body>
 
