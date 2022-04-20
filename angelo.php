@@ -59,14 +59,14 @@ $cardsaward = [
 ];*/
 
 $postcard = [
-    'background-img' => 'height: 742px; background-image: url(../stormind-games/img/sfondo2.jpg)',
+    'background-img' => 'height: 742px; background-image: url(../stormind-games/assets/img/sfondo2.jpg)',
     'class'  => '--biggest',
     'title' => 'BATORA:<br> LOST HAVEN',
     'icons' => [
-            '../stormind-games/img/pc.svg',
-            '../stormind-games/img/ps.svg',
-            '../stormind-games/img/xbox.svg',
-            '../stormind-games/img/nintendo.svg',
+            '../stormind-games/assets/img/pc.svg',
+            '../stormind-games/assets/img/ps.svg',
+            '../stormind-games/assets/img/xbox.svg',
+            '../stormind-games/assets/img/nintendo.svg',
         ],
         'contentbutton' => '+',
 ];
