@@ -2151,6 +2151,23 @@ textarea::-webkit-resizer {
   }
 }
 
+.card-video {
+  margin-top: 48px;
+}
+
+.card-video iframe {
+  width: 100%;
+}
+
+.card-video__title {
+  font-family: 'Poppins';
+  font-weight: 800;
+  color: #2D2A26;
+  text-align: left;
+  margin-top: 16px;
+  text-transform: uppercase;
+}
+
 .home__wrapper {
   background-color: #151210;
   padding-top: 120px;
