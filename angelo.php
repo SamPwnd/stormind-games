@@ -43,9 +43,9 @@ $cardsaward = [
     ];
 
 
-/**/$postcard = [
+/*$postcard = [
     'background-img' => 'height: 480px; background-image: url(../stormind-games/img/postcard.jpg)',
-    'class'  => 'post-card--medium',
+    'class'  => '--medium',
     'title' => 'BATORA: LOST HAVEN',
     'description' => 'After her expulsion from an all-girls boarding school, the rebellious Jen begins to observe strange occurrences happening at the Ashmann Inn, the hotel where she was sent to serve as one of its maids. As the past comes back to haunt her, will she be able to escape?',
     'caption' => 'COOMING SOON',
@@ -56,11 +56,11 @@ $cardsaward = [
             '../stormind-games/img/nintendo.svg',
         ],
     'contentbutton' => '+ SHOW MORE',
-];
+];*/
 
-/*$postcard = [
+$postcard = [
     'background-img' => 'height: 742px; background-image: url(../stormind-games/img/sfondo2.jpg)',
-    'class'  => 'post-card--biggest',
+    'class'  => '--biggest',
     'title' => 'BATORA:<br> LOST HAVEN',
     'icons' => [
             '../stormind-games/img/pc.svg',
@@ -71,9 +71,9 @@ $cardsaward = [
         'contentbutton' => '+',
 ];
 
-$postcard = [
+/*$postcard = [
     'background-img' => 'height: 360px; background-image: url(../stormind-games/img/littlepostcard.jpg)',
-    'class'  => 'post-card--little',
+    'class'  => '--little',
     'title' => 'REMOTHERED:<br> BROKEN PORCELAIN',
     'icons' => [
             '../stormind-games/img/pc.svg',
@@ -94,9 +94,6 @@ $postcard = [
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/bootstrap.min.css">
     <link rel="stylesheet" href="./style/main.css">
-    <link rel="stylesheet" href="./style/cardsimple.css">
-    <link rel="stylesheet" href="./style/cardsaward.css">
-    <link rel="stylesheet" href="./style/postcard.css">
     <title>Document</title>
 </head>
 <body>
@@ -128,25 +125,25 @@ $postcard = [
 <!-- Little
 <div class="container">
     <div class="row">
-      <div class="col-6">
+      <div class="col-md-6">
         <?php get_template_part( './components/postcard.php', [ 'postcard' =>$postcard])?>
       </div>
-      <div class="col-6">
+      <div class="col-md-6">
         <?php get_template_part( './components/postcard.php', [ 'postcard' =>$postcard])?>
       </div>
     </div>
 </div>-->
 
 <!-- Medium
--->
+
 <div class="container">
     <div class="row">
       <div class="col">
         <?php get_template_part( './components/postcard.php', [ 'postcard' =>$postcard])?>
       </div>
     </div>
-</div>
-<!-- BIGGEST
+</div>-->
+<!-- BIGGEST-->
 <div class="container">
     <div class="row">
       <div class="col">
@@ -154,6 +151,6 @@ $postcard = [
       </div>
     </div>
 </div>
--->
+
 </body>
 </html>

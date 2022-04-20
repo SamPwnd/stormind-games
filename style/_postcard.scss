@@ -1,0 +1,242 @@
+
+*{
+    margin: 0;
+}
+
+.post-card
+{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &--little
+    {
+        .post-card__title
+        {
+            @include poppins(H3,800,#F9B611,left);
+            padding: 16px 0 0 16px;
+            max-width: 512px;
+        }
+        .post-card__bottom
+        {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 63px 16px 16px 20px;
+            .post-card__box
+            {
+                img
+                {
+                    margin-right: 30px;
+                }
+            }
+        }
+        @media screen and (min-width: 768px) 
+        {
+
+            .post-card__buttonhidden
+            {
+                display: none;
+            }
+            .post-card__boxhidden
+            {
+                display: none;
+            }
+        }
+        @media screen and (max-width: 768px) 
+        {
+            .post-card__buttonhidden
+            {
+                display: none;
+            }
+            .post-card__boxhidden
+            {
+                display: none;
+            }
+            .post-card__title
+            {
+                font-family: 'Poppins' !important;
+                font-size: 24px !important;
+                line-height: 32px !important;
+                font-weight: 800;
+                color: #F9B611;
+                padding: 16px 0 0 16px;
+                max-width: 512px;
+            }
+            .post-card__bottom
+            {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin: 0 16px 0 20px !important;
+                .post-card__box
+                {
+                    img
+                    {
+                        margin-right: 30px;
+                    }
+                }
+            }
+        }
+    }
+    &--medium
+    {
+        @media screen and (min-width: 768px) {
+            .post-card__buttonhidden
+            {
+                display: none;
+            }
+            .post-card__boxhidden
+            {
+                display: none;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            background: #683682 !important;
+            height: auto !important;
+            .post-card__title
+            {
+                @include poppins(H4,800,#FFFF,left);
+                padding-left: 16px;
+            }
+            .post-card__description
+            {
+                @include poppins(H5,400,#FFFF,left);
+                width: 296px;
+                margin-left: 16px;
+            }
+            .post-card__caption
+            {
+                @include lato(H4,700,#FFFF,left);
+                margin-left: 16px;
+            }
+            .post-card__bottom
+            {
+                margin: 26px 16px 16px 20px;
+                .post-card__box
+                {
+                    display: none;
+                }
+                .post-card__button
+                {
+                    display: none;
+                }
+                .post-card__boxhidden
+                {
+                    img
+                    {
+                        height: 16px;
+                        width: 16px;
+                        margin-right: 30px;
+                    }
+                }
+            }    
+        } 
+    }
+    &--biggest
+    {
+        @media screen and (min-width: 768px) 
+        {
+
+            .post-card__buttonhidden
+            {
+                display: none;
+            }
+            .post-card__boxhidden
+            {
+                display: none;
+            }
+        }
+        @media screen and (max-width: 768px) 
+        {
+            background: #683682 !important;
+            height: 360px !important;
+            .post-card__buttonhidden
+            {
+                display: none;
+            }
+            .post-card__boxhidden
+            {
+                display: none;
+            }
+            .post-card__title
+            {
+                font-family: 'Poppins' !important;
+                font-size: 24px !important;
+                line-height: 32px !important;
+                font-weight: 800;
+                color: #F9B611;
+                padding: 16px 0 0 16px !important;
+            }
+            .post-card__bottom
+            {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin: 0 16px 0 20px !important;
+                .post-card__box
+                {
+                    img
+                    {
+                        margin-right: 30px;
+                    }
+                }
+            }
+        }
+        .post-card__title
+        {
+            @include poppins(H3,800,#F9B611,left);
+            padding: 48px 0 0 48px;
+        }
+        .post-card__bottom
+        {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 63px 52px 48px 48px;
+            .post-card__box
+            {
+                img
+                {
+                    margin-right: 30px;
+                }
+            }
+        }
+    }
+    &__title
+    {
+        @include poppins(h3,800,#F9B611,left);
+        padding: 48px 0 0 48px;
+        max-width: 250px;
+    }
+    &__description
+    {
+        @include lato(H1,400,#FFFF,left);
+        margin: 48px 0 0 48px;
+        width: 502px;
+    }
+    &__caption
+    {
+        @include lato(H4,400,#FFFF,left);
+        margin: 24px 0 0 48px;
+    }
+    &__bottom
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 38px 48px 58px 52px;
+        .post-card__box
+        {
+            img
+            {
+                margin-right: 30px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
