@@ -158,7 +158,7 @@ $center_logo = [
 
 $article = [
   [
-    'classes' => 'article',
+    'classes' => 'article article-accordion',
     'image' => 'assets/antonio-cannata.jpg',
     'title' => 'ANTONIO CANNATA',
     'subtitle' => 'Co-Founder & CEO',
@@ -167,7 +167,7 @@ $article = [
     'content-down' => 'and video games, his two passions. Following a professional training abroad, that paved the way for bringing his own company to life with the right conditions, he started operating in the entertainment industry, and after two years, together with Federico Laudani, he founded Stormind Games.<br><br>In the last 8 years, Antonio has specialized in the videogame industry for PC and Consoles. His enthusiastic leadership and his contribution in managing the company with the aim to always raise the bar have been awarded with the “Management Star” Award from DStars in 2020, the award dedicated to Italian excellences in the game development industry, for his outstanding contribution in managing a game studio.'
   ],
   [
-    'classes' => 'article',
+    'classes' => 'article article-accordion',
     'image' => 'assets/federico-laudani.jpg',
     'title' => 'FEDERICO LAUDANI',
     'subtitle' => 'Co-Founder & Art Director',
@@ -180,14 +180,67 @@ $article = [
 
 $accordion = [
   [
-    'classes' => 'accordion',
-    'title' => 'FUNCTIONAL TESTER'
+    'classes' => 'accordion accordion-accordion',
+    'title' => 'FUNCTIONAL TESTER',
+    'text-description' => '<span>Job Description:</span><br>
+      The functional tester is a very important member of the production team. He executes tests to ensure the user of the application will have an optimal experience. The tester helps the development team to find bugs, refine the user experience and support the development process.<br><br>
+
+      <span>Responsibilities:</span> <br>
+      Execute specific tests as required by the production team and the lead tester;
+      Perform tests against the established procedures;
+      Discover bugs, find clear reproductions steps and enter this information in the bug database;
+      <br><br>
+      <span>Qualifications Requirements:</span>
+      1 year of experience in quality assurance, preferably on applications
+      Possess a good knowledge of computer software and software development;
+      <br><br>
+      <span>Detail oriented:</span><br>
+      Be articulate and a team player<br>
+      Have a good understanding of spoken and written English.'
+  ],
+  [
+    'classes' => 'accordion accordion-accordion',
+    'title' => 'FUNCTIONAL TESTER',
+    'text-description' => '<span>Job Description:</span><br>
+      The functional tester is a very important member of the production team. He executes tests to ensure the user of the application will have an optimal experience. The tester helps the development team to find bugs, refine the user experience and support the development process.<br><br>
+
+      <span>Responsibilities:</span> <br>
+      Execute specific tests as required by the production team and the lead tester;
+      Perform tests against the established procedures;
+      Discover bugs, find clear reproductions steps and enter this information in the bug database;
+      <br><br>
+      <span>Qualifications Requirements:</span>
+      1 year of experience in quality assurance, preferably on applications
+      Possess a good knowledge of computer software and software development;
+      <br><br>
+      <span>Detail oriented:</span><br>
+      Be articulate and a team player<br>
+      Have a good understanding of spoken and written English.'
+  ],
+  [
+    'classes' => 'accordion accordion-accordion',
+    'title' => 'FUNCTIONAL TESTER',
+    'text-description' => '<span>Job Description:</span><br>
+      The functional tester is a very important member of the production team. He executes tests to ensure the user of the application will have an optimal experience. The tester helps the development team to find bugs, refine the user experience and support the development process.<br><br>
+
+      <span>Responsibilities:</span> <br>
+      Execute specific tests as required by the production team and the lead tester;
+      Perform tests against the established procedures;
+      Discover bugs, find clear reproductions steps and enter this information in the bug database;
+      <br><br>
+      <span>Qualifications Requirements:</span>
+      1 year of experience in quality assurance, preferably on applications
+      Possess a good knowledge of computer software and software development;
+      <br><br>
+      <span>Detail oriented:</span><br>
+      Be articulate and a team player<br>
+      Have a good understanding of spoken and written English.'
   ]
 ];
 
 $side_panel_2 = [
-    'classes' => 'side_panel_2',
-    'image' => 'assets/Dev-Company.jpg'
+  'classes' => 'side_panel_2',
+  'image' => 'assets/Dev-Company.jpg'
 ];
 
 ?>
@@ -218,8 +271,9 @@ $side_panel_2 = [
   </div>
 
   <?php get_template_part('./components/side-panel-2.php', ['side_panel_2' => $side_panel_2]) ?>
-
   <script src="./script/accordion.js"></script>
+  <!-- <script src="./script/article.js"></script> -->
+
 </body>
 
 </html>

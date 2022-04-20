@@ -35,7 +35,11 @@ $side-content-min-height-1: 350px;
 @import 'accordion';
 @import 'side_panel_2';
 @import 'postcard';
+@import 'bullettin';
+@import 'slider-panel';
 
+
+@import 'home';
 
 *{
     box-sizing: border-box;

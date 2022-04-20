@@ -1,0 +1,50 @@
+.slider-panel{
+    background: $primary;
+    padding: 120px 0;
+    overflow: hidden;
+    @media only screen and(max-width: 767px){
+        padding: 48px 1rem;
+    }        
+
+
+    &__title{
+        @include poppins(H1, 800, $black, start);
+    }
+
+    &__description{
+        @include lato(H1, 400, $black, start);
+        margin-bottom: 72px;
+    }
+
+    &__wrapper{
+        overflow-x: auto;
+    }
+
+    &__slider{
+        position: relative;
+        display: flex;
+        flex-wrap: nowrap;
+        
+    }
+
+    &__element{
+        min-height: 300px;
+        min-width: 50%;
+        
+        padding-right: 31px;
+        p{
+            @include poppins(H3, 800, $black, start);
+            margin-bottom: 25px;
+        }
+        span{
+            @include lato(H1, 400, $black, start);
+            display: block;
+        }
+
+        @media only screen and(max-width: 767px){
+            min-width: 100% ;
+        }        
+    }
+    
+
+}
