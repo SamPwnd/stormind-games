@@ -180,8 +180,61 @@ $article = [
 
 $accordion = [
   [
-    'classes' => 'accordion',
-    'title' => 'FUNCTIONAL TESTER'
+    'classes' => 'accordion accordion-accordion',
+    'title' => 'FUNCTIONAL TESTER',
+    'text-description' => '<span>Job Description:</span><br>
+      The functional tester is a very important member of the production team. He executes tests to ensure the user of the application will have an optimal experience. The tester helps the development team to find bugs, refine the user experience and support the development process.<br><br>
+
+      <span>Responsibilities:</span> <br>
+      Execute specific tests as required by the production team and the lead tester;
+      Perform tests against the established procedures;
+      Discover bugs, find clear reproductions steps and enter this information in the bug database;
+      <br><br>
+      <span>Qualifications Requirements:</span>
+      1 year of experience in quality assurance, preferably on applications
+      Possess a good knowledge of computer software and software development;
+      <br><br>
+      <span>Detail oriented:</span><br>
+      Be articulate and a team player<br>
+      Have a good understanding of spoken and written English.'
+  ],
+  [
+    'classes' => 'accordion accordion-accordion',
+    'title' => 'FUNCTIONAL TESTER',
+    'text-description' => '<span>Job Description:</span><br>
+      The functional tester is a very important member of the production team. He executes tests to ensure the user of the application will have an optimal experience. The tester helps the development team to find bugs, refine the user experience and support the development process.<br><br>
+
+      <span>Responsibilities:</span> <br>
+      Execute specific tests as required by the production team and the lead tester;
+      Perform tests against the established procedures;
+      Discover bugs, find clear reproductions steps and enter this information in the bug database;
+      <br><br>
+      <span>Qualifications Requirements:</span>
+      1 year of experience in quality assurance, preferably on applications
+      Possess a good knowledge of computer software and software development;
+      <br><br>
+      <span>Detail oriented:</span><br>
+      Be articulate and a team player<br>
+      Have a good understanding of spoken and written English.'
+  ],
+  [
+    'classes' => 'accordion accordion-accordion',
+    'title' => 'FUNCTIONAL TESTER',
+    'text-description' => '<span>Job Description:</span><br>
+      The functional tester is a very important member of the production team. He executes tests to ensure the user of the application will have an optimal experience. The tester helps the development team to find bugs, refine the user experience and support the development process.<br><br>
+
+      <span>Responsibilities:</span> <br>
+      Execute specific tests as required by the production team and the lead tester;
+      Perform tests against the established procedures;
+      Discover bugs, find clear reproductions steps and enter this information in the bug database;
+      <br><br>
+      <span>Qualifications Requirements:</span>
+      1 year of experience in quality assurance, preferably on applications
+      Possess a good knowledge of computer software and software development;
+      <br><br>
+      <span>Detail oriented:</span><br>
+      Be articulate and a team player<br>
+      Have a good understanding of spoken and written English.'
   ]
 ];
 
