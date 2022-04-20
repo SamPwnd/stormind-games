@@ -45,6 +45,116 @@ $center_logo_1 =[
 $side_panel =[
     'background' => 'https://stormindgames.com/wp-content/uploads/2021/01/cover-remothered-TF.png',
 ];
+
+$wrapper_characters =[
+    'classes' => 'wrapper--brown',
+    'row_classes' => 'row-cols-1 row-cols-md-2 row-cols-lg-3',
+    'title' => 'games',
+    'background' => '',
+];
+
+$character_elements =[
+    [
+        'classes' => 'col mb-4',
+        'component' => 'card-profile.php',
+        'content' => [
+            'classes' => 'card-profile ',
+            'image' => './assets/card-profile1.png',
+            'title' => 'JENNIFER',
+            'icon' => './assets/icon-more.svg',
+            'icon_hover' => './assets/icon-less.svg',
+            'description' => 'Linn is a timid and insecure sixteen-year-old girl with a stutter who works at the Ashmann Inn as a maid. 
+                She is definitely not happy with it but she feels somehow attached to the people who live in there.
+    
+                Upon Jennifer’s arrival, they became friends right away. 
+                However, their budding friendship will be put to test as they navigate the dangers within their new home.'
+        ],
+    ],
+    [
+        'classes' => 'col mb-4',
+        'component' => 'card-profile.php',
+        'content' => [
+            'classes' => 'card-profile ',
+            'image' => './assets/card-profile1.png',
+            'title' => 'JENNIFER',
+            'icon' => './assets/icon-more.svg',
+            'icon_hover' => './assets/icon-less.svg',
+            'description' => 'Linn is a timid and insecure sixteen-year-old girl with a stutter who works at the Ashmann Inn as a maid. 
+                She is definitely not happy with it but she feels somehow attached to the people who live in there.
+    
+                Upon Jennifer’s arrival, they became friends right away. 
+                However, their budding friendship will be put to test as they navigate the dangers within their new home.'
+        ],
+    ],
+    [
+        'classes' => 'col mb-4',
+        'component' => 'card-profile.php',
+        'content' => [
+            'classes' => 'card-profile ',
+            'image' => './assets/card-profile1.png',
+            'title' => 'JENNIFER',
+            'icon' => './assets/icon-more.svg',
+            'icon_hover' => './assets/icon-less.svg',
+            'description' => 'Linn is a timid and insecure sixteen-year-old girl with a stutter who works at the Ashmann Inn as a maid. 
+                She is definitely not happy with it but she feels somehow attached to the people who live in there.
+    
+                Upon Jennifer’s arrival, they became friends right away. 
+                However, their budding friendship will be put to test as they navigate the dangers within their new home.'
+        ],
+    ],
+    [
+        'classes' => 'col mb-4',
+        'component' => 'card-profile.php',
+        'content' => [
+            'classes' => 'card-profile ',
+            'image' => './assets/card-profile1.png',
+            'title' => 'JENNIFER',
+            'icon' => './assets/icon-more.svg',
+            'icon_hover' => './assets/icon-less.svg',
+            'description' => 'Linn is a timid and insecure sixteen-year-old girl with a stutter who works at the Ashmann Inn as a maid. 
+                She is definitely not happy with it but she feels somehow attached to the people who live in there.
+    
+                Upon Jennifer’s arrival, they became friends right away. 
+                However, their budding friendship will be put to test as they navigate the dangers within their new home.'
+        ],
+    ],
+    [
+        'classes' => 'col mb-4',
+        'component' => 'card-profile.php',
+        'content' => [
+            'classes' => 'card-profile ',
+            'image' => './assets/card-profile1.png',
+            'title' => 'JENNIFER',
+            'icon' => './assets/icon-more.svg',
+            'icon_hover' => './assets/icon-less.svg',
+            'description' => 'Linn is a timid and insecure sixteen-year-old girl with a stutter who works at the Ashmann Inn as a maid. 
+                She is definitely not happy with it but she feels somehow attached to the people who live in there.
+    
+                Upon Jennifer’s arrival, they became friends right away. 
+                However, their budding friendship will be put to test as they navigate the dangers within their new home.'
+        ],
+    ],
+    [
+        'classes' => 'col mb-4',
+        'component' => 'card-profile.php',
+        'content' => [
+            'classes' => 'card-profile ',
+            'image' => './assets/card-profile1.png',
+            'title' => 'JENNIFER',
+            'icon' => './assets/icon-more.svg',
+            'icon_hover' => './assets/icon-less.svg',
+            'description' => 'Linn is a timid and insecure sixteen-year-old girl with a stutter who works at the Ashmann Inn as a maid. 
+                She is definitely not happy with it but she feels somehow attached to the people who live in there.
+    
+                Upon Jennifer’s arrival, they became friends right away. 
+                However, their budding friendship will be put to test as they navigate the dangers within their new home.'
+        ],
+    ],
+    
+    
+];
+
+
 ?>
 
 <!DOCTYPE html>
@@ -128,6 +238,22 @@ $side_panel =[
             ?>
 
             <?php get_template_part(('./components/side-panel.php'), ['content' => $side_panel, 'text' => $side_panel_content]) ?>
+        </section>
+        <section class="mb-1">
+            <?php 
+                ob_start(); 
+                foreach($character_elements as $element): 
+            ?>        
+                <div class="<?= $element['classes'] ?>">
+                    <?php
+                        $component = $element['component'];
+                        get_template_part("./components/$component", ['content' => $element['content']]); ?>
+                </div>
+            <?php
+                endforeach;
+                $wrapper_content = ob_get_clean(); 
+            ?>
+            <?php get_template_part(('./components/wrapper.php'), ['content' => $wrapper_characters, 'elements' => $wrapper_content]) ?>
         </section>
     </body>
 

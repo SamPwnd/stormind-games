@@ -63,6 +63,7 @@
   background-color: #030504;
   position: relative;
   overflow: hidden;
+  border: 1px solid #423E38;
 }
 
 .card-profile:hover {
@@ -1240,6 +1241,10 @@
 }
 
 .wrapper--black {
+  background-color: #151210;
+}
+
+.wrapper--brown {
   background-color: #151210;
 }
 

@@ -144,36 +144,39 @@
         'row_classes' => 'row-cols-1 row-cols-md-3',
         'title' => 'games',
         'background' => 'https://stormindgames.com/wp-content/themes/storemind/storemind/assets/images/placeholder.jpg',
-        'elements' => [
-            [
-                'classes' => 'col',
-                'component' => 'cardsimple.php',
-                'content' => [
-                    'image' => './img/180.png',
-                    'title' => 'DEVELOPMENT',
-                    'subtitle' => 'We can help you with developing a sequel or an expansion of your video game and  converting the player mode you’ve set to the one of your choice.'
-                ],
+    ];
+
+    $wrapper_elements =[
+        [
+            'classes' => 'col',
+            'component' => 'cardsimple.php',
+            'content' => [
+                'image' => './img/180.png',
+                'title' => 'DEVELOPMENT',
+                'subtitle' => 'We can help you with developing a sequel or an expansion of your video game and  converting the player mode you’ve set to the one of your choice.'
             ],
-            [
-                'classes' => 'col',
-                'component' => 'cardsimple.php',
-                'content' => [
-                    'image' => './img/180.png',
-                    'title' => 'DEVELOPMENT',
-                    'subtitle' => 'We can help you with developing a sequel or an expansion of your video game and  converting the player mode you’ve set to the one of your choice.'
-                ],
+        ],
+        [
+            'classes' => 'col',
+            'component' => 'cardsimple.php',
+            'content' => [
+                'image' => './img/180.png',
+                'title' => 'DEVELOPMENT',
+                'subtitle' => 'We can help you with developing a sequel or an expansion of your video game and  converting the player mode you’ve set to the one of your choice.'
             ],
-            [
-                'classes' => 'col',
-                'component' => 'cardsimple.php',
-                'content' => [
-                    'image' => './img/180.png',
-                    'title' => 'DEVELOPMENT',
-                    'subtitle' => 'We can help you with developing a sequel or an expansion of your video game and  converting the player mode you’ve set to the one of your choice.'
-                ],
+        ],
+        [
+            'classes' => 'col',
+            'component' => 'cardsimple.php',
+            'content' => [
+                'image' => './img/180.png',
+                'title' => 'DEVELOPMENT',
+                'subtitle' => 'We can help you with developing a sequel or an expansion of your video game and  converting the player mode you’ve set to the one of your choice.'
             ],
         ],
     ];
+
+    
 
     $side_panel =[
         'background' => 'https://stormindgames.com/wp-content/uploads/2020/11/Batora-Lost-Haven-Cover-Central.jpg',
@@ -393,7 +396,22 @@
     <div>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum quos ducimus blanditiis dolores possimus, ex ipsam nostrum! Eius porro modi eaque nisi atque nemo! Mollitia rerum quis eius! Laudantium, nulla?
     </div>
-    <?php get_template_part(('./components/wrapper.php'), ['content' => $wrapper]) ?>
+
+    <?php 
+        ob_start(); 
+        foreach($wrapper_elements as $element): 
+    ?>        
+        <div class="<?= $element['class'] ?>">
+            <?php
+                $component = $element['component'];
+                get_template_part("./components/$component", ['content' => $element['content']]); ?>
+        </div>
+    <?php
+        endforeach;
+        $wrapper_content = ob_get_clean(); 
+    ?>
+
+    <?php get_template_part(('./components/wrapper.php'), ['content' => $wrapper, 'elements' => $wrapper_content]) ?>
     <div>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum quos ducimus blanditiis dolores possimus, ex ipsam nostrum! Eius porro modi eaque nisi atque nemo! Mollitia rerum quis eius! Laudantium, nulla?
     </div>
