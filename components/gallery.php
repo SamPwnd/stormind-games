@@ -19,8 +19,11 @@
     </div>
   <?php endforeach; ?> 
 
-  <div class="col-12">
-
+  <div class="col-12 d-flex justify-content-center">
+    <button class="btn btn-outline-primary gallery__btn">
+      <img src="./assets/icon-more.svg" alt="icon-more.svg">  
+      show more
+    </button>
   </div>
 </div>
   
