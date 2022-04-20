@@ -1499,19 +1499,6 @@ textarea::-webkit-resizer {
   margin-left: auto;
 }
 
-.gallery__container {
-  position: relative;
-}
-
-.gallery__container img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .modal-content, #caption {
   -webkit-animation-name: zoom;
   -webkit-animation-duration: 0.6s;
@@ -1537,6 +1524,48 @@ textarea::-webkit-resizer {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
+}
+
+.gallery {
+  margin-top: -72px;
+  padding-top: 26px;
+}
+
+.gallery__container {
+  position: relative;
+}
+
+.gallery__container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.gallery__selectors a {
+  text-transform: uppercase;
+  font-family: 'Lato';
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #151210;
+  text-align: start;
+  margin-right: 30px;
+  position: relative;
+}
+
+.gallery__selectors a:last-child {
+  margin: 0;
+}
+
+.gallery__selectors a:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-top: 1px solid #F9B611;
 }
 
 .contact__btn {
