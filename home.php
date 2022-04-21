@@ -385,7 +385,10 @@
             
         </section>
 
-        <?php get_template_part('./components/footer.php', $footer); ?>
+        <footer class="mt-1">
+          <?php get_template_part('./components/footer.php', $footer); ?>  
+        </footer>
+        
     </main>
     
     <script src="./script/navbar.js"></script>
