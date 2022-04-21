@@ -2275,17 +2275,7 @@ textarea::-webkit-resizer {
   height: 100%;
 }
 
-.text-company {
-  padding: 0;
-  font-family: 'Lato';
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: 400;
-  color: #2D2A26;
-  text-align: start;
-}
-
-.home__wrapper {
+.home .home__wrapper {
   background-color: #151210;
   padding: 120px 16px;
 }
@@ -2360,5 +2350,9 @@ textarea::-webkit-resizer {
 
 a {
   text-decoration: none;
+}
+
+.coso {
+  color: aqua;
 }
 /*# sourceMappingURL=main.css.map */

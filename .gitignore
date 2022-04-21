@@ -105,3 +105,6 @@ dist
 
 # Bootstrap 
 bootstrap/
+
+style/main.css
+style/main.css.map
