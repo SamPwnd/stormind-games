@@ -281,34 +281,29 @@
   margin-right: 0.5rem;
 }
 
-* {
-  margin: 0;
-}
-
 .cards-award {
   max-width: 22rem;
-  margin-top: 48px;
-  background-color: #2D2A26;
 }
 .cards-award img {
   width: 100%;
 }
 .cards-award__title {
   font-family: "Poppins";
+  font-size: 20px;
+  line-height: 32px;
   font-weight: 800;
   color: white;
   text-align: center;
   margin-top: 16px;
 }
 .cards-award__subtitle {
+  margin-top: 24px;
   font-family: "Lato";
+  font-size: 20px;
+  line-height: 24px;
   font-weight: 400;
   color: white;
   text-align: center;
-}
-
-* {
-  margin: 0;
 }
 
 .card-simple {
@@ -320,6 +315,8 @@
 }
 .card-simple__title {
   font-family: "Poppins";
+  font-size: 24px;
+  line-height: 32px;
   font-weight: 800;
   color: #2D2A26;
   text-align: left;
@@ -327,6 +324,8 @@
 }
 .card-simple__subtitle {
   font-family: "Lato";
+  font-size: 20px;
+  line-height: 24px;
   font-weight: 400;
   color: #2D2A26;
   text-align: left;
@@ -1407,14 +1406,14 @@ textarea::-webkit-resizer {
   margin-top: 40px;
 }
 
-* {
-  margin: 0;
-}
-
 .post-card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-size: cover;
+}
+.post-card--little {
+  background-position: center;
 }
 .post-card--little .post-card__title {
   font-family: "Poppins";
@@ -1594,11 +1593,19 @@ textarea::-webkit-resizer {
 }
 .post-card__title {
   font-family: "Poppins";
+  font-size: 32px;
+  line-height: 32px;
   font-weight: 800;
   color: #F9B611;
   text-align: left;
   padding: 48px 0 0 48px;
   max-width: 250px;
+}
+@media only screen and (max-width: 565px) {
+  .post-card__title {
+    font-size: 28px;
+    line-height: 32px;
+  }
 }
 .post-card__description {
   font-family: "Lato";
@@ -1817,7 +1824,7 @@ textarea::-webkit-resizer {
   max-width: fit-content;
   padding-left: 0;
 }
-.home .home__wrapper .text-panel {
+.home .text-panel--center {
   margin: 0 auto;
 }
 .home .text-panel__subtitle {

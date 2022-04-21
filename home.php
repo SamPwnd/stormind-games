@@ -100,30 +100,75 @@
 
     $wrapper =[
         'classes' => ' ',
-        'row_classes' => 'row-cols-1 row-cols-md-3',
+        'row_classes' => 'row-cols-1 row-cols-sm-2 row-cols-lg-3',
         'title' => 'AWARDS',
         'background' => './assets/img/placeholder-filtered.jpg',
     ];
 
     $wrapper_elements =[
         [
-            'classes' => 'col',
-            'component' => 'cardsimple.php',
+            'classes' => 'col offset-lg-1',
+            'component' => 'cardsaward.php',
             'content' => [
                 'image' => './assets/img/awards1.png',
-                'title' => 'OUTSTANDING ITALIAN COMPANY 2020',
+                'title' => 'OUTSTANDING ITALIAN COMPANY <br> 2020',
                 'subtitle' => 'Awarded to the company whose contribution have proved outstanding for the whole game development scene in Italy and in the International landscape.'
             ],
         ],
         [
-            'classes' => 'col',
-            'component' => 'cardsimple.php',
+            'classes' => 'col offset-lg-2 mt-5 mt-sm-0',
+            'component' => 'cardsaward.php',
             'content' => [
                 'image' => './assets/img/awards2.png',
-                'title' => 'BEST NEW STUDIO 2018',
+                'title' => 'BEST NEW STUDIO <br> 2018',
                 'subtitle' => 'Awarded to the new Italian studio with the best debut game released on the market in 2018.'
             ],
         ],
+    ];
+
+    $text_panel_postcard = [
+        'classes' => 'text-panel text-panel--center text-panel--dark col-12 col-lg-6',
+        'title' => 'GAMES',
+        'subtitle' => 'Check our games.'
+    ];
+
+    $postcard_biggest = [
+        'background-img' => 'height: 742px; background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/img/postcard1.jpg)',
+        'class'  => '--biggest',
+        'title' => 'BATORA:<br> LOST HAVEN',
+        'icons' => [
+                '../stormind-games/assets/img/pc.svg',
+                '../stormind-games/assets/img/ps.svg',
+                '../stormind-games/assets/img/xbox.svg',
+                '../stormind-games/assets/img/nintendo.svg',
+            ],
+            'contentbutton' => '+',
+    ];
+
+    $postcard__little1 = [
+        'background-img' => 'height: 360px; background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/img/postcard2.jpg)',
+        'class'  => '--little',
+        'title' => 'REMOTHERED:<br> BROKEN PORCELAIN',
+        'icons' => [
+                '../stormind-games/img/pc.svg',
+                '../stormind-games/img/ps.svg',
+                '../stormind-games/img/xbox.svg',
+                '../stormind-games/img/nintendo.svg',
+            ],
+            'contentbutton' => '+',
+    ];
+
+    $postcard__little2 = [
+        'background-img' => 'height: 360px; background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/img/postcard3.jpg); background-position-y: 40%',
+        'class'  => '--little',
+        'title' => 'REMOTHERED:<br> BROKEN PORCELAIN',
+        'icons' => [
+                '../stormind-games/img/pc.svg',
+                '../stormind-games/img/ps.svg',
+                '../stormind-games/img/xbox.svg',
+                '../stormind-games/img/nintendo.svg',
+            ],
+            'contentbutton' => '+',
     ];
 
 ?>
@@ -158,10 +203,7 @@
             </ul>
         <?php $navbarContent = ob_get_clean(); ?>
 
-
         <?php  get_template_part('./components/navbar.php', ['navbar' => $navbar , 'content' => $navbarContent]); ?>
-
-
 
         <?php ob_start(); ?>
             <div class="container">
@@ -245,12 +287,12 @@
 
         </section>
 
-        <section class="mb-1">
+        <section class="mb-5">
             <?php 
                 ob_start(); 
                 foreach($wrapper_elements as $element): 
             ?>        
-            <div class="<?= $element['class'] ?>">
+            <div class="<?= $element['classes'] ?>">
                 <?php
                     $component = $element['component'];
                     get_template_part("./components/$component", ['content' => $element['content']]);
@@ -263,6 +305,33 @@
 
             <?php get_template_part(('./components/wrapper.php'), ['content' => $wrapper, 'elements' => $wrapper_content]) ?>
         </section>
+
+        <section class="pt-5 mb-5">
+            <?php get_template_part('./components/text-panel.php',['content' => $text_panel_postcard]); ?>
+        </section>
+
+        <div>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <?php get_template_part( './components/postcard.php', [ 'postcard' =>$postcard_biggest])?>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <?php get_template_part( './components/postcard.php', [ 'postcard' =>$postcard__little1])?>
+                    </div>
+                    <div class="col-md-6">
+                        <?php get_template_part( './components/postcard.php', [ 'postcard' =>$postcard__little2])?>
+                    </div>
+                </div>
+        </div>
+
 
     </main>
     

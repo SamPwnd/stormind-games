@@ -1,26 +1,22 @@
-@import 'typography';
-*{
-    margin: 0;
-}
 
 .cards-award
 {
     max-width: 22rem;
-    margin-top: 48px;
-    background-color: #2D2A26;
+
     img
     {
         width: 100%;
     }
     &__title
     {
-       @include poppins(h5,800,#FFFF,center); 
+       @include poppins(H5,800,#FFFF,center); 
        margin-top: 16px;
     }
 
     &__subtitle
     {
-        @include lato(h1,400,#FFFF,center);
+        margin-top: 24px;
+        @include lato(H1,400,#FFFF,center);
     }
 
 }

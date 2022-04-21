@@ -1,15 +1,14 @@
 
-*{
-    margin: 0;
-}
 
 .post-card
 { 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-size: cover;
     &--little
     {
+        background-position: center;
         .post-card__title
         {
             @include poppins(H3,800,#F9B611,left);
@@ -204,7 +203,7 @@
     }
     &__title
     {
-        @include poppins(h3,800,#F9B611,left);
+        @include poppins(H3,800,#F9B611,left);
         padding: 48px 0 0 48px;
         max-width: 250px;
     }

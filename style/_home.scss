@@ -11,19 +11,22 @@
             max-width: fit-content;
             padding-left: 0;
         }
+    }
 
-        .text-panel {
+    .text-panel {
+        &--center {
             margin: 0 auto;
         }
-    }
-    
-    .text-panel {
         &__subtitle {
             white-space: pre-line;
         }
     }
-    
+
 }
+
+
+    
+
 @media only screen and (max-width: map-get($grid-breakpoints, lg)){
     .home__wrapper {
         padding-top: 48px;
