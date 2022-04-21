@@ -21,6 +21,9 @@
   background-image: url('../assets/Awards-scaled.jpg');
   // opacity: 0.5;
   // filter: brightness(50%);
+  .cards-award{
+    background-color: transparent!important;
+  }
   min-height: 1000px;
   .text-panel{
     margin: 0 auto 83px auto;
