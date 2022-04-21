@@ -1,0 +1,18 @@
+.cards-award-mini
+{
+    max-width: 22rem;
+    margin-top: 48px;
+    //background-color: #2D2A26;
+    img
+    {
+        width: 100%;
+    }
+    &__title
+    {
+       @include poppins(h5,800,#FFFF,center); 
+       margin-top: 16px;
+       font-size: 1rem;
+    }
+
+
+}

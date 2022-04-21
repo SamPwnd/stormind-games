@@ -180,6 +180,14 @@
 
     $side_panel =[
         'background' => 'https://stormindgames.com/wp-content/uploads/2020/11/Batora-Lost-Haven-Cover-Central.jpg',
+        'background-classes' => 'col-12 col-md-5 offset-md-1 p-0',
+        'content-classes' => 'col-10 offset-1 col-md-5',
+    ];
+
+    $side_panel_2 =[
+        'background' => 'https://stormindgames.com/wp-content/uploads/2020/11/Batora-Lost-Haven-Cover-Central.jpg',
+        'background-classes' => 'col-12 col-md-5  p-0 order-1',
+        'content-classes' => 'col-10 offset-1 col-md-5 order-2',
     ];
 
 
@@ -421,6 +429,7 @@
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum quos ducimus blanditiis dolores possimus, ex ipsam nostrum! Eius porro modi eaque nisi atque nemo! Mollitia rerum quis eius! Laudantium, nulla?
     </div>
     <?php get_template_part(('./components/side-panel.php'), ['content' => $side_panel, 'text' => $navbarContent]) ?>
+    <?php get_template_part(('./components/side-panel.php'), ['content' => $side_panel_2, 'text' => $navbarContent]) ?>
     <div>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum quos ducimus blanditiis dolores possimus, ex ipsam nostrum! Eius porro modi eaque nisi atque nemo! Mollitia rerum quis eius! Laudantium, nulla?
     </div>

@@ -3,10 +3,10 @@
 ?>
 
     
-    <div class="cards-award">
+    <div class="cards-award ms-auto me-auto">
         <div><img src="<?= $content['image'] ?>" alt=""></div>
-        <h4 class="cards-award__title"><?= $content['title'] ?></h4>
-        <div class="cards-award__subtitle"><?= $content['subtitle'] ?></div>
+        <p class="cards-award__title"><?= $content['title'] ?></p>
+        <p class="cards-award__subtitle mt-2 mt-sm-0"><?= $content['subtitle'] ?></p>
     </div>
    
  
