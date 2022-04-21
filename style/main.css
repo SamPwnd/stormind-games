@@ -1757,17 +1757,16 @@ textarea::-webkit-resizer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-size: cover;
-}
-
-.post-card--little {
-  background-position: center;
 }
 
 @media screen and (max-width: 768px) {
   .post-card {
     margin-top: 48px;
   }
+}
+
+.post-card--little {
+  background-position: center;
 }
 
 .post-card--little .post-card__title {
