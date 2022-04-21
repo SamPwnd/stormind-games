@@ -2,8 +2,8 @@
 let dots = document.getElementsByClassName("slider-simple__dot");
 
 let slider= document.querySelector(".slider-simple__slider");
-console.log(dots);
-console.log(slider);
+//console.log(dots);
+//console.log(slider);
 
 for(let i = 0; i< dots.length; i++){
     dots[i].addEventListener("click", ()=>{
