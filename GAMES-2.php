@@ -112,8 +112,8 @@ $wrapper_characters =[
 $character_elements =[
     [
         'classes' => 'card-profile ',
-        'image' => './assets/card-profile1.png',
-        'title' => 'JENNIFER',
+        'image' => 'https://stormindgames.com/wp-content/uploads/2021/01/Rosemary.png',
+        'title' => 'rosemary reed',
         'icon' => './assets/icon-more.svg',
         'icon_hover' => './assets/icon-less.svg',
         'description' => 'Linn is a timid and insecure sixteen-year-old girl with a stutter who works at the Ashmann Inn as a maid. 
@@ -121,11 +121,11 @@ $character_elements =[
 
             Upon Jennifer’s arrival, they became friends right away. 
             However, their budding friendship will be put to test as they navigate the dangers within their new home.'
-    ],
+    ],  
     [
         'classes' => 'card-profile ',
-        'image' => './assets/card-profile1.png',
-        'title' => 'JENNIFER',
+        'image' => 'https://stormindgames.com/wp-content/uploads/2021/01/Rosemary.png',
+        'title' => 'rosemary reed',
         'icon' => './assets/icon-more.svg',
         'icon_hover' => './assets/icon-less.svg',
         'description' => 'Linn is a timid and insecure sixteen-year-old girl with a stutter who works at the Ashmann Inn as a maid. 
@@ -133,11 +133,11 @@ $character_elements =[
 
             Upon Jennifer’s arrival, they became friends right away. 
             However, their budding friendship will be put to test as they navigate the dangers within their new home.'
-    ],
+    ],  
     [
         'classes' => 'card-profile ',
-        'image' => './assets/card-profile1.png',
-        'title' => 'JENNIFER',
+        'image' => 'https://stormindgames.com/wp-content/uploads/2021/01/Rosemary.png',
+        'title' => 'rosemary reed',
         'icon' => './assets/icon-more.svg',
         'icon_hover' => './assets/icon-less.svg',
         'description' => 'Linn is a timid and insecure sixteen-year-old girl with a stutter who works at the Ashmann Inn as a maid. 
@@ -145,11 +145,11 @@ $character_elements =[
 
             Upon Jennifer’s arrival, they became friends right away. 
             However, their budding friendship will be put to test as they navigate the dangers within their new home.'
-    ],
+    ],  
     [
         'classes' => 'card-profile ',
-        'image' => './assets/card-profile1.png',
-        'title' => 'JENNIFER',
+        'image' => 'https://stormindgames.com/wp-content/uploads/2021/01/Rosemary.png',
+        'title' => 'rosemary reed',
         'icon' => './assets/icon-more.svg',
         'icon_hover' => './assets/icon-less.svg',
         'description' => 'Linn is a timid and insecure sixteen-year-old girl with a stutter who works at the Ashmann Inn as a maid. 
@@ -157,11 +157,11 @@ $character_elements =[
 
             Upon Jennifer’s arrival, they became friends right away. 
             However, their budding friendship will be put to test as they navigate the dangers within their new home.'
-    ],
+    ],  
     [
         'classes' => 'card-profile ',
-        'image' => './assets/card-profile1.png',
-        'title' => 'JENNIFER',
+        'image' => 'https://stormindgames.com/wp-content/uploads/2021/01/Rosemary.png',
+        'title' => 'rosemary reed',
         'icon' => './assets/icon-more.svg',
         'icon_hover' => './assets/icon-less.svg',
         'description' => 'Linn is a timid and insecure sixteen-year-old girl with a stutter who works at the Ashmann Inn as a maid. 
@@ -169,11 +169,11 @@ $character_elements =[
 
             Upon Jennifer’s arrival, they became friends right away. 
             However, their budding friendship will be put to test as they navigate the dangers within their new home.'
-    ],
+    ],  
     [
         'classes' => 'card-profile ',
-        'image' => './assets/card-profile1.png',
-        'title' => 'JENNIFER',
+        'image' => 'https://stormindgames.com/wp-content/uploads/2021/01/Rosemary.png',
+        'title' => 'rosemary reed',
         'icon' => './assets/icon-more.svg',
         'icon_hover' => './assets/icon-less.svg',
         'description' => 'Linn is a timid and insecure sixteen-year-old girl with a stutter who works at the Ashmann Inn as a maid. 
@@ -181,9 +181,7 @@ $character_elements =[
 
             Upon Jennifer’s arrival, they became friends right away. 
             However, their budding friendship will be put to test as they navigate the dangers within their new home.'
-    ],
-
-    
+    ],  
     
     
 ];
@@ -197,7 +195,7 @@ $wrapper_trailer =[
 
 $wrapper_other_trailers =[
     'classes' => '',
-    'row_classes' => 'row-cols-1  row-cols-md-2 row-cols-lg-3',
+    'row_classes' => 'row-cols-1  row-cols-md-2 row-cols-xl-3',
     'title' => 'other trailers',
     'background' => '',
 ];
@@ -205,32 +203,32 @@ $wrapper_other_trailers =[
 $trailer_elements =[
     [
         'classes' => 'cards-video',
-        'video' => '<iframe width="560" height="315" src="https://www.youtube.com/embed/jdj3YPilUP0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+        'video' => '<iframe src="https://www.youtube.com/embed/jdj3YPilUP0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
         'title' => 'physical edition trailer',
     ],
     [
         'classes' => 'cards-video',
-        'video' => '<iframe width="560" height="315" src="https://www.youtube.com/embed/jdj3YPilUP0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+        'video' => '<iframe src="https://www.youtube.com/embed/jdj3YPilUP0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
         'title' => 'switch trailer',
     ],
     [
         'classes' => 'cards-video',
-        'video' => '<iframe width="560" height="315" src="https://www.youtube.com/embed/jdj3YPilUP0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+        'video' => '<iframe src="https://www.youtube.com/embed/jdj3YPilUP0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
         'title' => 'official trailer',
     ],
     [
         'classes' => 'cards-video',
-        'video' => '<iframe width="560" height="315" src="https://www.youtube.com/embed/jdj3YPilUP0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+        'video' => '<iframe src="https://www.youtube.com/embed/jdj3YPilUP0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
         'title' => 'steam early acces trailer',
     ],
     [
         'classes' => 'cards-video',
-        'video' => '<iframe width="560" height="315" src="https://www.youtube.com/embed/jdj3YPilUP0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+        'video' => '<iframe src="https://www.youtube.com/embed/jdj3YPilUP0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
         'title' => 'greenlight trailer',
     ],
     [
         'classes' => 'cards-video',
-        'video' => '<iframe width="560" height="315" src="https://www.youtube.com/embed/jdj3YPilUP0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+        'video' => '<iframe src="https://www.youtube.com/embed/jdj3YPilUP0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
         'title' => 'announcement trailer',
     ],
 ];
@@ -578,7 +576,7 @@ $partners=[
                 ob_start(); 
                 foreach($character_elements as $element): 
             ?>        
-                <div class="col">
+                <div class="col bw-mb-32">
                     <?php get_template_part("./components/card-profile.php", ['content' => $element]); ?>
                 </div>
             <?php

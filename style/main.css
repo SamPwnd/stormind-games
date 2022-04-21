@@ -91,6 +91,7 @@
   font-weight: 800;
   color: #FFFFFF;
   text-align: left;
+  text-transform: uppercase;
 }
 .card-profile__title-container {
   display: flex;
@@ -285,6 +286,7 @@
 .cards-award {
   max-width: 22rem;
   margin-top: 48px;
+  background-color: #2D2A26;
 }
 .cards-award img {
   width: 100%;
@@ -667,7 +669,6 @@
   top: 0;
   width: 100%;
   border-right: 4px solid white;
-  box-shadow: inset 0 0 0 110vh rgba(0, 0, 0, 0.5);
 }
 .timeline__content {
   padding: 120px 116px;
@@ -1827,6 +1828,27 @@ textarea::-webkit-resizer {
   width: 100%;
 }
 
+.awards {
+  width: 100%;
+  background-image: url("../assets/Awards-scaled.jpg");
+  min-height: 1000px;
+}
+.awards .text-panel {
+  margin: 0 auto 85px auto;
+  padding-top: 120px;
+}
+.awards .container .section-video {
+  position: relative;
+  height: 100%;
+}
+.awards .container .section-video .single-video {
+  position: relative;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  height: 100%;
+}
+
 .home .home__wrapper {
   background-color: #151210;
   padding: 120px 16px;
@@ -1914,6 +1936,10 @@ textarea::-webkit-resizer {
   margin-bottom: 72px;
 }
 
+.bw-mb-32 {
+  margin-bottom: 32px;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -1922,6 +1948,10 @@ textarea::-webkit-resizer {
 
 a {
   text-decoration: none;
+}
+
+.coso {
+  color: aqua;
 }
 
 /*# sourceMappingURL=main.css.map */
