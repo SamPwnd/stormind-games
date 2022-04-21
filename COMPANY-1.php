@@ -35,27 +35,8 @@ $text_panel_hero = [
   'subtitle' => 'The video game studio focused on the development of premium games with intense stories and distinctive visual style.'
 ];
 
-$side_panel = [
-  'background' => 'http://stormindgames.com/wp-content/uploads/2021/01/Our-Story.jpg',
-];
-
-$cardsaward = [
-  [
-    'image' => 'assets/img/awards1.png',
-    'title' => 'OUTSTANDING ITALIAN COMPANY 2020',
-    'subtitle' => 'Awarded to the company whose contribution have proved outstanding for the whole game development scene in Italy and in the International landscape.'
-  ],
-  [
-    'image' => 'assets/img/awards2.png',
-    'title' => 'BEST NEW STUDIO 2018',
-    'subtitle' => 'Awarded to the new Italian studio with the best debut game released on the market in 2018.'
-  ]
-
-];
-
 
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -108,94 +89,7 @@ $cardsaward = [
     <img src="assets/developers-of-intense-stories.jpg" alt="">
   </div>
 
-  <section class="mb-1">
-    <?php
-    $text_panel_1 = [
-      'classes' => 'text-panel text-panel--dark mb-5',
-      'title' => 'OUR STORY',
-      'subtitle' => 'Stormind Games was founded in 2016 by Antonio Cannata and Federico Laudani, simultaneously to the announcement of award-winning Remothered: Tormented Fathers, the pure and realistic survival horror video game, which is the first title of the Remothered saga.'
-    ];
-    $article_1 = [
-      'classes' => 'article article-accordion',
-      'image' => 'assets/antonio-cannata.jpg',
-      'title' => 'ANTONIO CANNATA',
-      'subtitle' => 'Co-Founder & CEO',
-      'content-up' => 'CEO and Co-Founder of the company, is in charge of the company marketing strategies and business development, with a focus on brand building and deal-making with publishers and investors.
-    <br><br> After graduating in Computer Engineering, he devoted his full time work to combine business',
-      'content-down' => 'and video games, his two passions. Following a professional training abroad, that paved the way for bringing his own company to life with the right conditions, he started operating in the entertainment industry, and after two years, together with Federico Laudani, he founded Stormind Games.<br><br>In the last 8 years, Antonio has specialized in the videogame industry for PC and Consoles. His enthusiastic leadership and his contribution in managing the company with the aim to always raise the bar have been awarded with the “Management Star” Award from DStars in 2020, the award dedicated to Italian excellences in the game development industry, for his outstanding contribution in managing a game studio.'
 
-    ];
-
-    $article_2 = [
-      'classes' => 'article article-accordion',
-      'image' => 'assets/federico-laudani.jpg',
-      'title' => 'FEDERICO LAUDANI',
-      'subtitle' => 'Co-Founder & Art Director',
-      'content-up' => 'Co-Founder and Art Director of Stormind Games, is in charge of art direction, lighting, look development and post-production.
-    <br><br>After earning a master’s degree in 3D and Graphic Design, he kick-started his career as Art Director,  specializing in CGI.',
-      'content-down' => 'In 2010, he opened a small CGI studio, working mainly on commercials, short films, and 4D movies for the entertainment industry. This experience got him ready for focusing his effort on creating his own company together with Antonio Cannata, in the entertainment industry first, and then in the video game industry, giving birth to Stormind Games.<br><br> In the last 11 years, Federico has worked on 30+ productions and now supervises the production department of the company to ensure everything goes off without a hitch.'
-
-    ];
-
-
-    ob_start();
-    get_template_part('./components/text-panel.php', ['content' => $text_panel_1]);
-    get_template_part('./components/article.php', ['article' => $article_1]);
-    get_template_part('./components/article.php', ['article' => $article_2]);
-    get_template_part('./components/text-company.php', ['text_company' => '']);
-    $side_panel_content = ob_get_clean();
-    ?>
-
-    <?php get_template_part(('./components/side-panel.php'), ['content' => $side_panel, 'text' => $side_panel_content]) ?>
-
-  </section>
-
-  <section class="awards">
-    <?php
-    $text_panel_1 = [
-      'classes' => 'text-panel text-panel--center mb-5',
-      'title' => 'AWARDS',
-      'subtitle' => ''
-    ];
-    ob_start();
-    get_template_part('./components/text-panel.php', ['content' => $text_panel_1]);
-    $text_panel_content = ob_get_clean();
-    ?>
-
-    <?php get_template_part(('./components/text-panel.php'), ['content' => $text_panel_1, 'text' => $text_panel_content]) ?>
-
-    <?php
-    ob_start();
-    get_template_part('./components/cardsaward.php', ['content' => $cardsaward]);
-    $cardsaward_content = ob_get_clean();
-    ?>
-    <div class="container">
-      <div class="row">
-        <div class="col-5 offset-2 col-sm-5 mb-5 mb-sm-0 pb-4 pb-sm-4">
-          <?php get_template_part('./components/cardsaward.php', ['content' => $cardsaward[0]],) ?>
-        </div>
-
-        <div class="pl-sm-0 col-5 col-sm-5 mb-5 mb-sm-0 pb-4 pb-sm-4">
-          <?php get_template_part('./components/cardsaward.php', ['content' => $cardsaward[1]]) ?>
-        </div>
-
-        <div class="col-10 offset-1 mt-5" style="height: 624px;">
-
-          <div class="section-video">
-            <iframe width="100%" class="single-video" frameborder="0" allowfullscreen="" src="https://www.youtube.com/embed/HaUZ6Zfjsvs">
-            </iframe>
-          </div>
-
-        </div>
-      </div>
-
-
-
-    </div>
-
-  </section>
-
-  <script src="script/accordion.js"></script>
 </body>
 
 </html>

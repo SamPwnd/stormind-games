@@ -366,6 +366,7 @@
 .cards-award {
   max-width: 22rem;
   margin-top: 48px;
+  background-color: #2D2A26;
 }
 
 .cards-award img {
@@ -719,7 +720,6 @@
 .article {
   max-width: 544px;
   position: relative;
-  margin-bottom: 72px;
 }
 
 .article .title-box {
