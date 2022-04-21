@@ -71,7 +71,7 @@
    
     <div class="row m-0">
         <div class="col-12 col-md-5 p-0" >
-            <div class="timeline__background" style="background-image: url('<?= $content['background'] ?>');"></div>
+            <div class="timeline__background" style="background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('<?= $content['background'] ?>');"></div>
 
         </div>
         <div class="col-10 offset-1 col-md-7 offset-md-0 ">

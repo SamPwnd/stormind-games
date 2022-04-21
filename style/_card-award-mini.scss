@@ -1,9 +1,4 @@
-@import 'typography';
-*{
-    margin: 0;
-}
-
-.cards-award
+.cards-award-mini
 {
     max-width: 22rem;
     margin-top: 48px;
@@ -16,11 +11,8 @@
     {
        @include poppins(h5,800,#FFFF,center); 
        margin-top: 16px;
+       font-size: 1rem;
     }
 
-    &__subtitle
-    {
-        @include lato(h1,400,#FFFF,center);
-    }
 
 }

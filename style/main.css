@@ -342,6 +342,7 @@
   top: 0;
   left: 0;
   height: 100%;
+  background: rgba(0, 0, 0, 0.5);
   z-index: 1;
   width: 100%;
   display: -webkit-box;
@@ -369,7 +370,6 @@
 .cards-award {
   max-width: 22rem;
   margin-top: 48px;
-  background-color: #2D2A26;
 }
 
 .cards-award img {
@@ -694,6 +694,7 @@
   top: 0;
   left: 0;
   height: 100%;
+  background: rgba(0, 0, 0, 0.5);
   z-index: 1;
   width: 100%;
   display: -webkit-box;
@@ -1609,7 +1610,7 @@ textarea::-webkit-resizer {
 .accordion {
   max-width: 544px;
   min-height: 96px;
-  border-bottom: 0.5px solid #2D2A26;
+  border-bottom: 0.5px solid rgba(4, 42, 38, 0.2);
   margin-bottom: 20px;
 }
 
@@ -1641,6 +1642,7 @@ textarea::-webkit-resizer {
   font-weight: 800;
   color: #2D2A26;
   text-align: start;
+  text-transform: uppercase;
 }
 
 @media only screen and (max-width: 565px) {
@@ -2260,6 +2262,24 @@ textarea::-webkit-resizer {
 
 .mt1 {
   margin-top: 72px;
+}
+
+.cards-award-mini {
+  max-width: 22rem;
+  margin-top: 48px;
+}
+
+.cards-award-mini img {
+  width: 100%;
+}
+
+.cards-award-mini__title {
+  font-family: 'Poppins';
+  font-weight: 800;
+  color: #FFFF;
+  text-align: center;
+  margin-top: 16px;
+  font-size: 1rem;
 }
 
 * {
