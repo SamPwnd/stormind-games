@@ -13,6 +13,7 @@
     &--little
     {
         background-position: center;
+        background-size: 120%;
         .post-card__title
         {
             @include poppins(H3,800,#F9B611,left);
@@ -149,9 +150,13 @@
                 display: none;
             }
         }
+        @media screen and (max-width: 1200px) {
+            background-size: cover;
+            background-position: center;
+        }
         @media screen and (max-width: 768px) 
         {
-            background: #683682 !important;
+            
             height: 360px !important;
             .post-card__buttonhidden
             {
