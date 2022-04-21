@@ -1827,8 +1827,43 @@ textarea::-webkit-resizer {
 .home .text-panel--center {
   margin: 0 auto;
 }
+@media only screen and (max-width: 565px) {
+  .home .text-panel--black .text-panel__title {
+    text-align: left;
+  }
+  .home .text-panel--black .text-panel__subtitle {
+    font-family: "Lato";
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #151210;
+    text-align: left;
+  }
+}
 .home .text-panel__subtitle {
   white-space: pre-line;
+}
+.home__newsletter {
+  margin-top: 124px;
+}
+.home__newsletter-list {
+  padding: 0 160px;
+}
+@media only screen and (max-width: 992px) {
+  .home__newsletter-list {
+    padding: 0 16px;
+  }
+}
+.home__newsletter-list ul {
+  font-family: "Lato";
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #151210;
+  text-align: left;
+}
+.home__newsletter-list ul li {
+  margin-top: 32px;
 }
 
 @media only screen and (max-width: 992px) {

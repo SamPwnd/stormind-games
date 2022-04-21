@@ -171,6 +171,12 @@
             'contentbutton' => '+',
     ];
 
+    $text_panel_prefooter = [
+        'classes' => 'text-panel text-panel--center text-panel--black col-12 col-lg-6',
+        'title' => 'Join Batora: Lost Haven Newsletter',
+        'subtitle' => 'Sign up to gain exclusive access to subscriber-only content, game updates, wallpapers, and more!'
+    ];
+
 ?>
 
 <!DOCTYPE html>
@@ -320,18 +326,44 @@
             </div>
         </div>
 
-        <div>
+        <div class="mb-5 pb-2">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6 mt-4">
                         <?php get_template_part( './components/postcard.php', [ 'postcard' =>$postcard__little1])?>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 mt-4">
                         <?php get_template_part( './components/postcard.php', [ 'postcard' =>$postcard__little2])?>
                     </div>
                 </div>
+            </div>
         </div>
 
+        <button class="btn btn-outline-primary ms-auto me-auto d-block">ALL GAMES</button>
+
+        <section class=" home__newsletter bg-primary pt-5">
+            <div class="container pt-5">
+                <?php get_template_part('./components/text-panel.php',['content' => $text_panel_prefooter]) ;?>  
+                <div class="home__newsletter-list row mt-5">
+                    <div class="col-12 col-md-6">
+                        <ul>
+                            <li>Stay on top of all the latest news on the game</li>
+                            <li>Gain access to behind-the-scenes content before anyone else</li>
+                            <li>Listen to “Will of the Keeper” from Batora: Lost Haven soundtrack composed by Ron Fish (God of War, Batman Arkham Asylum, and Batman Arkham City)</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <ul>
+                            <li>Get the official game wallpaper</li>
+                            <li>Have your name appear in Batora: Lost Haven closing credits</li>
+                            <li>Get the illustrated storyboard created for the game announcement trailer only accessible to subscribers</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
 
     </main>
     

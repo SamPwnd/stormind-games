@@ -17,11 +17,42 @@
         &--center {
             margin: 0 auto;
         }
+
+        &--black {
+            @media only screen and (max-width: 565px){
+                .text-panel__title {
+                    text-align: left
+                }
+                .text-panel__subtitle {
+                    @include lato(H2, 400, $black, left);
+                }
+            }
+        }
         &__subtitle {
             white-space: pre-line;
         }
     }
 
+    &__newsletter {
+        margin-top: 124px;
+    }
+
+    &__newsletter-list {
+        padding: 0 160px;
+        @media only screen and (max-width: map-get($grid-breakpoints, lg)){
+            padding: 0 16px;
+        }
+
+        ul {
+            @include lato(H1, 400, $black, left);
+            
+            li {
+                margin-top: 32px;
+            }
+        }
+    }
+
+    
 }
 
 
