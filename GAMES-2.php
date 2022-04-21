@@ -44,6 +44,8 @@ $center_logo_1 =[
 
 $side_panel =[
     'background' => 'https://stormindgames.com/wp-content/uploads/2021/01/cover-remothered-TF.png',
+    'background-classes' => 'col-12 col-md-5 offset-md-1 p-0',
+    'content-classes' => 'col-10 offset-1 col-md-5',
 ];
 $text_panel_side=[
     [
@@ -536,7 +538,7 @@ $partners=[
         <?php  get_template_part('./components/navbar.php', ['navbar' => $navbar , 'content' => $navbarContent]); ?>
     </header>
 
-    <body>
+    <main>
         <section class="mb-1">
             <?php ob_start(); ?>
                 <div class="container">
@@ -554,22 +556,20 @@ $partners=[
             <?php get_template_part('./components/center-logo.php', ['center_logo' => $center_logo_1]) ?>
         </section>
         <section class="mb-1">
-            <?php 
-                
-                ob_start();                
-                    get_template_part('./components/text-panel.php', ['content' => $text_panel_side[0]]);  
-                    get_template_part('./components/text-panel.php', ['content' => $text_panel_side[1]]);  
-                    get_template_part('./components/text-panel.php', ['content' => $text_panel_side[2]]);  
-                    get_template_part('./components/accordion.php', ['accordion' => $accordion_side[0]]);
-                    get_template_part('./components/accordion.php', ['accordion' => $accordion_side[1]]);
-                    get_template_part('./components/accordion.php', ['accordion' => $accordion_side[2]]);
-                    get_template_part('./components/accordion.php', ['accordion' => $accordion_side[3]]);
-                    get_template_part('./components/accordion.php', ['accordion' => $accordion_side[4]]);
-                    get_template_part('./components/accordion.php', ['accordion' => $accordion_side[5]]);
-                    get_template_part('./components/accordion.php', ['accordion' => $accordion_side[6]]);
+            <?php ob_start(); ?>
+                <?php foreach($text_panel_side as $tps): ?>
+                    <div class="bw-mb-72">
+                        <?php get_template_part('./components/text-panel.php', ['content' => $tps]); ?>
+                    </div>            
+                <?php endforeach; ?>    
+                <?php foreach($accordion_side as $acc): ?>
+                    <div class="bw-mb-72">
+                        <?php get_template_part('./components/accordion.php', ['accordion' => $acc]); ?>
+                    </div>            
+                <?php endforeach; ?>    
                     
-                $side_panel_content = ob_get_clean(); 
-            ?>
+            <?php $side_panel_content = ob_get_clean(); ?>
+            
 
             <?php get_template_part(('./components/side-panel.php'), ['content' => $side_panel, 'text' => $side_panel_content]) ?>
         </section>
@@ -653,7 +653,7 @@ $partners=[
             <?php get_template_part(('./components/wrapper.php'), ['content' => $wrapper_partners, 'elements' => $wrapper_content]) ?>
         </section>
 
-    </body>
+    </main>
 
     <footer>
         <?php 
