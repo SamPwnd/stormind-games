@@ -1,11 +1,12 @@
 .accordion{
   max-width: 544px;
   min-height: 96px;
-  border-bottom: 0.5px solid #2D2A26;
+  border-bottom: 0.5px solid rgba(4,42,38,0.2);
   margin-bottom: 20px;
   @media screen and (max-width: 768px){
     padding-bottom: 10px;
   }
+  
 }
 
 .accordion__simple{
@@ -19,6 +20,7 @@
 
 .accordion__title{
   @include poppins(H3, 800,#2D2A26,start);
+  text-transform: uppercase;
 }
 
 #crosse,#less{

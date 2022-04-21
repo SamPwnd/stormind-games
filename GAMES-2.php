@@ -45,6 +45,60 @@ $center_logo_1 =[
 $side_panel =[
     'background' => 'https://stormindgames.com/wp-content/uploads/2021/01/cover-remothered-TF.png',
 ];
+$text_panel_side=[
+    [
+        'classes' => 'text-panel text-panel--dark',
+        'title' => 'GAME OVERVIEW',
+        'subtitle' => 'We developed and promoted the award-winning Remothered: Tormented Fathers, the pure and realistic survival horror video game.<br><br>Psychology plays a huge role within the game: heroes and enemies are atypical and the line between good and evil is blurred. The plot is rich in unpredictable twists, and it is touching at the same time. The development of the game is similar to that of a film narration, where the player perfectly identifies himself with the character. The soundtrack, composed by Nobuko Toda (Final Fantasy, Halo, Metal Gear Solid) and Luca Balboni, enhances the terrifying atmosphere of the game.<br><br> Remothered: Tormented Fathers, is available for PlayStation®4, Xbox One, PC, and Nintendo Switch™. Furthermore, you can find the retail version of the game for Nintendo Switch™, PlayStation®4, and Xbox One.'
+    ],
+    [
+        'classes' => 'text-panel text-panel--dark',
+        'title' => 'PLOT',
+        'subtitle' => 'We developed and promoted the award-winning Remothered: Tormented Fathers, the pure and realistic survival horror video The story revolves around Rosemary Reed, a fascinating 35-year-old woman, who reaches Richard Felton’s house, in order to investigate the disappearance of a girl called Celeste. The woman is greeted by Gloria, the nurse who takes care of the old Richard. When Dr. Felton understands Rosemary’s true intentions, the dread begins.'
+    ],
+    [
+        'classes' => 'text-panel text-panel--dark',
+        'title' => 'FEATURES',
+        'subtitle' => ''
+    ],
+];
+$accordion_side =[
+    [                    
+        'classes' => 'accordion accordion-accordion',
+        'title' => 'PSYCHOLOGICAL PLOT',
+        'text-description' => "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",             
+    ],
+    [                    
+        'classes' => 'accordion accordion-accordion',
+        'title' => 'movie-like cutscenes',
+        'text-description' => "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",             
+    ],
+    [                    
+        'classes' => 'accordion accordion-accordion',
+        'title' => 'audio clues',
+        'text-description' => "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",             
+    ],
+    [                    
+        'classes' => 'accordion accordion-accordion',
+        'title' => 'no health bars',
+        'text-description' => "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",             
+    ],
+    [                    
+        'classes' => 'accordion accordion-accordion',
+        'title' => 'realistic puzzles',
+        'text-description' => "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",             
+    ],
+    [                    
+        'classes' => 'accordion accordion-accordion',
+        'title' => 'top-notch soundtrack',
+        'text-description' => "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",             
+    ],
+    [                    
+        'classes' => 'accordion accordion-accordion',
+        'title' => 'real-time loading',
+        'text-description' => "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",             
+    ],
+]; 
 
 $wrapper_characters =[
     'classes' => 'wrapper--brown',
@@ -205,7 +259,7 @@ $gallery =[
 ];
 
 $timeline=[
-    'background' => 'http://stormindgames.com/wp-content/uploads/2021/01/Timeline-scaled.jpg',
+    'background' => 'https://stormindgames.com/wp-content/uploads/2021/01/remote-tf-timeline.png',
     'title' => 'timeline',
     'elements'=>[
         [
@@ -266,6 +320,188 @@ $timeline=[
     ],
 
 ];
+
+$wrapper_reviews=[
+    'classes' => '',
+    'row_classes' => '',
+    'title' => 'rewiews',
+    'background' => '',
+];
+
+$reviews=[
+    'elements' =>[
+        [
+            'vote' => '8.5',
+            'title' => 'MULTIPLAYER.it',
+            'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+        ],
+        [
+            'vote' => '8.5',
+            'title' => 'MULTIPLAYER.it',
+            'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+        ],
+        [
+            'vote' => '8.5',
+            'title' => 'MULTIPLAYER.it',
+            'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+        ],
+        [
+            'vote' => '8.5',
+            'title' => 'MULTIPLAYER.it',
+            'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+        ],
+        [
+            'vote' => '8.5',
+            'title' => 'MULTIPLAYER.it',
+            'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+        ],
+        [
+            'vote' => '8.5',
+            'title' => 'MULTIPLAYER.it',
+            'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+        ],
+        [
+            'vote' => '8.5',
+            'title' => 'MULTIPLAYER.it',
+            'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+        ],
+        [
+            'vote' => '8.5',
+            'title' => 'MULTIPLAYER.it',
+            'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+        ],
+        [
+            'vote' => '8.5',
+            'title' => 'MULTIPLAYER.it',
+            'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+        ],
+        [
+            'vote' => '8.5',
+            'title' => 'MULTIPLAYER.it',
+            'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+        ],
+        [
+            'vote' => '8.5',
+            'title' => 'MULTIPLAYER.it',
+            'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+        ],
+        [
+            'vote' => '8.5',
+            'title' => 'MULTIPLAYER.it',
+            'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+        ],
+        [
+            'vote' => '8.5',
+            'title' => 'MULTIPLAYER.it',
+            'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+        ],
+        [
+            'vote' => '8.5',
+            'title' => 'MULTIPLAYER.it',
+            'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+        ],
+        
+    ],
+];
+
+$wrapper_awards=[
+    'classes' => '',
+    'row_classes' => '',
+    'title' => 'awards',
+    'background' => "linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url('http://stormindgames.com/wp-content/uploads/2021/01/Awards-scaled.jpg')",
+];
+
+$awards=[
+    [
+        'image' => './assets/img/awards1.png',
+        'title' => 'OUTSTANDING ITALIAN COMPANY 2020',
+        'subtitle' => ''
+    ],
+    [
+        'image' => './assets/img/awards2.png',
+        'title' => 'BEST NEW STUDIO 2018',
+        'subtitle' => ''
+    ],
+    [
+        'image' => './assets/img/awards1.png',
+        'title' => 'OUTSTANDING ITALIAN COMPANY 2020',
+        'subtitle' => ''
+    ],
+    [
+        'image' => './assets/img/awards2.png',
+        'title' => 'BEST NEW STUDIO 2018',
+        'subtitle' => ''
+    ],
+    [
+        'image' => './assets/img/awards1.png',
+        'title' => 'OUTSTANDING ITALIAN COMPANY 2020',
+        'subtitle' => ''
+    ],
+    [
+        'image' => './assets/img/awards2.png',
+        'title' => 'BEST NEW STUDIO 2018',
+        'subtitle' => ''
+    ],
+    [
+        'image' => './assets/img/awards1.png',
+        'title' => 'OUTSTANDING ITALIAN COMPANY 2020',
+        'subtitle' => ''
+    ],
+    [
+        'image' => './assets/img/awards2.png',
+        'title' => 'BEST NEW STUDIO 2018',
+        'subtitle' => ''
+    ],
+    [
+        'image' => './assets/img/awards1.png',
+        'title' => 'OUTSTANDING ITALIAN COMPANY 2020',
+        'subtitle' => ''
+    ],
+    [
+        'image' => './assets/img/awards2.png',
+        'title' => 'BEST NEW STUDIO 2018',
+        'subtitle' => ''
+    ],
+    [
+        'image' => './assets/img/awards1.png',
+        'title' => 'OUTSTANDING ITALIAN COMPANY 2020',
+        'subtitle' => ''
+    ],
+    [
+        'image' => './assets/img/awards2.png',
+        'title' => 'BEST NEW STUDIO 2018',
+        'subtitle' => ''
+    ],
+    
+];
+
+$wrapper_partners=[
+    'classes' => '',
+    'row_classes' => 'row-cols-1 row-cols-md-3 gy-5',
+    'title' => 'partners',
+    'background' => "",
+];
+
+$partners=[
+    './assets/Darril.svg',
+    './assets/3000.svg',
+    './assets/Soedesco.svg',
+    
+];
 ?>
 
 <!DOCTYPE html>
@@ -319,32 +555,19 @@ $timeline=[
         </section>
         <section class="mb-1">
             <?php 
-                $text_panel_1=[
-                    'classes' => 'text-panel text-panel--dark',
-                    'title' => 'GAME OVERVIEW',
-                    'subtitle' => 'We developed and promoted the award-winning Remothered: Tormented Fathers, the pure and realistic survival horror video game.<br><br>Psychology plays a huge role within the game: heroes and enemies are atypical and the line between good and evil is blurred. The plot is rich in unpredictable twists, and it is touching at the same time. The development of the game is similar to that of a film narration, where the player perfectly identifies himself with the character. The soundtrack, composed by Nobuko Toda (Final Fantasy, Halo, Metal Gear Solid) and Luca Balboni, enhances the terrifying atmosphere of the game.<br><br> Remothered: Tormented Fathers, is available for PlayStation®4, Xbox One, PC, and Nintendo Switch™. Furthermore, you can find the retail version of the game for Nintendo Switch™, PlayStation®4, and Xbox One.'
-                ];
-                $text_panel_2=[
-                    'classes' => 'text-panel text-panel--dark',
-                    'title' => 'PLOT',
-                    'subtitle' => 'We developed and promoted the award-winning Remothered: Tormented Fathers, the pure and realistic survival horror video The story revolves around Rosemary Reed, a fascinating 35-year-old woman, who reaches Richard Felton’s house, in order to investigate the disappearance of a girl called Celeste. The woman is greeted by Gloria, the nurse who takes care of the old Richard. When Dr. Felton understands Rosemary’s true intentions, the dread begins.'
-                ];
-                $text_panel_3=[
-                    'classes' => 'text-panel text-panel--dark',
-                    'title' => 'FEATURES',
-                    'subtitle' => ''
-                ];
-                $accordion_1 = [
-                    [
-                      'classes' => 'accordion',
-                      'title' => 'FUNCTIONAL TESTER'
-                    ]
-                  ];
+                
                 ob_start();                
-                get_template_part('./components/text-panel.php', ['content' => $text_panel_1]);  
-                get_template_part('./components/text-panel.php', ['content' => $text_panel_2]);  
-                get_template_part('./components/text-panel.php', ['content' => $text_panel_3]);  
-                get_template_part('./components/accordion.php', ['accordion' => $accordion_1]);
+                    get_template_part('./components/text-panel.php', ['content' => $text_panel_side[0]]);  
+                    get_template_part('./components/text-panel.php', ['content' => $text_panel_side[1]]);  
+                    get_template_part('./components/text-panel.php', ['content' => $text_panel_side[2]]);  
+                    get_template_part('./components/accordion.php', ['accordion' => $accordion_side[0]]);
+                    get_template_part('./components/accordion.php', ['accordion' => $accordion_side[1]]);
+                    get_template_part('./components/accordion.php', ['accordion' => $accordion_side[2]]);
+                    get_template_part('./components/accordion.php', ['accordion' => $accordion_side[3]]);
+                    get_template_part('./components/accordion.php', ['accordion' => $accordion_side[4]]);
+                    get_template_part('./components/accordion.php', ['accordion' => $accordion_side[5]]);
+                    get_template_part('./components/accordion.php', ['accordion' => $accordion_side[6]]);
+                    
                 $side_panel_content = ob_get_clean(); 
             ?>
 
@@ -388,16 +611,70 @@ $timeline=[
 
             <?php get_template_part(('./components/wrapper.php'), ['content' => $wrapper_other_trailers, 'elements' => $wrapper_content]) ?>
         </section>
-        <section class="mb-1">
-            <?php ob_start() ?>              
-                <?php get_template_part(('./components/gallery.php'), ['content' => $gallery]); ?>  
-            <?php $wrapper_content = ob_get_clean() ?>    
+        <section class="mb-1">                            
+            <?php   $wrapper_content = get_template_text(('./components/gallery.php'), ['content' => $gallery]); ?> 
             <?php get_template_part(('./components/wrapper.php'), ['content' => $wrapper_gallery, 'elements' => $wrapper_content]) ?>
         </section>
+        <section class="mb-1">
+            <?php get_template_part('./components/timeline.php',['content' => $timeline]) ;?>
+        </section>
+        <section class="mb-1">
+            <?php $wrapper_content = get_template_text(('./components/slider-simple.php'), ['content' => $reviews]); ?> 
+               
+            <?php get_template_part(('./components/wrapper.php'), ['content' => $wrapper_reviews, 'elements' => $wrapper_content]) ?>
+        </section>
+        <section class="mb-1">
+                <?php ob_start(); ?>
+                    <div class="col-12 mb-5">
+                        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4">
+                            <?php foreach($awards as $award): ?>
+                                <div class="col px-5">
+                                    
+                                    <?php get_template_part( './components/card-award-mini.php', [ 'content' =>$award])?>
+                                </div>
+                            <?php endforeach; ?>
+                        </div>
+                    </div>
+                    <div class="col-12 ratio ratio-16x9">
+                        <iframe width="" height="" src="https://www.youtube.com/embed/IRF285u5GxA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+
+                <?php    $wrapper_content = ob_get_clean();  ?>
+            <?php get_template_part(('./components/wrapper.php'), ['content' => $wrapper_awards, 'elements' => $wrapper_content]) ?>
+        </section>
+        <section class="mb-1">
+            <?php ob_start(); foreach($partners as $part): ?>
+                <div class="col d-flex justify-content-center">
+                    <img src="<?=$part ?>" alt="<?=$part ?>" >
+                </div>
+
+            <?php endforeach; $wrapper_content = ob_get_clean(); ?>
+
+            <?php get_template_part(('./components/wrapper.php'), ['content' => $wrapper_partners, 'elements' => $wrapper_content]) ?>
+        </section>
+
     </body>
 
     <footer>
-
+        <?php 
+            $footer = [
+                'classes' => 'footer',
+                'credits' => '© 2020  STORMIND S.R.L - P.IVA 05415340875     |     Via Sclafani 40/B - traversa, 95024 Acireale (CT) - ITALY     |     All Rights Reserved.',
+                'img_bw' => './assets/byBiscuitWay.svg',
+        
+                'socials' => [
+                    'classes' => 'navbar__socials',
+                    'icons' =>[
+                        './assets/social-linkdn.svg',
+                        './assets/social-Fb.svg',
+                        './assets/social-tw.svg',
+                        './assets/social-Ig.svg',
+                        './assets/social-yt.svg',
+                    ]
+                ],
+            ];
+        ?>
+        <?php get_template_part('./components/footer.php', $footer);  ?>
     </footer>
     <script src="./script/navbar.js"></script>
     <script src="./script/slider-simple.js"></script>
