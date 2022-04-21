@@ -1756,15 +1756,21 @@ textarea::-webkit-resizer {
   margin-top: 16px;
   text-transform: uppercase;
 }
-.home__wrapper {
+.home .home__wrapper {
   background-color: #151210;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding: 120px 16px;
 }
-.home__wrapper .text-panel {
+.home .home__wrapper .white-icon-list {
+  display: flex;
+  gap: 70px;
+  margin: 72px auto 0 auto;
+  max-width: fit-content;
+  padding-left: 0;
+}
+.home .home__wrapper .text-panel {
   margin: 0 auto;
 }
-.home__wrapper .text-panel__subtitle {
+.home .text-panel__subtitle {
   white-space: pre-line;
 }
 

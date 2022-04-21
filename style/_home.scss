@@ -1,16 +1,29 @@
-.home__wrapper {
-    background-color: $black;
-    padding-top: 120px;
-    padding-bottom: 120px;
+.home {
 
+    .home__wrapper {
+        background-color: $black;
+        padding: 120px 16px;
+    
+        .white-icon-list {
+            display: flex;
+            gap: 70px;
+            margin: 72px auto 0 auto;
+            max-width: fit-content;
+            padding-left: 0;
+        }
+
+        .text-panel {
+            margin: 0 auto;
+        }
+    }
+    
     .text-panel {
-        margin: 0 auto;
         &__subtitle {
             white-space: pre-line;
         }
     }
+    
 }
-
 @media only screen and (max-width: map-get($grid-breakpoints, lg)){
     .home__wrapper {
         padding-top: 48px;
