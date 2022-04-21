@@ -179,6 +179,194 @@ $trailer_elements =[
     ],
 ];
 
+$wrapper_gallery=[
+    'classes' => '',
+    'row_classes' => '',
+    'title' => 'gallery',
+    'background' => '',
+];
+
+$gallery =[
+    'elements' =>[
+        'https://stormindgames.com/wp-content/uploads/2020/12/01-Remothered-TF.png',
+        'https://stormindgames.com/wp-content/uploads/2020/12/02-Remothered-TF.png',
+        'https://stormindgames.com/wp-content/uploads/2020/12/03-Remothered-TF.png',
+        'https://stormindgames.com/wp-content/uploads/2020/12/04-Remothered-TF.png',
+        'https://stormindgames.com/wp-content/uploads/2020/12/05-Remothered-TF.png',
+        'https://stormindgames.com/wp-content/uploads/2020/12/06-Remothered-TF.png',
+        'https://stormindgames.com/wp-content/uploads/2020/12/07-Remothered-TF.png',
+        'https://stormindgames.com/wp-content/uploads/2020/12/08-Remothered-TF.png',
+        'https://stormindgames.com/wp-content/uploads/2020/12/09-Remothered-TF.png',
+        'https://stormindgames.com/wp-content/uploads/2020/12/10-Remothered-TF.png',
+        'https://stormindgames.com/wp-content/uploads/2020/12/11-Remothered-TF.png',
+        'https://stormindgames.com/wp-content/uploads/2020/12/12-Remothered-TF.png',
+        
+    ],
+];
+
+$timeline=[
+    'background' => 'https://stormindgames.com/wp-content/uploads/2021/01/remote-tf-timeline.png',
+    'title' => 'timeline',
+    'elements'=>[
+        [
+            'date' => 'Mar 19, 2020',
+            'subtitle' => 'NINTENDO SWITCH AND PS4 RELEASE IN ASIA',
+            'description' => 'The game became available in the Asian market, as "Remothered: Tormented Fathers Remastered" on the Nintendo e-Shop, and as “Remothered: Tormented Fathers" on the PlayStation™Store, published by the renowned Japanese company 3goo (Dead by Daylight, Victor Vran: Overkill Edition).',
+        ],
+        [
+            'date' => 'Oct 31, 2019',
+            'subtitle' => 'PHYSICAL RELEASE',
+            'description' => 'Thanks to a collaboration with video game publisher SOEDESCO, the physical edition of the pure and realistic survival horror game comes out for Nintendo Switch, PS4 and Xbox One.',
+        ],
+        [
+            'date' => 'Sep 6, 2019',
+            'subtitle' => 'NINTENDO SWITCH™ RELEASE',
+            'description' => 'The game became available for the Nintendo portable console.',
+        ],
+        [
+            'date' => 'Jul 25, 2018',
+            'subtitle' => 'PS4 AND XBOX ONE RELEASE',
+            'description' => 'Remothered: Tormented Fathers just made its appearance in the consoles world.',
+        ],
+        [
+            'date' => 'Jan 30, 2018',
+            'subtitle' => 'PC FULL RELEASE',
+            'description' => 'The full version of the game was available to PC players.',
+        ],
+        [
+            'date' => 'Oct 31, 2017',
+            'subtitle' => 'STEAM EARLY ACCESS RELEASE',
+            'description' => 'Remothered: Tormented Fathers hit the largest digital distribution platform for PC gaming in Early Access.',
+        ],
+        [
+            'date' => 'Jun, 2017',
+            'subtitle' => 'BETA VERSION',
+            'description' => 'We gave voice to the game characters as we finished the soundtrack with all the activities related to dubbing and subtitles. A near-final release was ready - the beta version was provided to testers.',
+        ],
+        [
+            'date' => 'Dec, 2016',
+            'subtitle' => 'ALMOST THERE',
+            'description' => 'We delivered cinematic vibes to the game as we produced all the cutscenes. Artificial intelligence and sound effects were also developed and implemented. The alpha version was ready.',
+        ],
+        [
+            'date' => 'Jun, 2016',
+            'subtitle' => 'TAKING SHAPE',
+            'description' => 'Motion capture technology was used to create animations. By taking advantage of professional actors, we focused on replicating natural movements to make the action utterly realistic. At the end of this process, characters were able to interact with objects and we got a first playable version of the game with preliminary graphics. Furthermore, we developed the first version of the GUI.',
+        ],
+        [
+            'date' => 'Mar, 2016',
+            'subtitle' => 'EARLY STEPS',
+            'description' => 'March 2016 - At this stage, our 3D artists had finished the preliminary modeling and texturing activities concerning characters and environments. Developers set up the input methods and environment exploration systems that would have been used subsequently in the final product.',
+        ],
+        [
+            'date' => 'Dec, 2015',
+            'subtitle' => 'THE BEGINNING',
+            'description' => 'The start of our journey together with Darril Arts. The production of Remothered: Tormented Fathers began here.',
+        ],
+    ],
+
+];
+
+$wrapper_reviews=[
+    'classes' => '',
+    'row_classes' => '',
+    'title' => 'rewiews',
+    'background' => '',
+];
+
+$reviews=[
+    'elements' =>[
+        [
+            'vote' => '8.5',
+            'title' => 'MULTIPLAYER.it',
+            'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+        ],
+        [
+            'vote' => '8.5',
+            'title' => 'MULTIPLAYER.it',
+            'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+        ],
+        [
+            'vote' => '8.5',
+            'title' => 'MULTIPLAYER.it',
+            'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+        ],
+        [
+            'vote' => '8.5',
+            'title' => 'MULTIPLAYER.it',
+            'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+        ],
+        [
+            'vote' => '8.5',
+            'title' => 'MULTIPLAYER.it',
+            'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+        ],
+        [
+            'vote' => '8.5',
+            'title' => 'MULTIPLAYER.it',
+            'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+        ],
+        [
+            'vote' => '8.5',
+            'title' => 'MULTIPLAYER.it',
+            'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+        ],
+        [
+            'vote' => '8.5',
+            'title' => 'MULTIPLAYER.it',
+            'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+        ],
+        [
+            'vote' => '8.5',
+            'title' => 'MULTIPLAYER.it',
+            'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+        ],
+        [
+            'vote' => '8.5',
+            'title' => 'MULTIPLAYER.it',
+            'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+        ],
+        [
+            'vote' => '8.5',
+            'title' => 'MULTIPLAYER.it',
+            'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+        ],
+        [
+            'vote' => '8.5',
+            'title' => 'MULTIPLAYER.it',
+            'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+        ],
+        [
+            'vote' => '8.5',
+            'title' => 'MULTIPLAYER.it',
+            'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+        ],
+        [
+            'vote' => '8.5',
+            'title' => 'MULTIPLAYER.it',
+            'description' => '“From what we have seen, the atmosphere is already promising and we are truly curious to see how much these guys have improved.”',
+
+        ],
+        
+    ],
+];
+
+
+
+
 ?>
 
 <!DOCTYPE html>
@@ -301,10 +489,41 @@ $trailer_elements =[
 
             <?php get_template_part(('./components/wrapper.php'), ['content' => $wrapper_other_trailers, 'elements' => $wrapper_content]) ?>
         </section>
+        <section class="mb-1">                            
+            <?php   $wrapper_content = get_template_text(('./components/gallery.php'), ['content' => $gallery]); ?> 
+            <?php get_template_part(('./components/wrapper.php'), ['content' => $wrapper_gallery, 'elements' => $wrapper_content]) ?>
+        </section>
+        <section class="mb-1">
+            <?php get_template_part('./components/timeline.php',['content' => $timeline]) ;?>
+        </section>
+        <section class="mb-1">
+            <?php $wrapper_content = get_template_text(('./components/slider-simple.php'), ['content' => $reviews]); ?> 
+               
+            <?php get_template_part(('./components/wrapper.php'), ['content' => $wrapper_gallery, 'elements' => $wrapper_content]) ?>
+        </section>
+
     </body>
 
     <footer>
-
+        <?php 
+            $footer = [
+                'classes' => 'footer',
+                'credits' => '© 2020  STORMIND S.R.L - P.IVA 05415340875     |     Via Sclafani 40/B - traversa, 95024 Acireale (CT) - ITALY     |     All Rights Reserved.',
+                'img_bw' => './assets/byBiscuitWay.svg',
+        
+                'socials' => [
+                    'classes' => 'navbar__socials',
+                    'icons' =>[
+                        './assets/social-linkdn.svg',
+                        './assets/social-Fb.svg',
+                        './assets/social-tw.svg',
+                        './assets/social-Ig.svg',
+                        './assets/social-yt.svg',
+                    ]
+                ],
+            ];
+        ?>
+        <?php get_template_part('./components/footer.php', $footer);  ?>
     </footer>
     <script src="./script/navbar.js"></script>
     <script src="./script/slider-simple.js"></script>

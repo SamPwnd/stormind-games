@@ -277,18 +277,19 @@
     $gallery =[
 
         'elements' =>[
-            './img/03-Remothered-BP.png',
-            './img/03-Remothered-BP.png',
-            './img/03-Remothered-BP.png',
-            './img/03-Remothered-BP.png',
-            './img/03-Remothered-BP.png',
-            './img/03-Remothered-BP.png',
-            './img/03-Remothered-BP.png',
-            './img/03-Remothered-BP.png',
-            './img/03-Remothered-BP.png',
-            './img/03-Remothered-BP.png',
-            './img/03-Remothered-BP.png',
-            './img/03-Remothered-BP.png',
+            './assets/img/03-Remothered-BP.png',
+            './assets/img/03-Remothered-BP.png',
+            './assets/img/03-Remothered-BP.png',
+            './assets/img/03-Remothered-BP.png',
+            './assets/img/03-Remothered-BP.png',
+            './assets/img/03-Remothered-BP.png',
+            './assets/img/03-Remothered-BP.png',
+            './assets/img/03-Remothered-BP.png',
+            './assets/img/03-Remothered-BP.png',
+            './assets/img/03-Remothered-BP.png',
+            './assets/img/03-Remothered-BP.png',
+            './assets/img/03-Remothered-BP.png',
+            
         ]
     ];
 
@@ -411,7 +412,11 @@
         $wrapper_content = ob_get_clean(); 
     ?>
 
-    <?php get_template_part(('./components/wrapper.php'), ['content' => $wrapper, 'elements' => $wrapper_content]) ?>
+    <div class="container-fluid">
+        
+        <?php get_template_part(('./components/wrapper.php'), ['content' => $wrapper, 'elements' => $wrapper_content]) ?>
+        
+    </div>
     <div>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum quos ducimus blanditiis dolores possimus, ex ipsam nostrum! Eius porro modi eaque nisi atque nemo! Mollitia rerum quis eius! Laudantium, nulla?
     </div>
@@ -423,7 +428,9 @@
     <?php get_template_part(('./components/slider-simple.php'), ['content' => $slider_simple]); ?>
 
     <div class="container-fluid">
-        <?php get_template_part(('./components/gallery.php'), ['content' => $gallery]); ?>
+        <div class="row">
+            <?php get_template_part(('./components/gallery.php'), ['content' => $gallery]); ?>  
+        </div>
 
     </div>
 

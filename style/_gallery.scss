@@ -53,9 +53,29 @@
   }
 } 
   
-  
+.modal-content, #caption {   
+    
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
 
-  .gallery__container{
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}  
+
+.gallery{
+  margin-top: -72px;
+  padding-top: 26px;
+  &__container{
     position: relative;
     
     img{
@@ -67,23 +87,42 @@
     }
   }
 
+  &__selectors{
+    margin-bottom: 70px;
+    a{
+      text-transform: uppercase;
+      @include lato(H3, 700, $black, start);
+      margin-right: 30px;
+      position: relative;
+      &:last-child{margin: 0;}
+
+      &:after{
+        content:'';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 0%;
+        border-top: 1px solid $primary;
+        transition: all .2s;
+      }
+      &:hover{
+        &:after{ width: 100%;}
+      }
+    }
+  }
+
+  &__btn{
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    margin-top: 72px;
+    img{
+      max-height: 35px;
+      margin-right: 7px;
+    }
+  }
+}
+
  
-  .modal-content, #caption {   
-    
-      -webkit-animation-name: zoom;
-      -webkit-animation-duration: 0.6s;
-      animation-name: zoom;
-      animation-duration: 0.6s;
-  }
   
-  
-  @-webkit-keyframes zoom {
-      from {-webkit-transform:scale(0)} 
-      to {-webkit-transform:scale(1)}
-  }
-  
-  @keyframes zoom {
-      from {transform:scale(0)} 
-      to {transform:scale(1)}
-  }
   
