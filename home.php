@@ -137,10 +137,10 @@
         'class'  => '--biggest',
         'title' => 'BATORA:<br> LOST HAVEN',
         'icons' => [
-                '../stormind-games/assets/img/pc.svg',
-                '../stormind-games/assets/img/ps.svg',
-                '../stormind-games/assets/img/xbox.svg',
-                '../stormind-games/assets/img/nintendo.svg',
+            './assets/img/pc.svg',
+            './assets/img/ps.svg',
+            './assets/img/xbox.svg',
+            './assets/img/nintendo.svg',
             ],
             'contentbutton' => '+',
     ];
@@ -150,10 +150,10 @@
         'class'  => '--little',
         'title' => 'REMOTHERED:<br> BROKEN PORCELAIN',
         'icons' => [
-                '../stormind-games/img/pc.svg',
-                '../stormind-games/img/ps.svg',
-                '../stormind-games/img/xbox.svg',
-                '../stormind-games/img/nintendo.svg',
+                './assets/img/pc.svg',
+                './assets/img/ps.svg',
+                './assets/img/xbox.svg',
+                './assets/img/nintendo.svg',
             ],
             'contentbutton' => '+',
     ];
@@ -163,19 +163,37 @@
         'class'  => '--little',
         'title' => 'REMOTHERED:<br> BROKEN PORCELAIN',
         'icons' => [
-                '../stormind-games/img/pc.svg',
-                '../stormind-games/img/ps.svg',
-                '../stormind-games/img/xbox.svg',
-                '../stormind-games/img/nintendo.svg',
+            './assets/img/pc.svg',
+            './assets/img/ps.svg',
+            './assets/img/xbox.svg',
+            './assets/img/nintendo.svg',
             ],
             'contentbutton' => '+',
     ];
 
     $text_panel_prefooter = [
-        'classes' => 'text-panel text-panel--center text-panel--black col-12 col-lg-6',
+        'classes' => 'text-panel text-panel--center text-panel--black col-12 col-lg-8',
         'title' => 'Join Batora: Lost Haven Newsletter',
         'subtitle' => 'Sign up to gain exclusive access to subscriber-only content, game updates, wallpapers, and more!'
     ];
+
+    $footer = [
+        'classes' => 'footer',
+        'credits' => '© 2020  STORMIND S.R.L - P.IVA 05415340875     |     Via Sclafani 40/B - traversa, 95024 Acireale (CT) - ITALY     |     All Rights Reserved.',
+        'img_bw' => './assets/byBiscuitWay.svg',
+
+        'socials' => [
+            'classes' => 'navbar__socials',
+            'icons' =>[
+                './assets/social-linkdn.svg',
+                './assets/social-Fb.svg',
+                './assets/social-tw.svg',
+                './assets/social-Ig.svg',
+                './assets/social-yt.svg',
+            ]
+        ],
+    ];
+
 
 ?>
 
@@ -326,7 +344,7 @@
             </div>
         </div>
 
-        <div class="mb-5 pb-2">
+        <div class="mb-5 pb-4">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 mt-4">
@@ -342,7 +360,7 @@
         <button class="btn btn-outline-primary ms-auto me-auto d-block">ALL GAMES</button>
 
         <section class=" home__newsletter bg-primary pt-5">
-            <div class="container pt-5">
+            <div class="container pt-5 pb-md-3 mb-5">
                 <?php get_template_part('./components/text-panel.php',['content' => $text_panel_prefooter]) ;?>  
                 <div class="home__newsletter-list row mt-5">
                     <div class="col-12 col-md-6">
@@ -362,9 +380,12 @@
                     </div>
                 </div>
             </div>
+
+            <button class="btn btn-outline-black ms-auto me-auto d-block">SUBSCRIBE</button>
             
         </section>
 
+        <?php get_template_part('./components/footer.php', $footer); ?>
     </main>
     
     <script src="./script/navbar.js"></script>

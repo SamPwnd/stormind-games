@@ -1422,6 +1422,7 @@ textarea::-webkit-resizer {
 }
 .post-card--little {
   background-position: center;
+  background-size: 120%;
 }
 .post-card--little .post-card__title {
   font-family: "Poppins";
@@ -1546,9 +1547,14 @@ textarea::-webkit-resizer {
     display: none;
   }
 }
+@media screen and (max-width: 1200px) {
+  .post-card--biggest {
+    background-size: cover;
+    background-position: center;
+  }
+}
 @media screen and (max-width: 768px) {
   .post-card--biggest {
-    background: #683682 !important;
     height: 360px !important;
   }
   .post-card--biggest .post-card__buttonhidden {
@@ -1853,6 +1859,7 @@ textarea::-webkit-resizer {
 }
 .home__newsletter {
   margin-top: 124px;
+  padding-bottom: 120px;
 }
 .home__newsletter-list {
   padding: 0 160px;
