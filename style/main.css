@@ -2252,6 +2252,20 @@ textarea::-webkit-resizer {
   width: 100%;
 }
 
+.side-panel__content .article {
+  margin-bottom: 24px;
+}
+
+.text-company {
+  margin-top: 72px;
+  font-family: 'Lato';
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #2D2A26;
+  text-align: start;
+}
+
 .awards {
   width: 100%;
   background-image: url("../assets/Awards-scaled.jpg");
@@ -2259,7 +2273,7 @@ textarea::-webkit-resizer {
 }
 
 .awards .text-panel {
-  margin: 0 auto 85px auto;
+  margin: 0 auto 83px auto;
   padding-top: 120px;
 }
 
@@ -2276,17 +2290,7 @@ textarea::-webkit-resizer {
   height: 100%;
 }
 
-.text-company {
-  padding: 0;
-  font-family: 'Lato';
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: 400;
-  color: #2D2A26;
-  text-align: start;
-}
-
-.home__wrapper {
+.home .home__wrapper {
   background-color: #151210;
   padding: 120px 16px;
 }

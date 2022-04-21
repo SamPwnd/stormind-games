@@ -5,6 +5,17 @@
   }
 }
 
+.side-panel__content{
+  .article{
+    margin-bottom: 24px;
+  }
+}
+
+.text-company{
+  margin-top: 72px;
+  @include lato(H1, 400, #2D2A26, start);
+}
+
 .awards{
   width: 100%;
   background-image: url('../assets/Awards-scaled.jpg');
@@ -12,7 +23,7 @@
   // filter: brightness(50%);
   min-height: 1000px;
   .text-panel{
-    margin: 0 auto 85px auto;
+    margin: 0 auto 83px auto;
     padding-top: 120px;
   }
 
