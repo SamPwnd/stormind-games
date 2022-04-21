@@ -2,7 +2,7 @@
 
 ?>
 
-<div class="container-fluid wrapper <?= $content['classes'] ?>"  style="background-image: <?= $content['background'] ?>">
+<div class="container-fluid wrapper <?= $content['classes'] ?>"  style="background-image: url(<?= $content['background'] ?>)">
     <p class="wrapper__title">
         <?= $content['title'] ?>
     </p>

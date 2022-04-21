@@ -53,6 +53,7 @@
 
     &__title {
         @include poppins(H4, 800, #FFFFFF, left);
+        text-transform: uppercase;
     }
 
     &__title-container {
