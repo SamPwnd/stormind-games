@@ -8,6 +8,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    @media screen and (max-width: 768px) 
+    {
+        margin-top: 48px;
+    }
+
     &--little
     {
         .post-card__title
@@ -67,7 +72,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                margin: 0 16px 0 20px !important;
+                margin: 0 16px 16px 20px !important;
                 .post-card__box
                 {
                     img

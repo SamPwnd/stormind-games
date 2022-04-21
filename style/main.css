@@ -1760,6 +1760,12 @@ textarea::-webkit-resizer {
           justify-content: space-between;
 }
 
+@media screen and (max-width: 768px) {
+  .post-card {
+    margin-top: 48px;
+  }
+}
+
 .post-card--little .post-card__title {
   font-family: 'Poppins';
   font-size: 32px;
@@ -1830,7 +1836,7 @@ textarea::-webkit-resizer {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin: 0 16px 0 20px !important;
+    margin: 0 16px 16px 20px !important;
   }
   .post-card--little .post-card__bottom .post-card__box img {
     margin-right: 30px;
