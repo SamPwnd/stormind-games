@@ -1,0 +1,17 @@
+.careers {
+    &__description {
+        @include lato-cta(H2, 400, $black, left)
+    }
+
+    @media only screen and (max-width: map-get($grid-breakpoints, lg)){
+        .wrapper {
+            &__title {
+                text-align: left;
+                &:after {
+                    left: 2px;
+                    transform: translate(0);
+                }
+            }
+        }
+    }
+}
