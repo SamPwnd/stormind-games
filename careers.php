@@ -52,9 +52,9 @@
     ];
 
     $sideContent =[
-        'background' => './assets/img/side-content-image-1.png',
-        'left-classes' => 'col-10 offset-1 col-md-5 d-flex align-items-center order-0 order-md-2',
-        'right-classes' => 'col-12 col-md-5  order-1',
+        'background' => './assets/img/side-content-long.png',
+        'left-classes' => 'col-10 offset-1 col-md-5 d-flex align-items-center ',
+        'right-classes' => 'col-12 col-md-5 offset-md-1',
     ];
 
 
@@ -141,5 +141,5 @@ Check out this section to see if there are job openings that match your profile.
 
             <?php $sideContentElement = ob_get_clean(); ?>
 
-            <?php get_template_part(('./components/side-content.php'), ['side_content' => $sideContent1, 'content' => $sideContentElement]) ?>
+            <?php get_template_part(('./components/side-content.php'), ['side_content' => $sideContent, 'content' => $sideContentElement]) ?>
         </section>
