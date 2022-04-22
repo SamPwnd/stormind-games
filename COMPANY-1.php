@@ -55,6 +55,27 @@ $cardsaward = [
 
 ];
 
+$cardsimple = [
+  [
+    'classes' => 'cards-simple',
+    'image' => './assets/img/180.png',
+    'title' => 'DEVELOPMENT',
+    'subtitle' => 'We can help you with developing a sequel or an expansion of your video game and  converting the player mode you’ve set to the one of your choice.'
+  ],
+  [
+    'classes' => 'cards-simple',
+    'image' => './assets/img/181.png',
+    'title' => 'GAME’S CINEMATICS & TRAILER',
+    'subtitle' => 'Thanks to the experience gained by the professionals in our team, who have had the chance to prove their skills in the production of CGI films, we can design and create trailers and cinematics for your video game.'
+  ],
+  [
+    'classes' => 'cards-simple',
+    'image' => './assets/img/182.png',
+    'title' => 'PORTING',
+    'subtitle' => 'If you have a finished game for PC, we can port it from PC to PlayStation, Xbox, and Switch, thus making it compatible for consoles.'
+  ]
+];
+
 
 ?>
 
@@ -181,7 +202,7 @@ $cardsaward = [
           <?php get_template_part('./components/cardsaward.php', ['content' => $cardsaward[1]]) ?>
         </div>
 
-        <div class="col-10 offset-1 mt-5" style="height: 624px;">
+        <div class="col-12 mt-5" style="height: 624px;">
 
           <div class="section-video">
             <iframe width="100%" class="single-video" frameborder="0" allowfullscreen="" src="https://www.youtube.com/embed/HaUZ6Zfjsvs">
@@ -196,7 +217,49 @@ $cardsaward = [
     </div>
 
   </section>
-  
+
+  <section class="services">
+    <?php
+    $text_panel_1 = [
+      'classes' => 'text-panel text-panel--center text-panel--dark',
+      'title' => 'SERVICES',
+      'subtitle' => 'Do you need support for your video game? We can help you with the following development services:'
+    ];
+    ob_start();
+    get_template_part('./components/text-panel.php', ['content' => $text_panel_1]);
+    $text_panel_content = ob_get_clean();
+    ?>
+
+    <?php get_template_part(('./components/text-panel.php'), ['content' => $text_panel_1, 'text' => $text_panel_content]) ?>
+    <div class="container">
+
+
+      <?php
+      ob_start();
+      get_template_part(('./components/cardsimple.php'), ['content' => $cardsimple]);
+      $cardsimple_content = ob_get_clean(); ?>
+
+      <div class="row">
+        <div class="col col-md-3 offset-md-1 col-sm-12">
+          <?php get_template_part(('./components/cardsimple.php'), ['content' => $cardsimple[0], 'text' => $cardsimple_content]) ?>
+        </div>
+
+
+        <div class="col col-md-3 col-sm-12 ">
+          <?php get_template_part(('./components/cardsimple.php'), ['content' => $cardsimple[1], 'text' => $cardsimple_content]) ?>
+        </div>
+
+
+        <div class="col col-md-3 col-sm-12">
+          <?php get_template_part(('./components/cardsimple.php'), ['content' => $cardsimple[2], 'text' => $cardsimple_content]) ?>
+        </div>
+      </div>
+    </div>
+    <!-- <?php for ($i = 0; $i < count($cardsimple); $i++) get_template_part(('./components/cardsimple.php'), ['content' => $cardsimple[$i], 'text' => $cardsimple_content]) ?> -->
+
+
+  </section>
+
 
   <script src="script/accordion.js"></script>
 </body>
