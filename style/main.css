@@ -2312,6 +2312,15 @@ textarea::-webkit-resizer {
   padding-bottom: 120px;
 }
 
+.news-letter .home__newsletter {
+  margin-top: 0;
+  padding-bottom: 120px;
+}
+
+.news-letter .home__newsletter .text-panel {
+  margin: 0 auto;
+}
+
 .home .home__wrapper {
   background-color: #151210;
   padding: 120px 16px;
