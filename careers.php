@@ -170,8 +170,11 @@
           ]
     ]; 
     
-      
-
+    $text_panel_prefooter = [
+        'classes' => 'text-panel text-panel--center text-panel--black col-12 col-lg-8 mx-auto',
+        'title' => 'batora: lost haven newsletter',
+        'subtitle' => 'Sign up to gain exclusive access to subscriber-only content, game updates, wallpapers, and more!'
+    ];
 ?>
 
 <!DOCTYPE html>
@@ -188,35 +191,35 @@
     <main class="careers">
         <section class="mb-1">
 
-        <?php ob_start(); ?>
-            <ul class="navbar__links " id="navbarNavDropdown">
-                <li class="navbar__link"><a href="#">company</a></li>
-                <li class="navbar__link"><a href="#">games</a></li>
-                <li class="navbar__link"><a href="#">news</a></li>
-                <li class="navbar__link"><a href="#">press kit</a></li>
-                <li class="navbar__link"><a href="#">careers</a></li>
-                <li class="navbar__link">
-                    <a href="#">
-                        <img src="./assets/icon-Coop.svg" alt="">
-                        work with us
-                    </a>
-                </li>
-            </ul>
-        <?php $navbarContent = ob_get_clean(); ?>
+            <?php ob_start(); ?>
+                <ul class="navbar__links " id="navbarNavDropdown">
+                    <li class="navbar__link"><a href="#">company</a></li>
+                    <li class="navbar__link"><a href="#">games</a></li>
+                    <li class="navbar__link"><a href="#">news</a></li>
+                    <li class="navbar__link"><a href="#">press kit</a></li>
+                    <li class="navbar__link"><a href="#">careers</a></li>
+                    <li class="navbar__link">
+                        <a href="#">
+                            <img src="./assets/icon-Coop.svg" alt="">
+                            work with us
+                        </a>
+                    </li>
+                </ul>
+            <?php $navbarContent = ob_get_clean(); ?>
 
-        <?php  get_template_part('./components/navbar.php', ['navbar' => $navbar , 'content' => $navbarContent]); ?>
+            <?php  get_template_part('./components/navbar.php', ['navbar' => $navbar , 'content' => $navbarContent]); ?>
 
-        <?php ob_start(); ?>
-            <div class="container">
-            <?php get_template_part('./components/text-panel.php',['content' => $text_panel_hero]); ?>
-                <p class="hero__bottom">
-                    <img src="./assets/scroll-down-arrow.svg" alt="down">
-                    <a href="#">Scroll Down</a>
-                </p>
-            </div>
-        <?php $heroContent = ob_get_clean(); ?>
+            <?php ob_start(); ?>
+                <div class="container">
+                <?php get_template_part('./components/text-panel.php',['content' => $text_panel_hero]); ?>
+                    <p class="hero__bottom">
+                        <img src="./assets/scroll-down-arrow.svg" alt="down">
+                        <a href="#">Scroll Down</a>
+                    </p>
+                </div>
+            <?php $heroContent = ob_get_clean(); ?>
 
-        <?php get_template_part('./components/hero.php', ['hero' => $hero, 'content' => $heroContent]); ?>
+            <?php get_template_part('./components/hero.php', ['hero' => $hero, 'content' => $heroContent]); ?>
 
         </section>
 
@@ -226,12 +229,12 @@
             ?>        
             <p class="col bw-white-space-preline ">Stormind Games is a fast-growing and award-winning game development studio based in Italy. As of today, Stormind Games has a development team consisting of both internal and external resources whose role spans from the concept to the post-production phase of the game,  and also has an internal marketing team.
  
- Stormind Games offers an innovative environment where people are encouraged to develop their skills so they can perform to the best of their abilities and work towards achieving the goals of the company.</p>
+                Stormind Games offers an innovative environment where people are encouraged to develop their skills so they can perform to the best of their abilities and work towards achieving the goals of the company.</p>
             <p class="col bw-white-space-preline ">Our employees are aware of their own roles: every time a new one is hired and has to be trained, this person is able to quickly learn each step.
 
-Being part of Stormind Games means living within a dynamic, international environment, where you will actively contribute to providing valuable and innovative games that stand out from the rest.
+                Being part of Stormind Games means living within a dynamic, international environment, where you will actively contribute to providing valuable and innovative games that stand out from the rest.
 
-Check out this section to see if there are job openings that match your profile. Otherwise, you can send your spontaneous application.</p>
+                Check out this section to see if there are job openings that match your profile. Otherwise, you can send your spontaneous application.</p>
 
             <?php
                 $wrapper_content = ob_get_clean(); 
@@ -295,7 +298,7 @@ Check out this section to see if there are job openings that match your profile.
                 </div>
             </div>
 
-            <button class="btn btn-outline-black ms-auto me-auto d-block">SUBSCRIBE</button>
+            <button class="btn btn-outline-black mx-auto d-block">SUBSCRIBE</button>
             
         </section>
 
