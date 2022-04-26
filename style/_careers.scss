@@ -14,4 +14,16 @@
             }
         }
     }
+    .side-panel {
+        &__background {
+            background-image: url('./assets/img/side-content-long.png');
+            background-position: top;
+        }
+        .bw-mb-72 {
+            margin-bottom: 0;
+        }
+        .alt-100 {
+            height: inherit;
+        }
+    }
 }

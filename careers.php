@@ -46,17 +46,131 @@
 
     ];
 
-    $textPanelSide = [
-        'classes' => 'text-panel',
-        'title' => 'DISCOVER OUR JOB OPPORTUNITIES',
-    ];
-
-    $sideContent =[
+   /*  $sideContent =[
         'background' => './assets/img/side-content-long.png',
         'left-classes' => 'col-10 offset-1 col-md-5 d-flex align-items-center ',
         'right-classes' => 'col-12 col-md-5 offset-md-1',
-    ];
+    ]; */
 
+    $side_panel =[
+        'background' => './assets/img/side-content-long1.png',
+        'background-classes' => 'col-12 col-md-5 offset-md-1 p-0',
+        'content-classes' => 'col-10 offset-1 col-md-5',
+    ];
+    $text_panel_side=[
+        [
+            'classes' => 'text-panel text-panel--dark',
+            'title' => 'DISCOVER OUR JOB OPPORTUNITIES',            
+        ],
+    ];
+    $accordion_side =[
+        [
+            'application' => [
+                'classes' => 'application',
+                'text_panel' => [
+                'classes' => 'text-panel text-panel--small-title text-panel--black',
+                'title' => 'FUNCTIONAL TESTER',
+                ],
+            ],
+            'classes' => 'accordion accordion-accordion',
+            'title' => 'FUNCTIONAL TESTER',
+            'text-description' => '<span>Job Description:</span><br>
+              The functional tester is a very important member of the production team. He executes tests to ensure the user of the application will have an optimal experience. The tester helps the development team to find bugs, refine the user experience and support the development process.<br><br>
+        
+              <span>Responsibilities:</span> <br>
+              Execute specific tests as required by the production team and the lead tester;
+              Perform tests against the established procedures;
+              Discover bugs, find clear reproductions steps and enter this information in the bug database;
+              <br><br>
+              <span>Qualifications Requirements:</span>
+              1 year of experience in quality assurance, preferably on applications
+              Possess a good knowledge of computer software and software development;
+              <br><br>
+              <span>Detail oriented:</span><br>
+              Be articulate and a team player<br>
+              Have a good understanding of spoken and written English.'
+          ],
+          [
+            'application' => [
+                'classes' => 'application',
+                'text_panel' => [
+                'classes' => 'text-panel text-panel--small-title text-panel--black',
+                'title' => 'FUNCTIONAL TESTER',
+                ],
+            ],
+            'classes' => 'accordion accordion-accordion',
+            'title' => 'FUNCTIONAL TESTER',
+            'text-description' => '<span>Job Description:</span><br>
+              The functional tester is a very important member of the production team. He executes tests to ensure the user of the application will have an optimal experience. The tester helps the development team to find bugs, refine the user experience and support the development process.<br><br>
+        
+              <span>Responsibilities:</span> <br>
+              Execute specific tests as required by the production team and the lead tester;
+              Perform tests against the established procedures;
+              Discover bugs, find clear reproductions steps and enter this information in the bug database;
+              <br><br>
+              <span>Qualifications Requirements:</span>
+              1 year of experience in quality assurance, preferably on applications
+              Possess a good knowledge of computer software and software development;
+              <br><br>
+              <span>Detail oriented:</span><br>
+              Be articulate and a team player<br>
+              Have a good understanding of spoken and written English.'
+          ],
+          [
+            'application' => [
+                'classes' => 'application',
+                'text_panel' => [
+                'classes' => 'text-panel text-panel--small-title text-panel--black',
+                'title' => 'FUNCTIONAL TESTER',
+                ],
+            ],
+            'classes' => 'accordion accordion-accordion',
+            'title' => 'FUNCTIONAL TESTER',
+            'text-description' => '<span>Job Description:</span><br>
+              The functional tester is a very important member of the production team. He executes tests to ensure the user of the application will have an optimal experience. The tester helps the development team to find bugs, refine the user experience and support the development process.<br><br>
+        
+              <span>Responsibilities:</span> <br>
+              Execute specific tests as required by the production team and the lead tester;
+              Perform tests against the established procedures;
+              Discover bugs, find clear reproductions steps and enter this information in the bug database;
+              <br><br>
+              <span>Qualifications Requirements:</span>
+              1 year of experience in quality assurance, preferably on applications
+              Possess a good knowledge of computer software and software development;
+              <br><br>
+              <span>Detail oriented:</span><br>
+              Be articulate and a team player<br>
+              Have a good understanding of spoken and written English.'
+          ],
+          [
+            'application' => [
+                'classes' => 'application',
+                'text_panel' => [
+                'classes' => 'text-panel text-panel--small-title text-panel--black',
+                'title' => 'FUNCTIONAL TESTER',
+                ],
+            ],
+            'classes' => 'accordion accordion-accordion',
+            'title' => 'FUNCTIONAL TESTER',
+            'text-description' => '<span>Job Description:</span><br>
+              The functional tester is a very important member of the production team. He executes tests to ensure the user of the application will have an optimal experience. The tester helps the development team to find bugs, refine the user experience and support the development process.<br><br>
+        
+              <span>Responsibilities:</span> <br>
+              Execute specific tests as required by the production team and the lead tester;
+              Perform tests against the established procedures;
+              Discover bugs, find clear reproductions steps and enter this information in the bug database;
+              <br><br>
+              <span>Qualifications Requirements:</span>
+              1 year of experience in quality assurance, preferably on applications
+              Possess a good knowledge of computer software and software development;
+              <br><br>
+              <span>Detail oriented:</span><br>
+              Be articulate and a team player<br>
+              Have a good understanding of spoken and written English.'
+          ]
+    ]; 
+    
+      
 
 ?>
 
@@ -135,11 +249,60 @@ Check out this section to see if there are job openings that match your profile.
         </section>
 
         <section class="mb-1">
-            <?php ob_start(); ?>
+        <?php ob_start(); ?>
+                <?php foreach($text_panel_side as $tps): ?>
+                    <div class="bw-mb-72">
+                        <?php get_template_part('./components/text-panel.php', ['content' => $tps]); ?>
+                    </div>            
+                <?php endforeach; ?>    
+                <?php foreach($accordion_side as $acc): ?>
+                    <div class="bw-mb-72">
+                        <?php get_template_part('./components/accordion.php', ['accordion' => $acc]); ?>
+                    </div>            
+                <?php endforeach; ?> 
+                
+                <?php foreach($accordion_side as $acc): ?>
+                    <div class="bw-mb-72">
+                        <?php get_template_part('./components/accordion.php', ['accordion' => $acc]); ?>
+                    </div>            
+                <?php endforeach; ?> 
+                    
+            <?php $side_panel_content = ob_get_clean(); ?>
+            
 
-                <?php get_template_part('./components/text-panel.php',['content' => $textPanelSide]) ;?>
-
-            <?php $sideContentElement = ob_get_clean(); ?>
-
-            <?php get_template_part(('./components/side-content.php'), ['side_content' => $sideContent, 'content' => $sideContentElement]) ?>
+            <?php get_template_part(('./components/side-panel.php'), ['content' => $side_panel, 'text' => $side_panel_content]) ?>
         </section>
+
+        <section class=" home__newsletter bg-primary pt-5">
+            <div class="container pt-5 pb-md-3 mb-5">
+                <?php get_template_part('./components/text-panel.php',['content' => $text_panel_prefooter]) ;?>  
+                <div class="home__newsletter-list row mt-5">
+                    <div class="col-12 col-md-6">
+                        <ul>
+                            <li>Stay on top of all the latest news on the game</li>
+                            <li>Gain access to behind-the-scenes content before anyone else</li>
+                            <li>Listen to “Will of the Keeper” from Batora: Lost Haven soundtrack composed by Ron Fish (God of War, Batman Arkham Asylum, and Batman Arkham City)</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <ul>
+                            <li>Get the official game wallpaper</li>
+                            <li>Have your name appear in Batora: Lost Haven closing credits</li>
+                            <li>Get the illustrated storyboard created for the game announcement trailer only accessible to subscribers</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn btn-outline-black ms-auto me-auto d-block">SUBSCRIBE</button>
+            
+        </section>
+
+    </main>
+    <script src="./script/bootstrap.min.js"></script>
+    <script src="./script/accordion.js"></script>
+
+
+</body>
+</html>
