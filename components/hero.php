@@ -12,11 +12,14 @@
 ?>
 
 
-<div class="hero">
-    <video  alt="Video" height="100%"  muted  loop>
-        <source src="<?= $hero['video'] ?>" type="video/mp4">
-    </video>
-
+<div class=" <?= $hero['classes'] ?>">
+    <?php if(isset($hero['video'])):?>
+        <video  alt="Video" height="100%"  muted  loop>
+            <source src="<?= $hero['video'] ?>" type="video/mp4">
+        </video>
+    <?php else:?>
+        <img src="<?= $hero['image']?>" alt="https://stormindgames.com/wp-content/uploads/2021/01/Hero-image-News-scaled.jpg">
+    <?php endif ?>    
     <div class="hero__content">
         
         <?= $content ?>

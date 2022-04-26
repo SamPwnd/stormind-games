@@ -1,71 +1,75 @@
-.bullettin__nav{
-    form{
-        width: 100%;
-        height: 64px;
-        display: flex;
-        flex-wrap: nowrap;
-        align-items: center;
-        position: relative;
-        z-index: 1;
-        margin-bottom: 2rem;
-
-        input{
+.bullettin{
+    padding-top: 120px;
+    padding-bottom: 120px;
+    &__nav{
+        form{
             width: 100%;
-            height: 100%;
-            border: 2px solid black;
-            padding: 15px 18px;
-            &:focus{
-                border: 2px solid $primary;
-                
+            height: 64px;
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+            margin-bottom: 2rem;
+    
+            input{
+                width: 100%;
+                height: 100%;
+                border: 2px solid black;
+                padding: 15px 18px;
+                &:focus{
+                    border: 2px solid $primary;
+                    
+                }
+            }
+            button{
+                position: absolute;
+                top: 0;
+                right: 0;
+                z-index: 2;
+                height: 100%;
+                width: 54px;
+                border: 0;
+                background-color: transparent;
+                background-image: url("../assets/icon-search.svg");
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+    
+        }
+    
+        .bullettin__title{
+            @include poppins(H4, 800, $primary, start);
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+            position: relative;
+            &:after{
+                content: '';
+                width: 100px;
+                border-top: 2px solid $primary;
+                position: absolute;
+                left: 0;
+                bottom: -10px;
             }
         }
-        button{
-            position: absolute;
-            top: 0;
-            right: 0;
-            z-index: 2;
-            height: 100%;
-            width: 54px;
-            border: 0;
-            background-color: transparent;
-            background-image: url("../assets/icon-search.svg");
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-
-    }
-
-    .bullettin__title{
-        @include poppins(H4, 800, $primary, start);
-        text-transform: uppercase;
-        margin-bottom: 2rem;
-        position: relative;
-        &:after{
-            content: '';
-            width: 100px;
-            border-top: 2px solid $primary;
-            position: absolute;
-            left: 0;
-            bottom: -10px;
-        }
-    }
-
-    .bullettin__li{
-        @include lato(H3, 700, $black, start);
-        margin-bottom: 20px;
-        text-transform: uppercase;
-        &:last-child{
-            margin-bottom: 50px;
-        }
-        display: flex;
-        div{
-            padding: 1rem;
-
-            p{
-                @include poppins(h5, 500, $black, start);
-                font-size: 12px;
-                opacity: 0.7;
-                img{ opacity: 1};
+    
+        .bullettin__li{
+            @include lato(H3, 700, $black, start);
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            &:last-child{
+                margin-bottom: 50px;
+            }
+            display: flex;
+            div{
+                padding: 1rem;
+    
+                p{
+                    @include poppins(h5, 500, $black, start);
+                    font-size: 12px;
+                    opacity: 0.7;
+                    img{ opacity: 1};
+                }
             }
         }
     }
