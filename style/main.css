@@ -1880,7 +1880,6 @@ textarea::-webkit-resizer {
   margin-top: 0;
   padding-bottom: 120px;
 }
-
 .news-letter .home__newsletter .text-panel {
   margin: 0 auto;
 }
@@ -1996,6 +1995,15 @@ textarea::-webkit-resizer {
     left: 2px;
     transform: translate(0);
   }
+}
+.careers .side-panel__background {
+  background-image: url("./assets/img/side-content-long.png");
+}
+.careers .side-panel .bw-mb-72 {
+  margin-bottom: 0;
+}
+.careers .side-panel .alt-100 {
+  height: inherit;
 }
 
 * {
