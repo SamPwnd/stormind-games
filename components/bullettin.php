@@ -47,6 +47,23 @@
                         <?php endforeach;  ?>
                     <?php endif;?>    
                 </div>
+                <div>
+                    <?php if(isset($content['related'])): ?>
+                        <div class="bullettin__title">
+                            related articles
+                        </div>
+                        <?php foreach($content['related'] as $latest): ?>
+                            
+                            <div class="bullettin__li">
+                                <img src="<?= $latest['image'] ?>" alt="<?= $latest['image'] ?>">
+                                <div>
+                                    <?= $latest['text'] ?>
+                                    <p> <img src="./assets/icon-calendar.svg" alt=""> <?= $latest['date'] ?></p>
+                                </div>
+                            </div>
+                        <?php endforeach;  ?>
+                    <?php endif;?>    
+                </div>
             </div>
         </div>
         </div>

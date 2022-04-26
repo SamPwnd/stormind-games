@@ -325,17 +325,17 @@ $footer = [
       $cardsimple_content = ob_get_clean(); ?>
 
       <div class="row">
-        <div class="col col-md-3 offset-md-1 col-sm-12">
+        <div class="col-lg-4 col-md-4 col-sm-12">
           <?php get_template_part(('./components/cardsimple.php'), ['content' => $cardsimple[0], 'text' => $cardsimple_content]) ?>
         </div>
 
 
-        <div class="col col-md-3 col-sm-12 ">
+        <div class="col-lg-4 col-md-4 col-sm-12 ">
           <?php get_template_part(('./components/cardsimple.php'), ['content' => $cardsimple[1], 'text' => $cardsimple_content]) ?>
         </div>
 
 
-        <div class="col col-md-3 col-sm-12">
+        <div class="col-lg-4 col-md-4 col-sm-12">
           <?php get_template_part(('./components/cardsimple.php'), ['content' => $cardsimple[2], 'text' => $cardsimple_content]) ?>
         </div>
       </div>
