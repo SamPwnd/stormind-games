@@ -92,6 +92,176 @@ $accordion_side =[
 
 ]; 
 
+$wrapper_characters =[
+    'classes' => 'wrapper--brown',
+    'row_classes' => 'row-cols-1 row-cols-md-2 row-cols-lg-3',
+    'title' => 'games',
+    'background' => '',
+];
+
+$character_elements =[
+    [
+        'classes' => 'card-profile ',
+        'image' => 'https://stormindgames.com/wp-content/uploads/2021/01/avril.png',
+        'title' => 'avril',
+        'icon' => './assets/icon-more.svg',
+        'icon_hover' => './assets/icon-less.svg',
+        'description' => 'Linn is a timid and insecure sixteen-year-old girl with a stutter who works at the Ashmann Inn as a maid. 
+            She is definitely not happy with it but she feels somehow attached to the people who live in there.
+
+            Upon Jennifer’s arrival, they became friends right away. 
+            However, their budding friendship will be put to test as they navigate the dangers within their new home.'
+    ],  
+    [
+        'classes' => 'card-profile ',
+        'image' => 'https://stormindgames.com/wp-content/uploads/2021/01/avril.png',
+        'title' => 'avril',
+        'icon' => './assets/icon-more.svg',
+        'icon_hover' => './assets/icon-less.svg',
+        'description' => 'Linn is a timid and insecure sixteen-year-old girl with a stutter who works at the Ashmann Inn as a maid. 
+            She is definitely not happy with it but she feels somehow attached to the people who live in there.
+
+            Upon Jennifer’s arrival, they became friends right away. 
+            However, their budding friendship will be put to test as they navigate the dangers within their new home.'
+    ],  
+    [
+        'classes' => 'card-profile ',
+        'image' => 'https://stormindgames.com/wp-content/uploads/2021/01/avril.png',
+        'title' => 'avril',
+        'icon' => './assets/icon-more.svg',
+        'icon_hover' => './assets/icon-less.svg',
+        'description' => 'Linn is a timid and insecure sixteen-year-old girl with a stutter who works at the Ashmann Inn as a maid. 
+            She is definitely not happy with it but she feels somehow attached to the people who live in there.
+
+            Upon Jennifer’s arrival, they became friends right away. 
+            However, their budding friendship will be put to test as they navigate the dangers within their new home.'
+    ],  
+    [
+        'classes' => 'card-profile ',
+        'image' => 'https://stormindgames.com/wp-content/uploads/2021/01/avril.png',
+        'title' => 'avril',
+        'icon' => './assets/icon-more.svg',
+        'icon_hover' => './assets/icon-less.svg',
+        'description' => 'Linn is a timid and insecure sixteen-year-old girl with a stutter who works at the Ashmann Inn as a maid. 
+            She is definitely not happy with it but she feels somehow attached to the people who live in there.
+
+            Upon Jennifer’s arrival, they became friends right away. 
+            However, their budding friendship will be put to test as they navigate the dangers within their new home.'
+    ],  
+    [
+        'classes' => 'card-profile ',
+        'image' => 'https://stormindgames.com/wp-content/uploads/2021/01/avril.png',
+        'title' => 'avril',
+        'icon' => './assets/icon-more.svg',
+        'icon_hover' => './assets/icon-less.svg',
+        'description' => 'Linn is a timid and insecure sixteen-year-old girl with a stutter who works at the Ashmann Inn as a maid. 
+            She is definitely not happy with it but she feels somehow attached to the people who live in there.
+
+            Upon Jennifer’s arrival, they became friends right away. 
+            However, their budding friendship will be put to test as they navigate the dangers within their new home.'
+    ],  
+    
+    
+    
+    
+];
+
+$wrapper_trailer =[
+    'classes' => '',
+    'row_classes' => 'row-cols-1 ',
+    'title' => 'trailer',
+    'background' => '',
+];
+
+$wrapper_other_trailers =[
+    'classes' => '',
+    'row_classes' => 'row-cols-1  row-cols-md-2 row-cols-xl-3',
+    'title' => 'other trailers',
+    'background' => '',
+];
+
+$trailer_elements =[
+    [
+        'classes' => 'cards-video',
+        'video' => 'https://www.youtube.com/embed/G8xNwyjzMRU',
+        'title' => 'physical edition trailer',
+    ],
+    [
+        'classes' => 'cards-video',
+        'video' => 'https://www.youtube.com/embed/G8xNwyjzMRU',
+        'title' => 'switch trailer',
+    ],
+    [
+        'classes' => 'cards-video',
+        'video' => 'https://www.youtube.com/embed/G8xNwyjzMRU',
+        'title' => 'official trailer',
+    ],
+    [
+        'classes' => 'cards-video',
+        'video' => 'https://www.youtube.com/embed/G8xNwyjzMRU',
+        'title' => 'steam early access trailer',
+    ],
+    [
+        'classes' => 'cards-video',
+        'video' => 'https://www.youtube.com/embed/G8xNwyjzMRU',
+        'title' => 'greenlight trailer',
+    ],
+    [
+        'classes' => 'cards-video',
+        'video' => 'https://www.youtube.com/embed/G8xNwyjzMRU',
+        'title' => 'announcement trailer',
+    ],
+    
+];
+
+$wrapper_gallery=[
+    'classes' => '',
+    'row_classes' => '',
+    'title' => 'gallery',
+    'background' => '',
+];
+
+$gallery =[
+    'elements' =>[
+        'https://stormindgames.com/wp-content/uploads/2020/11/01-Batora-Lost-Haven-2.png',
+        'https://stormindgames.com/wp-content/uploads/2020/11/02-Batora-Lost-Haven-2.png',
+        'https://stormindgames.com/wp-content/uploads/2020/11/03-Batora-Lost-Haven-1.png',
+        'https://stormindgames.com/wp-content/uploads/2020/11/04-Batora-Lost-Haven-1.png',
+        'https://stormindgames.com/wp-content/uploads/2020/11/05-Batora-Lost-Haven-1.png',
+        'https://stormindgames.com/wp-content/uploads/2020/11/06-Batora-Lost-Haven-1.png',
+        'https://stormindgames.com/wp-content/uploads/2020/11/07-Batora-Lost-Haven.png',
+        'https://stormindgames.com/wp-content/uploads/2020/11/08-Batora-Lost-Haven.png',
+        'https://stormindgames.com/wp-content/uploads/2020/11/09-Batora-Lost-Haven.png',
+        'https://stormindgames.com/wp-content/uploads/2020/11/10-Batora-Lost-Haven.png',
+        'https://stormindgames.com/wp-content/uploads/2020/11/11-Batora-Lost-Haven.png',
+        'https://stormindgames.com/wp-content/uploads/2020/11/12-Batora-Lost-Haven.png',   
+        
+    ],
+];
+
+$timeline=[
+    'background' => 'https://stormindgames.com/wp-content/uploads/2021/01/batora-timeline.png',
+    'title' => 'timeline',
+    'elements'=>[
+        [
+            'date' => 'Mar 19, 2020',
+            'subtitle' => 'NINTENDO SWITCH AND PS4 RELEASE IN ASIA',
+            'description' => 'The game became available in the Asian market, as "Remothered: Tormented Fathers Remastered" on the Nintendo e-Shop, and as “Remothered: Tormented Fathers" on the PlayStation™Store, published by the renowned Japanese company 3goo (Dead by Daylight, Victor Vran: Overkill Edition).',
+        ],
+        [
+            'date' => 'Oct 31, 2019',
+            'subtitle' => 'PHYSICAL RELEASE',
+            'description' => 'Thanks to a collaboration with video game publisher SOEDESCO, the physical edition of the pure and realistic survival horror game comes out for Nintendo Switch, PS4 and Xbox One.',
+        ],
+        [
+            'date' => 'Sep 6, 2019',
+            'subtitle' => 'NINTENDO SWITCH™ RELEASE',
+            'description' => 'The game became available for the Nintendo portable console.',
+        ],
+        
+    ],
+
+];
 ?>
 
 <!DOCTYPE html>
@@ -158,6 +328,51 @@ $accordion_side =[
             <?php $side_panel_content = ob_get_clean(); ?>
 
             <?php get_template_part(('./components/side-panel.php'), ['content' => $side_panel, 'text' => $side_panel_content]) ?>
+        </section>
+        <section class="mb-1">
+            <?php 
+                ob_start(); 
+                foreach($character_elements as $element): 
+            ?>        
+                <div class="col bw-mb-32">
+                    <?php get_template_part("./components/card-profile.php", ['content' => $element]); ?>
+                </div>
+            <?php
+                endforeach;
+                $wrapper_content = ob_get_clean(); 
+            ?>
+            <?php get_template_part(('./components/wrapper.php'), ['content' => $wrapper_characters, 'elements' => $wrapper_content]) ?>
+        </section>
+        <section class="mb-1">
+            <?php ob_start(); ?>        
+                <div class="col ratio ratio-16x9">
+                <iframe  width="" height="" src="https://www.youtube.com/embed/G8xNwyjzMRU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            <?php $wrapper_content = ob_get_clean(); ?>
+
+            <?php get_template_part(('./components/wrapper.php'), ['content' => $wrapper_trailer, 'elements' => $wrapper_content]) ?>
+        </section>
+        <section class="mb-1">
+            <?php 
+                ob_start(); 
+                foreach($trailer_elements as $element): 
+            ?>        
+                <div class="col">
+                    <?php  get_template_part("./components/card-video.php", ['content' => $element]);  ?>
+                </div>
+            <?php
+                endforeach;
+                $wrapper_content = ob_get_clean(); 
+            ?>
+
+            <?php get_template_part(('./components/wrapper.php'), ['content' => $wrapper_other_trailers, 'elements' => $wrapper_content]) ?>
+        </section>
+        <section class="mb-1">                            
+            <?php   $wrapper_content = get_template_text(('./components/gallery.php'), ['content' => $gallery]); ?> 
+            <?php get_template_part(('./components/wrapper.php'), ['content' => $wrapper_gallery, 'elements' => $wrapper_content]) ?>
+        </section>
+        <section class="mb-1">
+            <?php get_template_part('./components/timeline.php',['content' => $timeline]) ;?>
         </section>
     </main>   
     <footer>
