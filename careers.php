@@ -53,7 +53,7 @@
     ]; */
 
     $side_panel =[
-        'background' => '',
+        'background' => './assets/img/side-content-long.png',
         'background-classes' => 'col-12 col-md-5 offset-md-1 p-0',
         'content-classes' => 'col-10 offset-1 col-md-5',
     ];
