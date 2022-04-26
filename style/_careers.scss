@@ -13,6 +13,10 @@
                 }
             }
         }
+        .side-panel__background {
+            max-height: 216px;
+            background-position: bottom;
+        }
     }
     .side-panel {
         &__background {
@@ -25,5 +29,31 @@
         .alt-100 {
             height: inherit;
         }
+    }
+
+    &__prefooter {
+        padding-bottom: 120px;
+
+        .text-panel {
+            &--center {
+                margin: 0 auto;
+                max-width: none;
+            }
+    
+            &--black {
+                @media only screen and (max-width: 565px){
+                    .text-panel__title {
+                        text-align: left
+                    }
+                    .text-panel__subtitle {
+                        @include lato(H2, 400, $black, left);
+                    }
+                }
+            }
+            &__subtitle {
+                white-space: pre-line;
+            }
+        }
+    
     }
 }

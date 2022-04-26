@@ -54,8 +54,8 @@
 
     $side_panel =[
         'background' => './assets/img/side-content-long1.png',
-        'background-classes' => 'col-12 col-md-5 offset-md-1 p-0',
-        'content-classes' => 'col-10 offset-1 col-md-5',
+        'background-classes' => 'col-12 col-lg-5 offset-lg-1 p-0',
+        'content-classes' => 'col-10 offset-1 col-lg-5 order-1 order-lg-0',
     ];
     $text_panel_side=[
         [
@@ -170,7 +170,38 @@
           ]
     ]; 
     
-      
+    $text_panel_prefooter = [
+        'classes' => 'text-panel text-panel--center text-panel--black col-12 col-lg-8',
+        'title' => 'SPONTANEOUS APPLICATION',
+        'subtitle' => 'We are always on the lookout for talents to join us!
+        That’s why we’re more than happy to consider spontaneous applications.
+        If you would like to be considered for future vacancies, feel free to send your open application at any time, even if the position you are looking for is not listed among the available opportunities.'
+    ];
+
+    $spontaneous_application = [
+        'classes' => 'application',
+        'text_panel' => [
+            'classes' => 'text-panel text-panel--small-title text-panel--black',
+            'title' => 'SPONTANEOUS APPLICATION',
+        ],
+    ];
+
+    $footer = [
+        'classes' => 'footer',
+        'credits' => '© 2020  STORMIND S.R.L - P.IVA 05415340875     |     Via Sclafani 40/B - traversa, 95024 Acireale (CT) - ITALY     |     All Rights Reserved.',
+        'img_bw' => './assets/byBiscuitWay.svg',
+
+        'socials' => [
+            'classes' => 'navbar__socials',
+            'icons' =>[
+                './assets/social-linkdn.svg',
+                './assets/social-Fb.svg',
+                './assets/social-tw.svg',
+                './assets/social-Ig.svg',
+                './assets/social-yt.svg',
+            ]
+        ],
+    ];
 
 ?>
 
@@ -240,13 +271,16 @@ Check out this section to see if there are job openings that match your profile.
             <?php get_template_part(('./components/wrapper.php'), ['content' => $wrapper, 'elements' => $wrapper_content]) ?>
         </section>
 
-        <section class="mb-1">
-            <?php get_template_part(('./components/slider-panel.php'), ['content' => $slider_panel]) ?>
-        </section>
+        <div class="d-flex flex-column">
+            <section class="mb-1 order-1">
+                <?php get_template_part(('./components/slider-panel.php'), ['content' => $slider_panel]) ?>
+            </section>
 
-        <section class="mb-1">
-            <img class="w-100" src="./assets/img/career-img.png" alt="">
-        </section>
+            <section class="mb-1 order-0 order-lg-2">
+                <img class="w-100" src="./assets/img/career-img.png" alt="">
+            </section>
+        </div>
+        
 
         <section class="mb-1">
         <?php ob_start(); ?>
@@ -273,35 +307,24 @@ Check out this section to see if there are job openings that match your profile.
             <?php get_template_part(('./components/side-panel.php'), ['content' => $side_panel, 'text' => $side_panel_content]) ?>
         </section>
 
-        <section class=" home__newsletter bg-primary pt-5">
+        <section class="careers__prefooter bg-primary pt-5 mb-1">
             <div class="container pt-5 pb-md-3 mb-5">
                 <?php get_template_part('./components/text-panel.php',['content' => $text_panel_prefooter]) ;?>  
-                <div class="home__newsletter-list row mt-5">
-                    <div class="col-12 col-md-6">
-                        <ul>
-                            <li>Stay on top of all the latest news on the game</li>
-                            <li>Gain access to behind-the-scenes content before anyone else</li>
-                            <li>Listen to “Will of the Keeper” from Batora: Lost Haven soundtrack composed by Ron Fish (God of War, Batman Arkham Asylum, and Batman Arkham City)</li>
-                        </ul>
-                    </div>
-
-                    <div class="col-12 col-md-6">
-                        <ul>
-                            <li>Get the official game wallpaper</li>
-                            <li>Have your name appear in Batora: Lost Haven closing credits</li>
-                            <li>Get the illustrated storyboard created for the game announcement trailer only accessible to subscribers</li>
-                        </ul>
-                    </div>
-                </div>
             </div>
 
-            <button class="btn btn-outline-black ms-auto me-auto d-block">SUBSCRIBE</button>
-            
+            <button class="btn btn-outline-black ms-auto me-auto d-block" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">SEND APPLICATION</button>
+            <?php get_template_part('./components/application.php', ['content' => $spontaneous_application]); ?>
+
         </section>
 
+        <footer class="mt-1">
+          <?php get_template_part('./components/footer.php', $footer); ?>  
+        </footer>
+
     </main>
-    <script src="./script/bootstrap.min.js"></script>
+
     <script src="./script/accordion.js"></script>
+    <script src="./script/bootstrap.min.js"></script>
 
 
 </body>
