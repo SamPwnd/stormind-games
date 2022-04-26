@@ -20,15 +20,12 @@
   <?php endforeach; ?> 
 
   <div class="col-12 d-flex justify-content-center">
-    <button class="btn btn-outline-primary gallery__btn">
+    <button class="btn btn-outline-primary bw-btn-show-more bw-mt-72">
       <img src="./assets/icon-more.svg" alt="icon-more.svg">  
       show more
     </button>
   </div>
 </div>
-  
-
-
 
 
 

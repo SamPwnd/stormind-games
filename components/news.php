@@ -15,7 +15,7 @@
 
 ?>
 
-<div class="<?=$content['classes'] ?> col-8">
+<div class="<?=$content['classes'] ?>">
     <img src="<?=$content['image'] ?>" alt="">
     <div class="news__icons-wrapper">
         <div class="news__icon-block">

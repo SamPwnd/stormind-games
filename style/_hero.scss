@@ -11,7 +11,7 @@
     &--mini{
         max-height: 650px;
     }
-    video{
+    &__video{
         height: 100vh;
         width: 100%;
         position: relative;
@@ -20,7 +20,7 @@
         object-fit: cover;   
     }
 
-    img{
+    &__image{
         max-height: 100%;
         width: 100%;
         object-fit: cover;

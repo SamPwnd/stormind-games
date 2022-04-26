@@ -62,14 +62,14 @@ $news = [
     ],    
     [
     'classes' => 'news',
-    'image' => './assets/news.png',
+    'image' => './assets/news-1.png',
     'link' => '#',
     'date' => 'AUG 19, 2019',
     'category' => 'NEWS',
     'tag' => 'Remothered | Broken Porcelain',
     'text_panel' => [
         'classes' => 'text-panel text-panel--small-title text-panel--dark',
-        'title' => 'DEVELOPERS OF INTENSE STORIES',
+        'title' => 'REMOTHERED: Broken Porcelain',
         'subtitle' => 'We developed and promoted Remothered: Tormented Fathers. We are currently working on the second title, Remothered: Broken Porcelain, and on a new unannounced project.'
         ],
     ],
@@ -121,9 +121,17 @@ $news = [
             <?php get_template_part('./components/hero.php', ['hero' => $hero, 'content' => $heroContent]); ?>
         </section>
         <section class="mb-1">
-            <?php ob_start();  foreach($news as $element):?>
-                <?php get_template_part('./components/news.php', ['content' => $element]); ?>
-            <?php endforeach; $bullettin_elements = ob_get_clean() ?>
+            <?php ob_start()?>
+                <?php foreach($news as $element): ?>
+                    <?php get_template_part('./components/news.php', ['content' => $element]); ?>
+                <?php endforeach;?>
+                <div class="col-12 d-flex justify-content-center">
+                    <button class="btn btn-outline-primary bw-btn-show-more">
+                    <img src="./assets/icon-more.svg" alt="icon-more.svg">  
+                    show more
+                    </button>
+                </div>
+            <?php $bullettin_elements = ob_get_clean() ?>
 
             
             <?php get_template_part(('./components/bullettin.php'), ['content' => $bullettin,  'elements' => $bullettin_elements]) ?>
