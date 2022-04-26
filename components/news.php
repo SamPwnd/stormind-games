@@ -15,7 +15,7 @@
 
 ?>
 
-<div class="<?=$content['classes'] ?>">
+<a class="<?=$content['classes'] ?>" href="#">
     <img src="<?=$content['image'] ?>" alt="">
     <div class="news__icons-wrapper">
         <div class="news__icon-block">
@@ -35,5 +35,5 @@
     </div>
 
     <?php get_template_part('./components/text-panel.php',['content' => $content['text_panel']]); ?>
-</div>
+</a>
 
