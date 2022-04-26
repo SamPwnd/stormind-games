@@ -2014,6 +2014,19 @@ textarea::-webkit-resizer {
   height: inherit;
 }
 
+.under-hero {
+  padding-top: 124px;
+  padding-bottom: 124px;
+}
+
+.under-hero .container .card-simple {
+  max-width: 100%;
+}
+
+.under-hero .container .card-simple .card-simple__title {
+  margin-bottom: 16px;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
