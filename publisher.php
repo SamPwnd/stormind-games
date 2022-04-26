@@ -31,11 +31,10 @@ $hero = [
 ];
 
 $text_panel_hero = [
-  'classes' => 'text-panel',
-  'title' => 'PRESS KIT',
-  'subtitle' => 'Read the press releases, interviews, descriptions and biographies, watch the demos, videos and images from our games.'
+  'classes' => 'text-panel col-12 col-lg-6',
+  'title' => 'PUBLISHER',
+  'subtitle' => 'If you are a publisher willing to know more about our upcoming, unannounced projects or interested in developing a new video game.'
 ];
-
 
 $cardsimple = [
   [
@@ -81,6 +80,37 @@ $footer = [
   ],
 ];
 
+
+
+$text_panel = [
+  'classes' => 'text-panel text-panel--dark',
+  'title' => 'GET IN TOUCH',
+  'subtitle' => 'Get in touch with us, one of Stormind Games’ upcoming projects may be your next milestone! <br><br>
+
+We developed and promoted the award-winning Remothered: Tormented Fathers, the pure and realistic survival horror video game, and the second title, Remothered: Broken Porcelain.<br><br>
+
+Now, following the successful model used for the saga, we are working on unannounced titles.<br><br>
+
+We are looking for Publishers who can distribute the game worldwide on PC, PS, XBOX, and Switch, both digital and retail, with a track record in the creation of a fanbase for a new IP and willing to invest in marketing and PR to promote our upcoming video games, and we are also open to co-development opportunities and collaborations.<br><br>
+
+Please fill out the form specifying your request and we’ll get back to you as soon as possible.'
+];
+
+$text_panel_side = [
+  'classes' => 'text-panel',
+  'title' => 'GET IN TOUCH',
+  'subtitle' => 'Get in touch with us, one of Stormind Games’ upcoming projects may be your next milestone!
+
+We developed and promoted the award-winning Remothered: Tormented Fathers, the pure and realistic survival horror video game, and the second title, Remothered: Broken Porcelain.
+
+Now, following the successful model used for the saga, we are working on unannounced titles.
+
+We are looking for Publishers who can distribute the game worldwide on PC, PS, XBOX, and Switch, both digital and retail, with a track record in the creation of a fanbase for a new IP and willing to invest in marketing and PR to promote our upcoming video games, and we are also open to co-development opportunities and collaborations.
+
+Please fill out the form specifying your request and we’ll get back to you as soon as possible.'
+];
+
+
 ?>
 
 <!DOCTYPE html>
@@ -92,7 +122,7 @@ $footer = [
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style/bootstrap.min.css">
   <link rel="stylesheet" href="style/main.css">
-  <title>PRESS KIT</title>
+  <title>PUBLISHER</title>
 </head>
 
 <body>
@@ -131,33 +161,20 @@ $footer = [
 
   </section>
 
-  <section class="under-hero">
+  <section class="get-in-touch">
     <div class="container">
-      <?php
-      ob_start();
-      get_template_part(('./components/cardsimple.php'), ['content' => $cardsimple]);
-      $cardsimple_content = ob_get_clean(); ?>
-
       <div class="row">
-        <div class="col-lg-4 col-md-12">
-          <?php get_template_part(('./components/cardsimple.php'), ['content' => $cardsimple[0], 'text' => $cardsimple_content]) ?>
+        <div class="col-lg-6 col-md-12">
+          <?php get_template_part('./components/text-panel.php', ['content' => $text_panel]); ?>
+  
         </div>
-
-
-        <div class="col-lg-4 col-md-12">
-          <?php get_template_part(('./components/cardsimple.php'), ['content' => $cardsimple[1], 'text' => $cardsimple_content]) ?>
-        </div>
-
-
-        <div class="col-lg-4 col-md-12">
-          <?php get_template_part(('./components/cardsimple.php'), ['content' => $cardsimple[2], 'text' => $cardsimple_content]) ?>
-        </div>
-
-        <div class="col-lg-4 col-md-12">
-          <?php get_template_part(('./components/cardsimple.php'), ['content' => $cardsimple[3], 'text' => $cardsimple_content]) ?>
+        <div class="col-lg-6 col-md-12">
+          <?php get_template_part('./components/contact.php', ['content' => $text_panel_side]); ?>
         </div>
       </div>
-    </div>
+
+      </div>
+
   </section>
 
   <footer class="mt-1">

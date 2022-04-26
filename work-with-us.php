@@ -31,11 +31,10 @@ $hero = [
 ];
 
 $text_panel_hero = [
-  'classes' => 'text-panel',
-  'title' => 'PRESS KIT',
-  'subtitle' => 'Read the press releases, interviews, descriptions and biographies, watch the demos, videos and images from our games.'
+  'classes' => 'text-panel col-12 col-lg-6',
+  'title' => 'WORK WITH US',
+  'subtitle' => 'Are you interested in working with us or have any inquiries about our services or games?'
 ];
-
 
 $cardsimple = [
   [
@@ -81,6 +80,27 @@ $footer = [
   ],
 ];
 
+
+
+$text_panel = [
+  'classes' => 'text-panel text-panel--dark col-12 col-lg-6',
+  'title' => 'PUBLISHER',
+  'subtitle' => 'If you are a publisher willing to know more about our upcoming, unannounced projects or interested in developing a new video game.'
+];
+
+$text_panel_side = [
+  'classes' => 'text-panel',
+  'title' => 'DEVELOPMENT COMPANY',
+  'subtitle' => 'If you are a game development company interested in outsourcing or looking for development services.'
+];
+
+$side_panel_2 = [
+  'classes' => 'side_panel_2',
+  'title' => 'fff',
+  'subtitle' => 'ccc'
+]
+
+
 ?>
 
 <!DOCTYPE html>
@@ -92,7 +112,7 @@ $footer = [
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style/bootstrap.min.css">
   <link rel="stylesheet" href="style/main.css">
-  <title>PRESS KIT</title>
+  <title>WORK WITH US</title>
 </head>
 
 <body>
@@ -131,33 +151,11 @@ $footer = [
 
   </section>
 
-  <section class="under-hero">
+  <section class="publisher-development">
     <div class="container">
-      <?php
-      ob_start();
-      get_template_part(('./components/cardsimple.php'), ['content' => $cardsimple]);
-      $cardsimple_content = ob_get_clean(); ?>
-
-      <div class="row">
-        <div class="col-lg-4 col-md-12">
-          <?php get_template_part(('./components/cardsimple.php'), ['content' => $cardsimple[0], 'text' => $cardsimple_content]) ?>
-        </div>
-
-
-        <div class="col-lg-4 col-md-12">
-          <?php get_template_part(('./components/cardsimple.php'), ['content' => $cardsimple[1], 'text' => $cardsimple_content]) ?>
-        </div>
-
-
-        <div class="col-lg-4 col-md-12">
-          <?php get_template_part(('./components/cardsimple.php'), ['content' => $cardsimple[2], 'text' => $cardsimple_content]) ?>
-        </div>
-
-        <div class="col-lg-4 col-md-12">
-          <?php get_template_part(('./components/cardsimple.php'), ['content' => $cardsimple[3], 'text' => $cardsimple_content]) ?>
-        </div>
-      </div>
+      <?php get_template_part('./components/text-panel.php', ['content' => $text_panel]); ?>
     </div>
+    <?php get_template_part('./components/side-panel-2.php', ['content' => $text_panel_side]); ?>
   </section>
 
   <footer class="mt-1">
