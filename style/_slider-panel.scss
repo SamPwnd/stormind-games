@@ -46,5 +46,14 @@
         }        
     }
     
+    &::-webkit-scrollbar {
+        height: 1px;
+        background: rgba(0,0,0,.2);
+    }
+    
+    &::-webkit-scrollbar-thumb {
+        outline: 1px solid $black;
+        background: $black;
+    }
 
 }

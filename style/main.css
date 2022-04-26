@@ -1805,6 +1805,14 @@ textarea::-webkit-resizer {
     min-width: 100%;
   }
 }
+.slider-panel::-webkit-scrollbar {
+  height: 1px;
+  background: rgba(0, 0, 0, 0.2);
+}
+.slider-panel::-webkit-scrollbar-thumb {
+  outline: 1px solid #151210;
+  background: #151210;
+}
 
 .card-video {
   margin-top: 48px;
