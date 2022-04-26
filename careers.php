@@ -312,7 +312,7 @@
                 <?php get_template_part('./components/text-panel.php',['content' => $text_panel_prefooter]) ;?>  
             </div>
 
-            <button class="btn btn-outline-black ms-auto me-auto d-block" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">SEND APPLICATION</button>
+            <button class="btn btn-outline-black mx-auto  d-block" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">SEND APPLICATION</button>
             <?php get_template_part('./components/application.php', ['content' => $spontaneous_application]); ?>
 
         </section>
@@ -322,9 +322,10 @@
         </footer>
 
     </main>
-
-    <script src="./script/accordion.js"></script>
+    
     <script src="./script/bootstrap.min.js"></script>
+    <script src="./script/accordion.js"></script>
+    
 
 
 </body>
