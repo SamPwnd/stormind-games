@@ -197,42 +197,35 @@ $wrapper_other_trailers =[
     'background' => '',
 ];
 
-$wrapper_other_trailers =[
-    'classes' => '',
-    'row_classes' => 'row-cols-1  row-cols-md-2 row-cols-xl-3',
-    'title' => 'other trailers',
-    'background' => '',
-];
-
 $trailer_elements =[
     [
         'classes' => 'cards-video',
-        'video' => '<iframe src="https://www.youtube.com/embed/jdj3YPilUP0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+        'video' => 'https://www.youtube.com/embed/jdj3YPilUP0',
         'title' => 'physical edition trailer',
     ],
     [
         'classes' => 'cards-video',
-        'video' => '<iframe src="https://www.youtube.com/embed/jdj3YPilUP0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+        'video' => 'https://www.youtube.com/embed/jdj3YPilUP0',
         'title' => 'switch trailer',
     ],
     [
         'classes' => 'cards-video',
-        'video' => '<iframe src="https://www.youtube.com/embed/jdj3YPilUP0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+        'video' => 'https://www.youtube.com/embed/jdj3YPilUP0',
         'title' => 'official trailer',
     ],
     [
         'classes' => 'cards-video',
-        'video' => '<iframe src="https://www.youtube.com/embed/jdj3YPilUP0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+        'video' => 'https://www.youtube.com/embed/jdj3YPilUP0',
         'title' => 'steam early acces trailer',
     ],
     [
         'classes' => 'cards-video',
-        'video' => '<iframe src="https://www.youtube.com/embed/jdj3YPilUP0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+        'video' => 'https://www.youtube.com/embed/jdj3YPilUP0',
         'title' => 'greenlight trailer',
     ],
     [
         'classes' => 'cards-video',
-        'video' => '<iframe src="https://www.youtube.com/embed/jdj3YPilUP0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+        'video' => 'https://www.youtube.com/embed/jdj3YPilUP0',
         'title' => 'announcement trailer',
     ],
 ];
