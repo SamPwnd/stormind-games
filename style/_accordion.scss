@@ -34,7 +34,7 @@
 }
 
 #accordion__submenu{
-  p{
+  .accordion__text{
     @include lato(H1, 400, #2D2A26,start);margin-bottom: 24px;
     span{
       font-weight: 800;

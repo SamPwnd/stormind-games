@@ -53,7 +53,7 @@
     ]; */
 
     $side_panel =[
-        'background' => './assets/img/side-content-long.png',
+        'background' => './assets/img/side-content-long1.png',
         'background-classes' => 'col-12 col-md-5 offset-md-1 p-0',
         'content-classes' => 'col-10 offset-1 col-md-5',
     ];
@@ -65,6 +65,13 @@
     ];
     $accordion_side =[
         [
+            'application' => [
+                'classes' => 'application',
+                'text_panel' => [
+                'classes' => 'text-panel text-panel--small-title text-panel--black',
+                'title' => 'FUNCTIONAL TESTER',
+                ],
+            ],
             'classes' => 'accordion accordion-accordion',
             'title' => 'FUNCTIONAL TESTER',
             'text-description' => '<span>Job Description:</span><br>
@@ -84,6 +91,13 @@
               Have a good understanding of spoken and written English.'
           ],
           [
+            'application' => [
+                'classes' => 'application',
+                'text_panel' => [
+                'classes' => 'text-panel text-panel--small-title text-panel--black',
+                'title' => 'FUNCTIONAL TESTER',
+                ],
+            ],
             'classes' => 'accordion accordion-accordion',
             'title' => 'FUNCTIONAL TESTER',
             'text-description' => '<span>Job Description:</span><br>
@@ -103,6 +117,13 @@
               Have a good understanding of spoken and written English.'
           ],
           [
+            'application' => [
+                'classes' => 'application',
+                'text_panel' => [
+                'classes' => 'text-panel text-panel--small-title text-panel--black',
+                'title' => 'FUNCTIONAL TESTER',
+                ],
+            ],
             'classes' => 'accordion accordion-accordion',
             'title' => 'FUNCTIONAL TESTER',
             'text-description' => '<span>Job Description:</span><br>
@@ -122,6 +143,13 @@
               Have a good understanding of spoken and written English.'
           ],
           [
+            'application' => [
+                'classes' => 'application',
+                'text_panel' => [
+                'classes' => 'text-panel text-panel--small-title text-panel--black',
+                'title' => 'FUNCTIONAL TESTER',
+                ],
+            ],
             'classes' => 'accordion accordion-accordion',
             'title' => 'FUNCTIONAL TESTER',
             'text-description' => '<span>Job Description:</span><br>
@@ -244,9 +272,37 @@ Check out this section to see if there are job openings that match your profile.
 
             <?php get_template_part(('./components/side-panel.php'), ['content' => $side_panel, 'text' => $side_panel_content]) ?>
         </section>
-        </section>
-    </main>
 
+        <section class=" home__newsletter bg-primary pt-5">
+            <div class="container pt-5 pb-md-3 mb-5">
+                <?php get_template_part('./components/text-panel.php',['content' => $text_panel_prefooter]) ;?>  
+                <div class="home__newsletter-list row mt-5">
+                    <div class="col-12 col-md-6">
+                        <ul>
+                            <li>Stay on top of all the latest news on the game</li>
+                            <li>Gain access to behind-the-scenes content before anyone else</li>
+                            <li>Listen to “Will of the Keeper” from Batora: Lost Haven soundtrack composed by Ron Fish (God of War, Batman Arkham Asylum, and Batman Arkham City)</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <ul>
+                            <li>Get the official game wallpaper</li>
+                            <li>Have your name appear in Batora: Lost Haven closing credits</li>
+                            <li>Get the illustrated storyboard created for the game announcement trailer only accessible to subscribers</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn btn-outline-black ms-auto me-auto d-block">SUBSCRIBE</button>
+            
+        </section>
+
+    </main>
+    <script src="./script/bootstrap.min.js"></script>
     <script src="./script/accordion.js"></script>
+
+
 </body>
 </html>
