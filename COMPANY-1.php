@@ -340,7 +340,6 @@ $footer = [
         </div>
       </div>
     </div>
-    <!-- <?php for ($i = 0; $i < count($cardsimple); $i++) get_template_part(('./components/cardsimple.php'), ['content' => $cardsimple[$i], 'text' => $cardsimple_content]) ?> -->
 
 
   </section>
