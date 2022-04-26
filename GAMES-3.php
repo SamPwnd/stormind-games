@@ -390,67 +390,9 @@ $wrapper_awards=[
 ];
 
 $awards=[
-    [
         'image' => './assets/img/awards1.png',
         'title' => 'OUTSTANDING ITALIAN COMPANY 2020',
         'subtitle' => ''
-    ],
-    [
-        'image' => './assets/img/awards2.png',
-        'title' => 'BEST NEW STUDIO 2018',
-        'subtitle' => ''
-    ],
-    [
-        'image' => './assets/img/awards1.png',
-        'title' => 'OUTSTANDING ITALIAN COMPANY 2020',
-        'subtitle' => ''
-    ],
-    [
-        'image' => './assets/img/awards2.png',
-        'title' => 'BEST NEW STUDIO 2018',
-        'subtitle' => ''
-    ],
-    [
-        'image' => './assets/img/awards1.png',
-        'title' => 'OUTSTANDING ITALIAN COMPANY 2020',
-        'subtitle' => ''
-    ],
-    [
-        'image' => './assets/img/awards2.png',
-        'title' => 'BEST NEW STUDIO 2018',
-        'subtitle' => ''
-    ],
-    [
-        'image' => './assets/img/awards1.png',
-        'title' => 'OUTSTANDING ITALIAN COMPANY 2020',
-        'subtitle' => ''
-    ],
-    [
-        'image' => './assets/img/awards2.png',
-        'title' => 'BEST NEW STUDIO 2018',
-        'subtitle' => ''
-    ],
-    [
-        'image' => './assets/img/awards1.png',
-        'title' => 'OUTSTANDING ITALIAN COMPANY 2020',
-        'subtitle' => ''
-    ],
-    [
-        'image' => './assets/img/awards2.png',
-        'title' => 'BEST NEW STUDIO 2018',
-        'subtitle' => ''
-    ],
-    [
-        'image' => './assets/img/awards1.png',
-        'title' => 'OUTSTANDING ITALIAN COMPANY 2020',
-        'subtitle' => ''
-    ],
-    [
-        'image' => './assets/img/awards2.png',
-        'title' => 'BEST NEW STUDIO 2018',
-        'subtitle' => ''
-    ],
-    
 ];
 
 $wrapper_partners=[
@@ -583,16 +525,10 @@ $partners=[
     </section>
     <section class="mb-1">
                 <?php ob_start(); ?>
-                    <div class="col-12 mb-5">
-                        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4">
-                            <?php foreach($awards as $award): ?>
-                                <div class="col px-5">
-                                    
-                                    <?php get_template_part( './components/card-award-mini.php', [ 'content' =>$award])?>
-                                </div>
-                            <?php endforeach; ?>
-                        </div>
+                    <div class="col-10 offset-1 col-sm-6 offset-sm-3 col-lg-2 offset-lg-5">
+                        <?php get_template_part( './components/card-award-mini.php', [ 'content' =>$awards])?>
                     </div>
+                </div>
                 <?php    $wrapper_content = ob_get_clean();  ?>
             <?php get_template_part(('./components/wrapper.php'), ['content' => $wrapper_awards, 'elements' => $wrapper_content]) ?>
     </section>
