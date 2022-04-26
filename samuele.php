@@ -87,7 +87,8 @@
     <?php get_template_part('./components/card-link.php', ['content' => $cardLink]); ?>
     
     <?php get_template_part('./components/news.php', ['content' => $news]); ?>
-
+    
+    <button class="btn btn-outline-black ms-auto me-auto d-block" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">SEND APPLICATION</button>
     <?php get_template_part('./components/application.php', ['content' => $application]); ?>
 
     <?php get_template_part('./components/contact.php', ['content' => $contact]); ?>

@@ -14,9 +14,11 @@
   </div>
 
   <div id="accordion__submenu" class="alt-0 d-none accordion_submenu">
-    <p><?= $accordion['text-description'] ?></p>
+    <p class="accordion__text"><?= $accordion['text-description'] ?></p>
 
-    <button class="btn btn-outline-primary">SEND APPLICATION</button>
+    <button class="btn btn-outline-primary" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">SEND APPLICATION</button>
+    <?php get_template_part('./components/application.php', ['content' => $accordion['application']]); ?>
+
   </div>
 
 </div>

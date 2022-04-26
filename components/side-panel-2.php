@@ -3,7 +3,8 @@ $text_panel = [
   'classes' => 'text-panel',
   'title' => 'DEVELOPMENT COMPANY',
   'subtitle' => 'If you are a game development company interested in outsourcing or looking for development services.'
-]
+];
+
 ?>
 
 

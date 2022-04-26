@@ -19,6 +19,7 @@
 .awards{
   width: 100%;
   background-image: url('../assets/Awards-scaled.jpg');
+  padding-bottom: 120px;
   // opacity: 0.5;
   // filter: brightness(50%);
   .cards-award{
@@ -44,5 +45,29 @@
         }
     }
 
+  }
+}
+
+.services{
+  width: 100%;
+  .text-panel {
+    margin: 120px auto 72px auto;
+  }
+  .container{
+    padding-bottom: 120px;
+    .card-simple{
+      max-width: 100%;
+    }
+  }
+}
+
+
+.news-letter{
+  .home__newsletter{
+    margin-top: 0;
+    padding-bottom: 120px;
+    .text-panel{
+      margin: 0 auto;
+    }
   }
 }

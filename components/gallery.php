@@ -20,23 +20,20 @@
   <?php endforeach; ?> 
 
   <div class="col-12 d-flex justify-content-center">
-    <button class="btn btn-outline-primary gallery__btn">
+    <button class="btn btn-outline-primary bw-btn-show-more bw-mt-72">
       <img src="./assets/icon-more.svg" alt="icon-more.svg">  
       show more
     </button>
   </div>
 </div>
-  
 
 
 
-
-
-<div id="modal01" class="modal" onclick="this.style.display='none'">
-  <div class="modal__nav">
-    <img class="modal__close" src="./assets/icon-Close.svg"></img>
+<div id="modal01" class="bw-modal" onclick="this.style.display='none'">
+  <div class="bw-modal__nav">
+    <img class="bw-modal__close" src="./assets/icon-Close.svg"></img>
   </div>
-  <div class="modal-content">
+  <div class="bw-modal-content">
     <img id="img01" style="max-width:100%">
   </div>
 </div>
