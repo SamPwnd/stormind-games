@@ -43,43 +43,56 @@ $bullettin = [
     'tags' =>[
         '#REMOTHERED #BROKEN PORCELAIN #BROKEN PORCELAIN #REMOTHERED ',
     ],
+    'latest' =>[
+        [
+            'image' => './assets/img/bullettin_1.png',
+            'text' => 'Developers of Intense Stories.',
+            'date' => 'Aug 19, 2019',
+        ],
+        [
+            'image' => './assets/img/bullettin_1.png',
+            'text' => 'Developers of Intense Stories.',
+            'date' => 'Aug 19, 2019',
+        ],
+        [
+            'image' => './assets/img/bullettin_1.png',
+            'text' => 'Developers of Intense Stories.',
+            'date' => 'Aug 19, 2019',
+        ],
+        
+    ],
+    'related' =>[
+        [
+            'image' => './assets/img/bullettin_1.png',
+            'text' => 'Developers of Intense Stories.',
+            'date' => 'Aug 19, 2019',
+        ],
+        [
+            'image' => './assets/img/bullettin_1.png',
+            'text' => 'Developers of Intense Stories.',
+            'date' => 'Aug 19, 2019',
+        ],
+        [
+            'image' => './assets/img/bullettin_1.png',
+            'text' => 'Developers of Intense Stories.',
+            'date' => 'Aug 19, 2019',
+        ],
+        
+    ]
     
 ];
 
 $news = [
-    [
-    'classes' => 'news',
+    'classes' => 'news-expanded',
     'image' => './assets/news.png',
     'link' => '#',
     'date' => 'AUG 19, 2019',
     'category' => 'NEWS',
     'tag' => 'Remothered | Broken Porcelain',
-    'text_panel' => [
-        'classes' => 'text-panel text-panel--small-title text-panel--dark',
-        'title' => 'DEVELOPERS OF INTENSE STORIES',
-        'subtitle' => 'We developed and promoted Remothered: Tormented Fathers. We are currently working on the second title, Remothered: Broken Porcelain, and on a new unannounced project.'
-        ],
-    ],    
-    [
-    'classes' => 'news',
-    'image' => './assets/news-1.png',
-    'link' => '#',
-    'date' => 'AUG 19, 2019',
-    'category' => 'NEWS',
-    'tag' => 'Remothered | Broken Porcelain',
-    'text_panel' => [
-        'classes' => 'text-panel text-panel--small-title text-panel--dark',
-        'title' => 'REMOTHERED: Broken Porcelain',
-        'subtitle' => 'We developed and promoted Remothered: Tormented Fathers. We are currently working on the second title, Remothered: Broken Porcelain, and on a new unannounced project.'
-        ],
-    ],
+    'content' => 'ciao',
+    
 ];
 
-$text_panel_prefooter = [
-    'classes' => 'text-panel text-panel--center text-panel--black col-12 col-lg-8 mx-auto',
-    'title' => 'batora: lost haven newsletter',
-    'subtitle' => 'Sign up to gain exclusive access to subscriber-only content, game updates, wallpapers, and more!'
-];
 
 
 ?>
@@ -92,7 +105,7 @@ $text_panel_prefooter = [
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/bootstrap.min.css">
     <link rel="stylesheet" href="style/main.css">
-    <title>News-1</title>
+    <title>News-2</title>
 </head>
 <body>
     <header>
@@ -130,45 +143,27 @@ $text_panel_prefooter = [
             <?php get_template_part('./components/hero.php', ['hero' => $hero, 'content' => $heroContent]); ?>
         </section>
         <section class="mb-1">
+            <?php ob_start() ?>
+                <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                </p>
+                <p>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <img src="./assets/news-1.png" alt="news-1">
+                <h4>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <img src="./assets/news.png" alt="news">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            <?php $news['content'] = ob_get_clean() ?>
+            
             <?php ob_start()?>
-                <?php foreach($news as $element): ?>
-                    <?php get_template_part('./components/news.php', ['content' => $element]); ?>
-                <?php endforeach;?>
-                <div class="col-12 d-flex justify-content-center">
-                    <button class="btn btn-outline-primary bw-btn-show-more">
-                    <img src="./assets/icon-more.svg" alt="icon-more.svg">  
-                    show more
-                    </button>
-                </div>
+                <?php get_template_part(('./components/news-expanded.php'), ['content' => $news]) ?>
             <?php $bullettin_elements = ob_get_clean() ?>
 
             
             <?php get_template_part(('./components/bullettin.php'), ['content' => $bullettin,  'elements' => $bullettin_elements]) ?>
-        </section>
-        <section class=" home__newsletter bg-primary pt-5">
-            <div class="container pt-5 pb-md-3 mb-5">
-                <?php get_template_part('./components/text-panel.php',['content' => $text_panel_prefooter]) ;?>  
-                <div class="home__newsletter-list row mt-5">
-                    <div class="col-12 col-md-6">
-                        <ul>
-                            <li>Stay on top of all the latest news on the game</li>
-                            <li>Gain access to behind-the-scenes content before anyone else</li>
-                            <li>Listen to “Will of the Keeper” from Batora: Lost Haven soundtrack composed by Ron Fish (God of War, Batman Arkham Asylum, and Batman Arkham City)</li>
-                        </ul>
-                    </div>
-
-                    <div class="col-12 col-md-6">
-                        <ul>
-                            <li>Get the official game wallpaper</li>
-                            <li>Have your name appear in Batora: Lost Haven closing credits</li>
-                            <li>Get the illustrated storyboard created for the game announcement trailer only accessible to subscribers</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <button class="btn btn-outline-black ms-auto me-auto d-block">SUBSCRIBE</button>
-            
         </section>
     <footer>
         <?php 
