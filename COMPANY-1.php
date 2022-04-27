@@ -181,11 +181,11 @@ $footer = [
   <header>
     <?php ob_start(); ?>
     <ul class="navbar__links " id="navbarNavDropdown">
-      <li class="navbar__link"><a href="#">company</a></li>
-      <li class="navbar__link"><a href="#">games</a></li>
-      <li class="navbar__link"><a href="#">news</a></li>
-      <li class="navbar__link"><a href="#">press kit</a></li>
-      <li class="navbar__link"><a href="#">careers</a></li>
+      <li class="navbar__link"><a href="http://localhost/stormind-games/COMPANY-1.php">company</a></li>
+      <li class="navbar__link"><a href="http://localhost/stormind-games/GAMES-1.php">games</a></li>
+      <li class="navbar__link"><a href="http://localhost/stormind-games/NEWS-1.php">news</a></li>
+      <li class="navbar__link"><a href="http://localhost/stormind-games/presskit.php">press kit</a></li>
+      <li class="navbar__link"><a href="http://localhost/stormind-games/careers.php">careers</a></li>
       <li class="navbar__link">
         <a href="#">
           <img src="./assets/icon-Coop.svg" alt="">
@@ -279,11 +279,11 @@ $footer = [
     ?>
     <div class="container">
       <div class="row">
-        <div class="col-6">
+        <div class="col-lg-6 col-md-12">
           <?php get_template_part('./components/cardsaward.php', ['content' => $cardsaward[0]],) ?>
         </div>
 
-        <div class="col-6">
+        <div class="col-lg-6 col-md-12">
           <?php get_template_part('./components/cardsaward.php', ['content' => $cardsaward[1]]) ?>
         </div>
 
