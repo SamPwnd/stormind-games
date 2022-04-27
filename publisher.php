@@ -166,14 +166,14 @@ Please fill out the form specifying your request and we’ll get back to you as 
       <div class="row">
         <div class="col-lg-6 col-md-12">
           <?php get_template_part('./components/text-panel.php', ['content' => $text_panel]); ?>
-  
+
         </div>
-        <div class="col-lg-6 col-md-12">
+        <div class="col-lg-6 col-md-12" style="max-height: 620px;">
           <?php get_template_part('./components/contact.php', ['content' => $text_panel_side]); ?>
         </div>
       </div>
 
-      </div>
+    </div>
 
   </section>
 
