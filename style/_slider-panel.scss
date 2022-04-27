@@ -18,6 +18,20 @@
 
     &__wrapper{
         overflow-x: auto;
+        
+        ::-webkit-scrollbar {
+            width: 1px;
+            height: 1px;
+            background: #888;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #888;
+        }
+          
+        ::-webkit-scrollbar-thumb {
+            outline: 1px solid $black;
+        }
     }
 
     &__slider{
