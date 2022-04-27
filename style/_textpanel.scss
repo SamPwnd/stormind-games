@@ -58,6 +58,13 @@
     }
   }
 
+  &__icons{
+    display: flex;
+  }
+
+  &__icon{
+    margin-right: 30px;
+  }
   
 }
 

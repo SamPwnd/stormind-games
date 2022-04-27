@@ -155,7 +155,7 @@ $side_panel_2 = [
     <div class="container">
       <?php get_template_part('./components/text-panel.php', ['content' => $text_panel]); ?>
     </div>
-    <?php get_template_part('./components/side-panel-2.php', ['content' => $text_panel_side]); ?>
+    <?php get_template_part('./components/side-panel-2.php', ['side_panel_2' => $side_panel_2]); ?>
   </section>
 
   <footer class="mt-1">

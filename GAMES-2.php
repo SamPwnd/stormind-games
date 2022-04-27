@@ -34,7 +34,13 @@ $hero =[
 $text_panel_hero=[
     'classes' => 'text-panel ',
     'title' => 'remothered tormented fathers',
-    'subtitle' => 'RELEASE DATE: Jan 30, 2018'
+    'subtitle' => 'RELEASE DATE: Jan 30, 2018',
+    'icons' => [
+        './assets/platform-steam-yellow.svg',
+        './assets/platform-ps-yellow.svg',
+        './assets/platform-xbox-yellow.svg',
+        './assets/platform-switch-yellow.svg',
+    ],
 ];
 
 $center_logo_1 =[

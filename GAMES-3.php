@@ -33,7 +33,13 @@ $hero =[
 $text_panel_hero=[
     'classes' => 'text-panel ',
     'title' => 'REMOTHERED <br>BROKEN<br> PORCELAIN',
-    'subtitle' => 'WILL BE RELEASED IN SUMMER 2020'
+    'subtitle' => 'WILL BE RELEASED IN SUMMER 2020',
+    'icons' => [
+        './assets/platform-steam-yellow.svg',
+        './assets/platform-ps-yellow.svg',
+        './assets/platform-xbox-yellow.svg',
+        './assets/platform-switch-yellow.svg',
+    ],
 ];
 
 $center_logo_1 =[

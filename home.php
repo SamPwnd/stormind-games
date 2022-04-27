@@ -102,7 +102,7 @@
         'classes' => ' ',
         'row_classes' => 'row-cols-1 row-cols-sm-2 row-cols-lg-3',
         'title' => 'AWARDS',
-        'background' => './assets/img/placeholder-filtered.jpg',
+        'background' => './assets/img/placeholder-filter.jpg',
     ];
 
     $wrapper_elements =[

@@ -43,7 +43,40 @@
     ];
 
     $slider_panel =[
-
+        'title' => "Interested in a job position at Stormind Games?",
+        'description' => "Here’s what to expect from our recruitment process!<br><br>We like to keep the recruitment experience clear, effective, and straightforward. Here's what you can expect in the different stages of our selection process.",
+        'elements' =>[
+            [
+                'index' => '01.',
+                'title' => 'Candidates Pre-selection',
+                'description' => 'After the job ad closing date, we start analyzing and selecting the most promising candidates. At this point, we may contact you to talk about the role and schedule an interview.',
+            ],
+            [
+                'index' => '02.',
+                'title' => 'Candidates Pre-selection',
+                'description' => 'After the job ad closing date, we start analyzing and selecting the most promising candidates. At this point, we may contact you to talk about the role and schedule an interview.',
+            ],
+            [
+                'index' => '03.',
+                'title' => 'Candidates Pre-selection',
+                'description' => 'After the job ad closing date, we start analyzing and selecting the most promising candidates. At this point, we may contact you to talk about the role and schedule an interview.',
+            ],
+            [
+                'index' => '04.',
+                'title' => 'Candidates Pre-selection',
+                'description' => 'After the job ad closing date, we start analyzing and selecting the most promising candidates. At this point, we may contact you to talk about the role and schedule an interview.',
+            ],
+            [
+                'index' => '05.',
+                'title' => 'Candidates Pre-selection',
+                'description' => 'After the job ad closing date, we start analyzing and selecting the most promising candidates. At this point, we may contact you to talk about the role and schedule an interview.',
+            ],
+            [
+                'index' => '06.',
+                'title' => 'Candidates Pre-selection',
+                'description' => 'After the job ad closing date, we start analyzing and selecting the most promising candidates. At this point, we may contact you to talk about the role and schedule an interview.',
+            ],
+        ]
     ];
 
    /*  $sideContent =[

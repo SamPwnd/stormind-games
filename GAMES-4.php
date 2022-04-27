@@ -32,7 +32,13 @@ $hero =[
 $text_panel_hero=[
     'classes' => 'text-panel ',
     'title' => 'batora: lost heaven',
-    'subtitle' => 'Coming 2022'
+    'subtitle' => 'Coming 2022',
+    'icons' => [
+        './assets/platform-steam-yellow.svg',
+        './assets/platform-ps-yellow.svg',
+        './assets/platform-xbox-yellow.svg',
+        './assets/platform-switch-yellow.svg',
+    ],
 ];
 
 $center_logo_1 =[
