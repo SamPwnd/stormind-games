@@ -2,10 +2,10 @@
 function initializeAccordions(){
   var createAccordion = function(accordion){
     let cross = accordion.querySelector(".cross");
-    console.log(cross);
+    //console.log(cross);
     let sub_menu = accordion.querySelector(".accordion_submenu");
     let meno = accordion.querySelector(".less_acc");
-    console.log(meno);
+    //console.log(meno);
 
     cross.addEventListener("click", function(){
     sub_menu.style.transition = "all 2s";
@@ -23,7 +23,7 @@ function initializeAccordions(){
   }
 
    const accordions2 = document.querySelectorAll('.accordion-accordion');
-   console.log(accordions2);
+   //console.log(accordions2);
    for (let j = 0; j < accordions2.length; j++) {
       createAccordion(accordions2[j]);
   }
@@ -55,7 +55,7 @@ function initializeArticle() {
   
   }
   const accordions = document.querySelectorAll('.article-accordion');
-  console.log(accordions);
+  //console.log(accordions);
   for (let j = 0; j < accordions.length; j++) {
       createAccordion(accordions[j]);
   }

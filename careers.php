@@ -100,6 +100,7 @@
         [
             'application' => [
                 'classes' => 'application',
+                'id' => 'staticBackdrop1',
                 'text_panel' => [
                 'classes' => 'text-panel text-panel--small-title text-panel--black',
                 'title' => 'FUNCTIONAL TESTER',
@@ -107,6 +108,7 @@
             ],
             'classes' => 'accordion accordion-accordion',
             'title' => 'FUNCTIONAL TESTER',
+            'modal-id' => '#staticBackdrop1',
             'text-description' => '<span>Job Description:</span><br>
               The functional tester is a very important member of the production team. He executes tests to ensure the user of the application will have an optimal experience. The tester helps the development team to find bugs, refine the user experience and support the development process.<br><br>
         
@@ -126,6 +128,7 @@
           [
             'application' => [
                 'classes' => 'application',
+                'id' => 'staticBackdrop2',
                 'text_panel' => [
                 'classes' => 'text-panel text-panel--small-title text-panel--black',
                 'title' => 'FUNCTIONAL TESTER',
@@ -133,6 +136,7 @@
             ],
             'classes' => 'accordion accordion-accordion',
             'title' => 'FUNCTIONAL TESTER',
+            'modal-id' => '#staticBackdrop2',
             'text-description' => '<span>Job Description:</span><br>
               The functional tester is a very important member of the production team. He executes tests to ensure the user of the application will have an optimal experience. The tester helps the development team to find bugs, refine the user experience and support the development process.<br><br>
         
@@ -152,6 +156,7 @@
           [
             'application' => [
                 'classes' => 'application',
+                'id' => 'staticBackdrop3',
                 'text_panel' => [
                 'classes' => 'text-panel text-panel--small-title text-panel--black',
                 'title' => 'FUNCTIONAL TESTER',
@@ -159,6 +164,7 @@
             ],
             'classes' => 'accordion accordion-accordion',
             'title' => 'FUNCTIONAL TESTER',
+            'modal-id' => '#staticBackdrop3',
             'text-description' => '<span>Job Description:</span><br>
               The functional tester is a very important member of the production team. He executes tests to ensure the user of the application will have an optimal experience. The tester helps the development team to find bugs, refine the user experience and support the development process.<br><br>
         
@@ -178,6 +184,7 @@
           [
             'application' => [
                 'classes' => 'application',
+                'id' => 'staticBackdrop4',
                 'text_panel' => [
                 'classes' => 'text-panel text-panel--small-title text-panel--black',
                 'title' => 'FUNCTIONAL TESTER',
@@ -185,6 +192,7 @@
             ],
             'classes' => 'accordion accordion-accordion',
             'title' => 'FUNCTIONAL TESTER',
+            'modal-id' => '#staticBackdrop4',
             'text-description' => '<span>Job Description:</span><br>
               The functional tester is a very important member of the production team. He executes tests to ensure the user of the application will have an optimal experience. The tester helps the development team to find bugs, refine the user experience and support the development process.<br><br>
         
@@ -200,7 +208,64 @@
               <span>Detail oriented:</span><br>
               Be articulate and a team player<br>
               Have a good understanding of spoken and written English.'
-          ]
+          ],
+          [
+            'application' => [
+                'classes' => 'application',
+                'id' => 'staticBackdrop5',
+                'text_panel' => [
+                'classes' => 'text-panel text-panel--small-title text-panel--black',
+                'title' => 'FUNCTIONAL TESTER',
+                ],
+            ],
+            'classes' => 'accordion accordion-accordion',
+            'title' => 'FUNCTIONAL TESTER',
+            'modal-id' => '#staticBackdrop5',
+            'text-description' => '<span>Job Description:</span><br>
+              The functional tester is a very important member of the production team. He executes tests to ensure the user of the application will have an optimal experience. The tester helps the development team to find bugs, refine the user experience and support the development process.<br><br>
+        
+              <span>Responsibilities:</span> <br>
+              Execute specific tests as required by the production team and the lead tester;
+              Perform tests against the established procedures;
+              Discover bugs, find clear reproductions steps and enter this information in the bug database;
+              <br><br>
+              <span>Qualifications Requirements:</span>
+              1 year of experience in quality assurance, preferably on applications
+              Possess a good knowledge of computer software and software development;
+              <br><br>
+              <span>Detail oriented:</span><br>
+              Be articulate and a team player<br>
+              Have a good understanding of spoken and written English.'
+          ],
+          [
+            'application' => [
+                'classes' => 'application',
+                'id' => 'staticBackdrop6',
+                'text_panel' => [
+                'classes' => 'text-panel text-panel--small-title text-panel--black',
+                'title' => 'FUNCTIONAL TESTER',
+                ],
+            ],
+            'classes' => 'accordion accordion-accordion',
+            'title' => 'FUNCTIONAL TESTER',
+            'modal-id' => '#staticBackdrop6',
+            'text-description' => '<span>Job Description:</span><br>
+              The functional tester is a very important member of the production team. He executes tests to ensure the user of the application will have an optimal experience. The tester helps the development team to find bugs, refine the user experience and support the development process.<br><br>
+        
+              <span>Responsibilities:</span> <br>
+              Execute specific tests as required by the production team and the lead tester;
+              Perform tests against the established procedures;
+              Discover bugs, find clear reproductions steps and enter this information in the bug database;
+              <br><br>
+              <span>Qualifications Requirements:</span>
+              1 year of experience in quality assurance, preferably on applications
+              Possess a good knowledge of computer software and software development;
+              <br><br>
+              <span>Detail oriented:</span><br>
+              Be articulate and a team player<br>
+              Have a good understanding of spoken and written English.'
+          ],
+          
     ]; 
     
     $text_panel_prefooter = [
@@ -213,10 +278,12 @@
 
     $spontaneous_application = [
         'classes' => 'application',
+        'id' => 'staticBackdrop9',
         'text_panel' => [
             'classes' => 'text-panel text-panel--small-title text-panel--black',
             'title' => 'SPONTANEOUS APPLICATION',
         ],
+        
     ];
 
     $footer = [
@@ -324,15 +391,10 @@
                 <?php endforeach; ?>    
                 <?php foreach($accordion_side as $acc): ?>
                     <div class="bw-mb-72">
-                        <?php get_template_part('./components/accordion.php', ['accordion' => $acc]); ?>
+                        <?php get_template_part('./components/accordion.php', ['accordion' => $acc]);?>
                     </div>            
                 <?php endforeach; ?> 
-                
-                <?php foreach($accordion_side as $acc): ?>
-                    <div class="bw-mb-72">
-                        <?php get_template_part('./components/accordion.php', ['accordion' => $acc]); ?>
-                    </div>            
-                <?php endforeach; ?> 
+
                     
             <?php $side_panel_content = ob_get_clean(); ?>
             
@@ -345,7 +407,7 @@
                 <?php get_template_part('./components/text-panel.php',['content' => $text_panel_prefooter]) ;?>  
             </div>
 
-            <button class="btn btn-outline-black mx-auto  d-block" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">SEND APPLICATION</button>
+            <button class="btn btn-outline-black ms-auto me-auto d-block" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop9">SEND APPLICATION</button>
             <?php get_template_part('./components/application.php', ['content' => $spontaneous_application]); ?>
 
         </section>
@@ -358,6 +420,7 @@
     
     <script src="./script/bootstrap.min.js"></script>
     <script src="./script/accordion.js"></script>
+    <script src="./script/navbar.js"></script>
     
 
 

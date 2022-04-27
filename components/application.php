@@ -2,6 +2,7 @@
 
 /* $application = [
     'classes' => 'application',
+    'id' => 'staticBackdrop',
     'text_panel' => [
         'classes' => 'text-panel text-panel--small-title text-panel--black',
         'title' => 'FUNCTIONAL TESTER',
@@ -11,7 +12,7 @@
 
 <!-- <button class="btn btn-outline-primary" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">SEND APPLICATION</button>
  -->
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal fade" id="<?= $content['id'] ?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog modal-xl">
     <div class="modal-content">
       <div class="modal-header">
