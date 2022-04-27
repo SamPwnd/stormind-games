@@ -167,5 +167,6 @@ $footer = [
     <div class="mt">
         <?php get_template_part('./components/footer.php', $footer); ?>
     </div>
+    <script src="./script/script.js"></script>
 </body>
 </html>

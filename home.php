@@ -391,6 +391,6 @@
         
     </main>
     
-    <script src="./script/navbar.js"></script>
+    <script src="./script/script.js"></script>
 </body>
 </html>

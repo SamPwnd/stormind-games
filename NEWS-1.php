@@ -191,9 +191,6 @@ $text_panel_prefooter = [
         ?>
         <?php get_template_part('./components/footer.php', $footer);  ?>
     </footer>
-<script src="./script/navbar.js"></script>
-<script src="./script/slider-simple.js"></script>
-<script src="./script/galery.js"></script>
-<script src="./script/accordion.js"></script>
+    <script src="./script/script.js"></script>
 </body>
 </html>

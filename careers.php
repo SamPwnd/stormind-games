@@ -418,11 +418,7 @@
 
     </main>
     
-    <script src="./script/bootstrap.min.js"></script>
-    <script src="./script/accordion.js"></script>
-    <script src="./script/navbar.js"></script>
-    
-
+    <script src="./script/script.js"></script>
 
 </body>
 </html>

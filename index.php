@@ -65,5 +65,6 @@ $navbar = [
     </div>
   </div>
 </div>  
+<script src="./script/script.js"></script>
 </body>
 </html>

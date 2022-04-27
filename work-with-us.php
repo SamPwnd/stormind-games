@@ -161,7 +161,7 @@ $side_panel_2 = [
   <footer class="mt-1">
     <?php get_template_part('./components/footer.php', $footer); ?>
   </footer>
-
+  <script src="./script/script.js"></script>
 </body>
 
 </html>

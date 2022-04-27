@@ -94,7 +94,6 @@
     <?php get_template_part('./components/contact.php', ['content' => $contact]); ?>
 
 
-    <script src="./script/navbar.js"></script>
-    <script src="./script/bootstrap.min.js"></script>
+    <script src="./script/script.js"></script>
 </body>
 </html>
