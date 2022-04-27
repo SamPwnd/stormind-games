@@ -1,0 +1,59 @@
+.careers {
+    &__description {
+        @include lato-cta(H2, 400, $black, left)
+    }
+
+    @media only screen and (max-width: map-get($grid-breakpoints, lg)){
+        .wrapper {
+            &__title {
+                text-align: left;
+                &:after {
+                    left: 2px;
+                    transform: translate(0);
+                }
+            }
+        }
+        .side-panel__background {
+            max-height: 216px;
+            background-position: bottom;
+        }
+    }
+    .side-panel {
+        &__background {
+            background-image: url('./assets/img/side-content-long.png');
+            background-position: top;
+        }
+        .bw-mb-72 {
+            margin-bottom: 0;
+        }
+        .alt-100 {
+            height: inherit;
+        }
+    }
+
+    &__prefooter {
+        padding-bottom: 120px;
+
+        .text-panel {
+            &--center {
+                margin: 0 auto;
+                max-width: none;
+            }
+    
+            &--black {
+                @media only screen and (max-width: 565px){
+                    .text-panel__title {
+                        text-align: left
+                    }
+                    .text-panel__subtitle {
+                        @include lato(H2, 400, $black, left);
+                    }
+                }
+            }
+            &__subtitle {
+                white-space: pre-line;
+            }
+        }
+    
+    }
+}

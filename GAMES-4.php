@@ -1,6 +1,5 @@
 <?php
 
-
 require_once('./functions.php');
 
 $navbar =[
@@ -27,30 +26,30 @@ $navbar =[
 
 $hero =[
     'classes' => 'hero',
-    'video' => 'https://stormindgames.com/wp-content/uploads/2020/12/Remothered-1-Tormented-fathers-2.mp4',
-    
-];
+    'video' => 'https://stormindgames.com/wp-content/uploads/2020/11/Batora-1.mp4',
 
+];
 $text_panel_hero=[
     'classes' => 'text-panel ',
-    'title' => 'remothered tormented fathers',
-    'subtitle' => 'RELEASE DATE: Jan 30, 2018'
+    'title' => 'batora: lost heaven',
+    'subtitle' => 'Coming 2022'
 ];
 
 $center_logo_1 =[
     'classes' => 'center-logo',
-    'image' => 'assets/center-logo.svg'
+    'image' => 'https://stormindgames.com/wp-content/uploads/2020/11/Logo-batora-sito-storm-2-1.svg'
 ];
 
 $side_panel =[
-    'background' => 'https://stormindgames.com/wp-content/uploads/2021/01/cover-remothered-TF.png',
+    'background' => 'https://stormindgames.com/wp-content/uploads/2020/11/Batora-Lost-Haven-Cover-Central.jpg',
     'background-classes' => 'col-12 col-md-5 offset-md-1 p-0',
     'content-classes' => 'col-10 offset-1 col-md-5',
 ];
+
 $text_panel_side=[
     [
         'classes' => 'text-panel text-panel--dark',
-        'title' => 'GAME OVERVIEW',
+        'title' => 'OVERVIEW',
         'subtitle' => 'We developed and promoted the award-winning Remothered: Tormented Fathers, the pure and realistic survival horror video game.<br><br>Psychology plays a huge role within the game: heroes and enemies are atypical and the line between good and evil is blurred. The plot is rich in unpredictable twists, and it is touching at the same time. The development of the game is similar to that of a film narration, where the player perfectly identifies himself with the character. The soundtrack, composed by Nobuko Toda (Final Fantasy, Halo, Metal Gear Solid) and Luca Balboni, enhances the terrifying atmosphere of the game.<br><br> Remothered: Tormented Fathers, is available for PlayStation®4, Xbox One, PC, and Nintendo Switch™. Furthermore, you can find the retail version of the game for Nintendo Switch™, PlayStation®4, and Xbox One.'
     ],
     [
@@ -67,39 +66,30 @@ $text_panel_side=[
 $accordion_side =[
     [                    
         'classes' => 'accordion accordion-accordion',
-        'title' => 'PSYCHOLOGICAL PLOT',
+        'title' => 'Physical/mental dualism',
         'text-description' => "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",             
     ],
     [                    
         'classes' => 'accordion accordion-accordion',
-        'title' => 'movie-like cutscenes',
+        'title' => 'defender or conqueror',
         'text-description' => "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",             
     ],
     [                    
         'classes' => 'accordion accordion-accordion',
-        'title' => 'audio clues',
+        'title' => 'responsive non-linear narration',
         'text-description' => "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",             
     ],
     [                    
         'classes' => 'accordion accordion-accordion',
-        'title' => 'no health bars',
+        'title' => 'fast-paced multi-layered combat system',
         'text-description' => "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",             
     ],
     [                    
         'classes' => 'accordion accordion-accordion',
-        'title' => 'realistic puzzles',
+        'title' => 'retri sci-fi visuals',
         'text-description' => "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",             
     ],
-    [                    
-        'classes' => 'accordion accordion-accordion',
-        'title' => 'top-notch soundtrack',
-        'text-description' => "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",             
-    ],
-    [                    
-        'classes' => 'accordion accordion-accordion',
-        'title' => 'real-time loading',
-        'text-description' => "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",             
-    ],
+
 ]; 
 
 $wrapper_characters =[
@@ -112,8 +102,8 @@ $wrapper_characters =[
 $character_elements =[
     [
         'classes' => 'card-profile ',
-        'image' => 'https://stormindgames.com/wp-content/uploads/2021/01/Rosemary.png',
-        'title' => 'rosemary reed',
+        'image' => 'https://stormindgames.com/wp-content/uploads/2021/01/avril.png',
+        'title' => 'avril',
         'icon' => './assets/icon-more.svg',
         'icon_hover' => './assets/icon-less.svg',
         'description' => 'Linn is a timid and insecure sixteen-year-old girl with a stutter who works at the Ashmann Inn as a maid. 
@@ -124,8 +114,8 @@ $character_elements =[
     ],  
     [
         'classes' => 'card-profile ',
-        'image' => 'https://stormindgames.com/wp-content/uploads/2021/01/Rosemary.png',
-        'title' => 'rosemary reed',
+        'image' => 'https://stormindgames.com/wp-content/uploads/2021/01/avril.png',
+        'title' => 'avril',
         'icon' => './assets/icon-more.svg',
         'icon_hover' => './assets/icon-less.svg',
         'description' => 'Linn is a timid and insecure sixteen-year-old girl with a stutter who works at the Ashmann Inn as a maid. 
@@ -136,8 +126,8 @@ $character_elements =[
     ],  
     [
         'classes' => 'card-profile ',
-        'image' => 'https://stormindgames.com/wp-content/uploads/2021/01/Rosemary.png',
-        'title' => 'rosemary reed',
+        'image' => 'https://stormindgames.com/wp-content/uploads/2021/01/avril.png',
+        'title' => 'avril',
         'icon' => './assets/icon-more.svg',
         'icon_hover' => './assets/icon-less.svg',
         'description' => 'Linn is a timid and insecure sixteen-year-old girl with a stutter who works at the Ashmann Inn as a maid. 
@@ -148,8 +138,8 @@ $character_elements =[
     ],  
     [
         'classes' => 'card-profile ',
-        'image' => 'https://stormindgames.com/wp-content/uploads/2021/01/Rosemary.png',
-        'title' => 'rosemary reed',
+        'image' => 'https://stormindgames.com/wp-content/uploads/2021/01/avril.png',
+        'title' => 'avril',
         'icon' => './assets/icon-more.svg',
         'icon_hover' => './assets/icon-less.svg',
         'description' => 'Linn is a timid and insecure sixteen-year-old girl with a stutter who works at the Ashmann Inn as a maid. 
@@ -160,8 +150,8 @@ $character_elements =[
     ],  
     [
         'classes' => 'card-profile ',
-        'image' => 'https://stormindgames.com/wp-content/uploads/2021/01/Rosemary.png',
-        'title' => 'rosemary reed',
+        'image' => 'https://stormindgames.com/wp-content/uploads/2021/01/avril.png',
+        'title' => 'avril',
         'icon' => './assets/icon-more.svg',
         'icon_hover' => './assets/icon-less.svg',
         'description' => 'Linn is a timid and insecure sixteen-year-old girl with a stutter who works at the Ashmann Inn as a maid. 
@@ -170,18 +160,8 @@ $character_elements =[
             Upon Jennifer’s arrival, they became friends right away. 
             However, their budding friendship will be put to test as they navigate the dangers within their new home.'
     ],  
-    [
-        'classes' => 'card-profile ',
-        'image' => 'https://stormindgames.com/wp-content/uploads/2021/01/Rosemary.png',
-        'title' => 'rosemary reed',
-        'icon' => './assets/icon-more.svg',
-        'icon_hover' => './assets/icon-less.svg',
-        'description' => 'Linn is a timid and insecure sixteen-year-old girl with a stutter who works at the Ashmann Inn as a maid. 
-            She is definitely not happy with it but she feels somehow attached to the people who live in there.
-
-            Upon Jennifer’s arrival, they became friends right away. 
-            However, their budding friendship will be put to test as they navigate the dangers within their new home.'
-    ],  
+    
+    
     
     
 ];
@@ -203,34 +183,35 @@ $wrapper_other_trailers =[
 $trailer_elements =[
     [
         'classes' => 'cards-video',
-        'video' => 'https://www.youtube.com/embed/jdj3YPilUP0',
+        'video' => 'https://www.youtube.com/embed/G8xNwyjzMRU',
         'title' => 'physical edition trailer',
     ],
     [
         'classes' => 'cards-video',
-        'video' => 'https://www.youtube.com/embed/jdj3YPilUP0',
+        'video' => 'https://www.youtube.com/embed/G8xNwyjzMRU',
         'title' => 'switch trailer',
     ],
     [
         'classes' => 'cards-video',
-        'video' => 'https://www.youtube.com/embed/jdj3YPilUP0',
+        'video' => 'https://www.youtube.com/embed/G8xNwyjzMRU',
         'title' => 'official trailer',
     ],
     [
         'classes' => 'cards-video',
-        'video' => 'https://www.youtube.com/embed/jdj3YPilUP0',
-        'title' => 'steam early acces trailer',
+        'video' => 'https://www.youtube.com/embed/G8xNwyjzMRU',
+        'title' => 'steam early access trailer',
     ],
     [
         'classes' => 'cards-video',
-        'video' => 'https://www.youtube.com/embed/jdj3YPilUP0',
+        'video' => 'https://www.youtube.com/embed/G8xNwyjzMRU',
         'title' => 'greenlight trailer',
     ],
     [
         'classes' => 'cards-video',
-        'video' => 'https://www.youtube.com/embed/jdj3YPilUP0',
+        'video' => 'https://www.youtube.com/embed/G8xNwyjzMRU',
         'title' => 'announcement trailer',
     ],
+    
 ];
 
 $wrapper_gallery=[
@@ -242,24 +223,24 @@ $wrapper_gallery=[
 
 $gallery =[
     'elements' =>[
-        'https://stormindgames.com/wp-content/uploads/2020/12/01-Remothered-TF.png',
-        'https://stormindgames.com/wp-content/uploads/2020/12/02-Remothered-TF.png',
-        'https://stormindgames.com/wp-content/uploads/2020/12/03-Remothered-TF.png',
-        'https://stormindgames.com/wp-content/uploads/2020/12/04-Remothered-TF.png',
-        'https://stormindgames.com/wp-content/uploads/2020/12/05-Remothered-TF.png',
-        'https://stormindgames.com/wp-content/uploads/2020/12/06-Remothered-TF.png',
-        'https://stormindgames.com/wp-content/uploads/2020/12/07-Remothered-TF.png',
-        'https://stormindgames.com/wp-content/uploads/2020/12/08-Remothered-TF.png',
-        'https://stormindgames.com/wp-content/uploads/2020/12/09-Remothered-TF.png',
-        'https://stormindgames.com/wp-content/uploads/2020/12/10-Remothered-TF.png',
-        'https://stormindgames.com/wp-content/uploads/2020/12/11-Remothered-TF.png',
-        'https://stormindgames.com/wp-content/uploads/2020/12/12-Remothered-TF.png',
+        'https://stormindgames.com/wp-content/uploads/2020/11/01-Batora-Lost-Haven-2.png',
+        'https://stormindgames.com/wp-content/uploads/2020/11/02-Batora-Lost-Haven-2.png',
+        'https://stormindgames.com/wp-content/uploads/2020/11/03-Batora-Lost-Haven-1.png',
+        'https://stormindgames.com/wp-content/uploads/2020/11/04-Batora-Lost-Haven-1.png',
+        'https://stormindgames.com/wp-content/uploads/2020/11/05-Batora-Lost-Haven-1.png',
+        'https://stormindgames.com/wp-content/uploads/2020/11/06-Batora-Lost-Haven-1.png',
+        'https://stormindgames.com/wp-content/uploads/2020/11/07-Batora-Lost-Haven.png',
+        'https://stormindgames.com/wp-content/uploads/2020/11/08-Batora-Lost-Haven.png',
+        'https://stormindgames.com/wp-content/uploads/2020/11/09-Batora-Lost-Haven.png',
+        'https://stormindgames.com/wp-content/uploads/2020/11/10-Batora-Lost-Haven.png',
+        'https://stormindgames.com/wp-content/uploads/2020/11/11-Batora-Lost-Haven.png',
+        'https://stormindgames.com/wp-content/uploads/2020/11/12-Batora-Lost-Haven.png',   
         
     ],
 ];
 
 $timeline=[
-    'background' => 'https://stormindgames.com/wp-content/uploads/2021/01/remote-tf-timeline.png',
+    'background' => 'https://stormindgames.com/wp-content/uploads/2021/01/batora-timeline.png',
     'title' => 'timeline',
     'elements'=>[
         [
@@ -277,46 +258,7 @@ $timeline=[
             'subtitle' => 'NINTENDO SWITCH™ RELEASE',
             'description' => 'The game became available for the Nintendo portable console.',
         ],
-        [
-            'date' => 'Jul 25, 2018',
-            'subtitle' => 'PS4 AND XBOX ONE RELEASE',
-            'description' => 'Remothered: Tormented Fathers just made its appearance in the consoles world.',
-        ],
-        [
-            'date' => 'Jan 30, 2018',
-            'subtitle' => 'PC FULL RELEASE',
-            'description' => 'The full version of the game was available to PC players.',
-        ],
-        [
-            'date' => 'Oct 31, 2017',
-            'subtitle' => 'STEAM EARLY ACCESS RELEASE',
-            'description' => 'Remothered: Tormented Fathers hit the largest digital distribution platform for PC gaming in Early Access.',
-        ],
-        [
-            'date' => 'Jun, 2017',
-            'subtitle' => 'BETA VERSION',
-            'description' => 'We gave voice to the game characters as we finished the soundtrack with all the activities related to dubbing and subtitles. A near-final release was ready - the beta version was provided to testers.',
-        ],
-        [
-            'date' => 'Dec, 2016',
-            'subtitle' => 'ALMOST THERE',
-            'description' => 'We delivered cinematic vibes to the game as we produced all the cutscenes. Artificial intelligence and sound effects were also developed and implemented. The alpha version was ready.',
-        ],
-        [
-            'date' => 'Jun, 2016',
-            'subtitle' => 'TAKING SHAPE',
-            'description' => 'Motion capture technology was used to create animations. By taking advantage of professional actors, we focused on replicating natural movements to make the action utterly realistic. At the end of this process, characters were able to interact with objects and we got a first playable version of the game with preliminary graphics. Furthermore, we developed the first version of the GUI.',
-        ],
-        [
-            'date' => 'Mar, 2016',
-            'subtitle' => 'EARLY STEPS',
-            'description' => 'March 2016 - At this stage, our 3D artists had finished the preliminary modeling and texturing activities concerning characters and environments. Developers set up the input methods and environment exploration systems that would have been used subsequently in the final product.',
-        ],
-        [
-            'date' => 'Dec, 2015',
-            'subtitle' => 'THE BEGINNING',
-            'description' => 'The start of our journey together with Darril Arts. The production of Remothered: Tormented Fathers began here.',
-        ],
+        
     ],
 
 ];
@@ -418,77 +360,6 @@ $reviews=[
     ],
 ];
 
-$wrapper_awards=[
-    'classes' => '',
-    'row_classes' => '',
-    'title' => 'awards',
-    'background' => "linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url('http://stormindgames.com/wp-content/uploads/2021/01/Awards-scaled.jpg')",
-];
-
-$awards=[
-    [
-        'image' => './assets/img/awards1.png',
-        'title' => 'OUTSTANDING ITALIAN COMPANY 2020',
-        'subtitle' => ''
-    ],
-    [
-        'image' => './assets/img/awards2.png',
-        'title' => 'BEST NEW STUDIO 2018',
-        'subtitle' => ''
-    ],
-    [
-        'image' => './assets/img/awards1.png',
-        'title' => 'OUTSTANDING ITALIAN COMPANY 2020',
-        'subtitle' => ''
-    ],
-    [
-        'image' => './assets/img/awards2.png',
-        'title' => 'BEST NEW STUDIO 2018',
-        'subtitle' => ''
-    ],
-    [
-        'image' => './assets/img/awards1.png',
-        'title' => 'OUTSTANDING ITALIAN COMPANY 2020',
-        'subtitle' => ''
-    ],
-    [
-        'image' => './assets/img/awards2.png',
-        'title' => 'BEST NEW STUDIO 2018',
-        'subtitle' => ''
-    ],
-    [
-        'image' => './assets/img/awards1.png',
-        'title' => 'OUTSTANDING ITALIAN COMPANY 2020',
-        'subtitle' => ''
-    ],
-    [
-        'image' => './assets/img/awards2.png',
-        'title' => 'BEST NEW STUDIO 2018',
-        'subtitle' => ''
-    ],
-    [
-        'image' => './assets/img/awards1.png',
-        'title' => 'OUTSTANDING ITALIAN COMPANY 2020',
-        'subtitle' => ''
-    ],
-    [
-        'image' => './assets/img/awards2.png',
-        'title' => 'BEST NEW STUDIO 2018',
-        'subtitle' => ''
-    ],
-    [
-        'image' => './assets/img/awards1.png',
-        'title' => 'OUTSTANDING ITALIAN COMPANY 2020',
-        'subtitle' => ''
-    ],
-    [
-        'image' => './assets/img/awards2.png',
-        'title' => 'BEST NEW STUDIO 2018',
-        'subtitle' => ''
-    ],
-    
-];
-
 $wrapper_partners=[
     'classes' => '',
     'row_classes' => 'row-cols-1 row-cols-md-3 gy-5',
@@ -512,7 +383,7 @@ $partners=[
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/bootstrap.min.css">
     <link rel="stylesheet" href="style/main.css">
-    <title>Remothered: Tormented Fathers</title>
+    <title>Batora</title>
 </head>
 <body>
     <header>
@@ -535,7 +406,6 @@ $partners=[
 
         <?php  get_template_part('./components/navbar.php', ['navbar' => $navbar , 'content' => $navbarContent]); ?>
     </header>
-
     <main>
         <section class="mb-1">
             <?php ob_start(); ?>
@@ -565,9 +435,8 @@ $partners=[
                         <?php get_template_part('./components/accordion.php', ['accordion' => $acc]); ?>
                     </div>            
                 <?php endforeach; ?>    
-                    
+
             <?php $side_panel_content = ob_get_clean(); ?>
-            
 
             <?php get_template_part(('./components/side-panel.php'), ['content' => $side_panel, 'text' => $side_panel_content]) ?>
         </section>
@@ -588,7 +457,7 @@ $partners=[
         <section class="mb-1">
             <?php ob_start(); ?>        
                 <div class="col ratio ratio-16x9">
-                <iframe  width="" height="" src="https://www.youtube.com/embed/jdj3YPilUP0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe  width="" height="" src="https://www.youtube.com/embed/G8xNwyjzMRU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             <?php $wrapper_content = ob_get_clean(); ?>
 
@@ -622,25 +491,6 @@ $partners=[
             <?php get_template_part(('./components/wrapper.php'), ['content' => $wrapper_reviews, 'elements' => $wrapper_content]) ?>
         </section>
         <section class="mb-1">
-                <?php ob_start(); ?>
-                    <div class="col-12 mb-5">
-                        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4">
-                            <?php foreach($awards as $award): ?>
-                                <div class="col px-5">
-                                    
-                                    <?php get_template_part( './components/card-award-mini.php', [ 'content' =>$award])?>
-                                </div>
-                            <?php endforeach; ?>
-                        </div>
-                    </div>
-                    <div class="col-12 ratio ratio-16x9">
-                        <iframe width="" height="" src="https://www.youtube.com/embed/IRF285u5GxA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-
-                <?php    $wrapper_content = ob_get_clean();  ?>
-            <?php get_template_part(('./components/wrapper.php'), ['content' => $wrapper_awards, 'elements' => $wrapper_content]) ?>
-        </section>
-        <section class="mb-1">
             <?php ob_start(); foreach($partners as $part): ?>
                 <div class="col d-flex justify-content-center">
                     <img src="<?=$part ?>" alt="<?=$part ?>" >
@@ -650,16 +500,14 @@ $partners=[
 
             <?php get_template_part(('./components/wrapper.php'), ['content' => $wrapper_partners, 'elements' => $wrapper_content]) ?>
         </section>
-
-    </main>
-
+    </main>   
     <footer>
         <?php 
             $footer = [
                 'classes' => 'footer',
                 'credits' => '© 2020  STORMIND S.R.L - P.IVA 05415340875     |     Via Sclafani 40/B - traversa, 95024 Acireale (CT) - ITALY     |     All Rights Reserved.',
                 'img_bw' => './assets/byBiscuitWay.svg',
-        
+
                 'socials' => [
                     'classes' => 'navbar__socials',
                     'icons' =>[
@@ -674,9 +522,9 @@ $partners=[
         ?>
         <?php get_template_part('./components/footer.php', $footer);  ?>
     </footer>
-    <script src="./script/navbar.js"></script>
-    <script src="./script/slider-simple.js"></script>
-    <script src="./script/galery.js"></script>
-    <script src="./script/accordion.js"></script>
+<script src="./script/navbar.js"></script>
+<script src="./script/slider-simple.js"></script>
+<script src="./script/galery.js"></script>
+<script src="./script/accordion.js"></script>
 </body>
 </html>
