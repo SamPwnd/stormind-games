@@ -21,18 +21,12 @@
         .bottom__left
         {
             margin-left: 108px;
-            @media (max-width: 992px)
-            {
-                display: none;
-            }
+            
         }
         .bottom__right
         {
             margin-left: 165px;
-            @media (max-width: 992px)
-            {
-                margin-left: 50px;
-            }
+            
             .bottom__right-title
             {
                 font-family: 'Poppins';
@@ -40,14 +34,7 @@
                 line-height: 76px;
                 font-weight: 700;
                 color: black;
-                @media (max-width: 992px)
-                {
-                    font-size: 50px;
-                }
-                @media (max-width: 576px)
-                {
-                    font-size: 36px;
-                }
+
             }
             .bottom__right-subtitle
             {
@@ -57,14 +44,7 @@
                 line-height: 28px;
                 color: black;
                 margin-top: 15px;
-                @media (max-width: 992px)
-                {
-                    font-size: 22px;
-                }
-                @media (max-width: 576px)
-                {
-                    font-size: 18px;
-                }
+               
             }
             .bottom__right-button
             {
@@ -75,6 +55,54 @@
                 }
             }
         }
+    }
+
+    @media only screen and (max-width: 992px), screen and (max-height: 650px){
+        .bottom__right{
+            margin-left: 50px;
+
+            .bottom__right-subtitle{
+                font-size: 22px;
+            }
+    
+            .bottom__right-title{
+                font-size: 50px;
+                line-height: 64px;
+            }
+    
+        }
+        
+        .bottom__left{
+            display: none;
+        }
+
+    }
+
+    @media only screen and (max-width: 576px), screen and (max-height: 550px){
+        .bottom__right{
+            margin-left: 10px;
+            .bottom__right-title{
+                font-size: 36px;
+                line-height: 44px;
+            }
+            .bottom__right-subtitle{
+                font-size: 18px;
+            }
+        }
+        
+    }
+    @media only screen and (max-height: 550px){
+        .bottom__right{
+            .bottom__right-button{
+                margin-top: 15px;
+            }
+        }
+
+        .box__bottom{
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        
     }
 }
     
