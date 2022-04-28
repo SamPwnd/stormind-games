@@ -113,12 +113,11 @@
     }
 
     &__up{
-        
+        width: 56px;
         &-inner{
             position: fixed;
-            top: 65vh;
-            
-            right: 100px;
+            right: 8.333%;
+            cursor: pointer;
             height: 56px;
             width: 56px;
             display: flex;
@@ -129,35 +128,7 @@
             background-image: url('../assets/backgrounds/noise.png');
             transform-origin: right top;
             margin-right: 20px;
-            --br1: map-get($container-max-widths, sm);
-            @media only screen and(max-width: map-get($container-max-widths, sm) ){
-                
-                right: calc((var(--br1) - 30% ) + 16px);
-            }
-
-            --br2: map-get($container-max-widths, md);
-            @media only screen and(max-width: map-get($container-max-widths, md) ){
-                
-                right: calc((var(--br2) - 30% ) + 16px);
-            }
-
-            --br3: map-get($container-max-widths, lg);
-            @media only screen and(max-width: map-get($container-max-widths, lg) ){
-                
-                right: calc(var(--br3) - 30%);
-            }
-
-            --br4: map-get($container-max-widths, xl);
-            @media only screen and(max-width: map-get($container-max-widths, xl) ){
-                
-                right: calc((var(--br4) - 30% ) + 16px);
-            }
-
-            --br5: map-get($container-max-widths, xxl);
-            @media only screen and(max-width: map-get($container-max-widths, xxl) ){
-                
-                right: calc((var(--br5) - 30% ) + 16px);
-            }
+            bottom: 164px;
         }
         
     }

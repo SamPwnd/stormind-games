@@ -12,3 +12,17 @@ navButton1.addEventListener("click", function(){
         navbar1.classList.add('navbar--open');
     }
 });
+
+$(document).ready(() =>{
+    $('.navbar__up-inner').hide();
+    $(window).on('scroll', () => {
+        
+        if ($(window).scrollTop() > $('.navbar').height()) {
+            $('.navbar__up-inner').show();
+            
+        }
+        else {
+            $('.navbar__up-inner').hide();
+        }
+    });
+});
