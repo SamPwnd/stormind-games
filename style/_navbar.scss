@@ -115,8 +115,14 @@
     &__up{
         width: 56px;
         &-inner{
-            position: fixed;
-            right: 8.333%;
+
+            &--fixed{
+                position: fixed;
+                right: 6.333%;
+                bottom: 164px;
+                
+            }
+            
             cursor: pointer;
             height: 56px;
             width: 56px;
@@ -128,7 +134,7 @@
             background-image: url('../assets/backgrounds/noise.png');
             transform-origin: right top;
             margin-right: 20px;
-            bottom: 164px;
+            
         }
         
     }

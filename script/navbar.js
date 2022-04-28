@@ -13,16 +13,19 @@ navButton1.addEventListener("click", function(){
     }
 });
 
-$(document).ready(() =>{
-    $('.navbar__up-inner').hide();
+window.addEventListener('load', () =>{
+    $('.navbar__up-inner').removeClass("navbar__up-inner--fixed");
     $(window).on('scroll', () => {
         
         if ($(window).scrollTop() > $('.navbar').height()) {
-            $('.navbar__up-inner').show();
+            $('.navbar__up-inner').addClass("navbar__up-inner--fixed");
             
+        }else {
+            $('.navbar__up-inner').removeClass("navbar__up-inner--fixed");
         }
-        else {
-            $('.navbar__up-inner').hide();
+
+        if($(window).scrollTop()  > $(document).height() - 600) {
+            $('.navbar__up-inner').removeClass("navbar__up-inner--fixed");
         }
     });
 });
