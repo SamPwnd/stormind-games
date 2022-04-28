@@ -29,7 +29,7 @@ require_once('./functions.php');
  */
 
 $navbar =[
-    'classes' => 'navbar navbar--opened',
+    'classes' => 'navbar navbar--footer navbar--opened',
     'id' => 'navbar1',
     'logo' => './assets/logo.svg',
     'navContainer' => 'container',
@@ -48,15 +48,7 @@ $navbar =[
 
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+
     <div class="<?=$classes ?>">
         <?php ob_start(); ?>
             <ul class="navbar__links " id="navbarNavDropdown">
@@ -87,5 +79,3 @@ $navbar =[
         </div>
     </div>
     
-</body>
-</html>

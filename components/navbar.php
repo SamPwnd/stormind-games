@@ -36,7 +36,13 @@
             <?php endif; ?>
 
             <?= $content ?>
-
+            <?php if($navbar['classes'] === 'navbar navbar--footer navbar--opened'): ?>
+                <div class="navbar__up">
+                    <a class="navbar__up-inner" href="#">
+                        <img src="./assets/icon-top.svg" alt="icon-top">
+                    </a>
+                </div>
+            <?php endif;?>
             <div class="navbar__socials">
                 <?php foreach($navbar['socials']['icons'] as $icon):?>
                     <img src="<?= $icon ?>" alt="<?= $icon ?>">
