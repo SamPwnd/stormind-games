@@ -10,3 +10,10 @@
     }
   }
 }
+
+.mini-form {
+  @media only screen and (max-width: map-get($grid-breakpoints, sm)){
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

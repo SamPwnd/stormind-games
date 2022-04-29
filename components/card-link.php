@@ -6,6 +6,7 @@
     'link' => '#',
     'title' => 'REMOTHERED: Broken Porcelain',
     'subtitle' => 'UPDATED: Aug 19, 2019',
+    'icon' => './assets/icon-download.svg',
 ];
  */
 ?>
