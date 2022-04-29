@@ -193,14 +193,14 @@ $character_elements =[
 ];
 
 $wrapper_trailer =[
-    'classes' => '',
+    'classes' => 'wrapper--short',
     'row_classes' => 'row-cols-1 ',
     'title' => 'trailer',
     'background' => '',
 ];
 
 $wrapper_other_trailers =[
-    'classes' => '',
+    'classes' => 'wrapper--short',
     'row_classes' => 'row-cols-1  row-cols-md-2 row-cols-xl-3',
     'title' => 'other trailers',
     'background' => '',
@@ -240,7 +240,7 @@ $trailer_elements =[
 ];
 
 $wrapper_gallery=[
-    'classes' => '',
+    'classes' => 'wrapper--short',
     'row_classes' => '',
     'title' => 'gallery',
     'background' => '',

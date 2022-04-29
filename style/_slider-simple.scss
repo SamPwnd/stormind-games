@@ -21,16 +21,31 @@ $slider-num-of-slides: '5';
         transition: left 0.5s;
         display: flex;
         flex-wrap: nowrap;
+        @media screen and (max-width: 850px) {
+            width: 1500%;
+            
+        }
         
         .slider-simple__element{
             display: inline-block;
             max-width: calc((100% / 5) / 3);
             padding-right: 2rem;
 
-            //&:last-of-type{padding: 0;}
+            @media screen and (max-width: 850px) {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                p{
+                    text-align: center;
+                    &:first-of-type{
+                        
+                    }
+                }
+            }
 
             .slider-simple__title{
                 @include poppins(H4, 800, $black, start);
+                padding-bottom: 10px;
                 span{
                     color: $primary;
                 }
