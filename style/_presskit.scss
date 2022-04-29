@@ -2,8 +2,11 @@
   padding-top: 124px;
   padding-bottom: 124px;
   .container{
+    .col-lg-4.col-md-12{
+      margin-bottom: 20px;
+    }
     .card-simple{
-      max-width: 100%;
+      position: relative;
       .card-simple__title{
         margin-bottom: 16px;
       }

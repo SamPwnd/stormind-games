@@ -6,11 +6,12 @@
     'link' => '#',
     'title' => 'REMOTHERED: Broken Porcelain',
     'subtitle' => 'UPDATED: Aug 19, 2019',
+    'icon' => './assets/icon-download.svg',
 ];
  */
 ?>
 
-<div class="<?= $content['classes']?> col-4">
+<div class="<?= $content['classes']?>">
     <a href="<?= $content['link']?>">
         <div class="card-link__img-wrapper">
             <img class="w-100" src="<?=$content['image']?>" alt="">

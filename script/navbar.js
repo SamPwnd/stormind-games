@@ -12,3 +12,20 @@ navButton1.addEventListener("click", function(){
         navbar1.classList.add('navbar--open');
     }
 });
+
+window.addEventListener('load', () =>{
+    $('.navbar__up-inner').removeClass("navbar__up-inner--fixed");
+    $(window).on('scroll', () => {
+        
+        if ($(window).scrollTop() > $('.navbar').height()) {
+            $('.navbar__up-inner').addClass("navbar__up-inner--fixed");
+            
+        }else {
+            $('.navbar__up-inner').removeClass("navbar__up-inner--fixed");
+        }
+
+        if($(window).scrollTop()  > $(document).height() - 600) {
+            $('.navbar__up-inner').removeClass("navbar__up-inner--fixed");
+        }
+    });
+});
