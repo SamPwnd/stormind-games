@@ -37,30 +37,41 @@ $text_panel_hero = [
 ];
 
 
-$cardsimple = [
+$card_link = [
   [
     'classes' => 'cards-simple',
     'image' => './assets/img/180.png',
+    'link' => '#',
     'title' => 'Batora: Lost Haven',
-    'subtitle' => 'UPDATED: Aug 19, 2019'
+    'subtitle' => 'UPDATED: Aug 19, 2019',
+    'icon' => './assets/icon-download.svg'
   ],
   [
     'classes' => 'cards-simple',
     'image' => './assets/remothered.png',
+    'link' => '#',
     'title' => 'REMOTHERED: Broken Porcelain',
-    'subtitle' => 'UPDATED: Aug 19, 2019'
+    'subtitle' =>
+    'UPDATED: Aug 19, 2019',
+    'icon' => './assets/icon-download.svg'
   ],
   [
     'classes' => 'cards-simple',
     'image' => './assets/remothered2.png',
+    'link' => '#',
     'title' => 'REMOTHERED: Tormented Fathers',
-    'subtitle' => 'UPDATED: Mar 19, 2020'
+    'subtitle' =>
+    'UPDATED: Mar 19, 2020',
+    'icon' => './assets/icon-download.svg'
   ],
   [
     'classes' => 'cards-simple',
     'image' => './assets/img/180.png',
+    'link' => '#',
     'title' => 'STORMIND GAMES',
-    'subtitle' => 'UPDATED: Aug 19, 2019'
+    'subtitle' =>
+    'UPDATED: Aug 19, 2019',
+    'icon' => './assets/icon-download.svg'
   ]
 ];
 
@@ -135,26 +146,26 @@ $footer = [
     <div class="container">
       <?php
       ob_start();
-      get_template_part(('./components/cardsimple.php'), ['content' => $cardsimple]);
-      $cardsimple_content = ob_get_clean(); ?>
+      get_template_part(('./components/card-link.php'), ['content' => $card_link]);
+      $card_link_content = ob_get_clean(); ?>
 
       <div class="row">
         <div class="col-lg-4 col-md-12">
-          <?php get_template_part(('./components/cardsimple.php'), ['content' => $cardsimple[0], 'text' => $cardsimple_content]) ?>
+          <?php get_template_part(('./components/card-link.php'), ['content' => $card_link[0], 'text' => $card_link_content]) ?>
         </div>
 
 
         <div class="col-lg-4 col-md-12">
-          <?php get_template_part(('./components/cardsimple.php'), ['content' => $cardsimple[1], 'text' => $cardsimple_content]) ?>
+          <?php get_template_part(('./components/card-link.php'), ['content' => $card_link[1], 'text' => $card_link_content]) ?>
         </div>
 
 
         <div class="col-lg-4 col-md-12">
-          <?php get_template_part(('./components/cardsimple.php'), ['content' => $cardsimple[2], 'text' => $cardsimple_content]) ?>
+          <?php get_template_part(('./components/card-link.php'), ['content' => $card_link[2], 'text' => $card_link_content]) ?>
         </div>
 
         <div class="col-lg-4 col-md-12">
-          <?php get_template_part(('./components/cardsimple.php'), ['content' => $cardsimple[3], 'text' => $cardsimple_content]) ?>
+          <?php get_template_part(('./components/card-link.php'), ['content' => $card_link[3], 'text' => $card_link_content]) ?>
         </div>
       </div>
     </div>
